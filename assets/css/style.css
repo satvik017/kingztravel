@@ -64,11 +64,11 @@ a {
     padding: 7em 0; }
 
   a{
-    color: brown;
+    color: rgb(153, 74, 74);
   }
 
   a:hover{
-    color: rgb(201, 63, 63);
+    color: rgb(153, 74, 74);
   }
 
 .btn {
@@ -79,13 +79,13 @@ a {
   font-weight: 400; }
   .btn.btn-primary {
     color: #fff;
-    background-color: brown;
-    border-color: brown;
+    background-color: rgb(153, 74, 74);
+    border-color: rgb(153, 74, 74);
   }
   .btn:hover, .btn:active, .btn:focus {
     -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-    background-color: rgb(201, 63, 63); }
+    background-color: rgb(153, 74, 74); }
 
 .bg_image, .probootstrap-section-half .probootstrap-image {
   background-size: cover;
@@ -157,7 +157,7 @@ a {
   .border-bottom:after {
     width: 50px;
     height: 2px;
-    background: brown;
+    background: rgb(153, 74, 74);
     position: absolute;
     content: "";
     bottom: 0;
@@ -375,7 +375,7 @@ a {
       box-shadow: none;
       -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-      border: 1px solid brown; }
+      border: 1px solid rgb(153, 74, 74); }
   .probootstrap-form .form-group:last-child {
     margin-bottom: 0;
     padding-bottom: 0; }
@@ -420,10 +420,10 @@ a {
   .select2-dropdown:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
-    border: 1px solid brown; }
+    border: 1px solid rgb(153, 74, 74); }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-  background: brown; }
+  background: rgb(153, 74, 74); }
 
 .select2-container--default .select2-results__option[aria-selected=true] {
   background: #d9d9d9;
@@ -512,7 +512,7 @@ a {
       visibility: visible; }
     .owl-carousel .probootstrap-slide:hover span, .owl-carousel .probootstrap-slide:focus span {
       top: 40%;
-      color: brown; }
+      color: rgb(153, 74, 74); }
 
 .owl-carousel .owl-nav {
   position: absolute;
@@ -543,7 +543,7 @@ a {
     border-radius: 50%;
     background: #e6e6e6; }
     .owl-carousel .owl-dots .owl-dot.active {
-      background: brown; }
+      background: rgb(153, 74, 74); }
 
 .probootstrap-date-wrap {
   position: relative; }
