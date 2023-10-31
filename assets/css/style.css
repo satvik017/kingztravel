@@ -565,3 +565,10 @@ a {
 #section-services{
       border-top: 1px solid #e6e6e6;
 }
+
+.logo{
+  height: 50px;
+  width: 50px;
+  margin: 5px 10px;
+  border-radius: 50%;
+}
