@@ -582,6 +582,10 @@ a {
 }
 
 iframe{
-  width: 600px;
+  width: -webkit-fill-available;
   height: 500px;
+}
+
+.profile-img{
+  width: -webkit-fill-available;
 }
