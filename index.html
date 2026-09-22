@@ -29,17 +29,17 @@
     .section-sub{font-size:17px;color:var(--gray-500);max-width:560px;margin-bottom:48px;}
     .section-header-center{text-align:center;}
     .section-header-center .section-sub{margin-left:auto;margin-right:auto;}
-    .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:100px;font-size:15px;font-weight:600;cursor:pointer;transition:var(--transition);border:2px solid transparent;}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:100px;font-size:15px;font-weight:600;cursor:pointer;transition:var(--transition);border:none;overflow:hidden;transform:translateZ(0);-webkit-mask-image:-webkit-radial-gradient(white,black);}
     .btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--navy);box-shadow:var(--shadow-gold);}
-    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(212,168,67,0.4);}
-    .btn-outline-gold{background:transparent;border-color:var(--gold);color:var(--gold);}
-    .btn-outline-gold:hover{background:var(--gold);color:var(--navy);transform:translateY(-2px);}
+    .btn-primary:hover{transform:translateY(-2px) translateZ(0);box-shadow:0 12px 40px rgba(212,168,67,0.4);}
+    .btn-outline-gold{background:transparent;box-shadow:inset 0 0 0 2px var(--gold);color:var(--gold);}
+    .btn-outline-gold:hover{background:var(--gold);color:var(--navy);transform:translateY(-2px) translateZ(0);}
     .btn-navy{background:var(--navy);color:var(--white);}
-    .btn-navy:hover{background:var(--navy-light);transform:translateY(-2px);box-shadow:var(--shadow-md);}
+    .btn-navy:hover{background:var(--navy-light);transform:translateY(-2px) translateZ(0);box-shadow:var(--shadow-md);}
     .btn-whatsapp{background:linear-gradient(135deg,#25D366,#128C7E);color:white;box-shadow:0 8px 24px rgba(37,211,102,0.3);}
-    .btn-whatsapp:hover{transform:translateY(-2px);}
+    .btn-whatsapp:hover{transform:translateY(-2px) translateZ(0);}
     .btn-call{background:linear-gradient(135deg,#4facfe,#00f2fe);color:white;}
-    .btn-call:hover{transform:translateY(-2px);}
+    .btn-call:hover{transform:translateY(-2px) translateZ(0);}
     .btn-sm{padding:10px 20px;font-size:13px;}
     /* NAVBAR */
     .navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 24px;background:rgba(123,76,21,0.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(226,175,94,0.25);transition:var(--transition);}
@@ -91,8 +91,8 @@
     .hero-form-group input::placeholder{color:rgba(255,255,255,0.45);}
     .hero-form-group input:focus,.hero-form-group select:focus{outline:none;border-color:var(--gold);background:rgba(255,255,255,0.15);}
     .hero-form-group select option{background:var(--navy);color:white;}
-    .hero-search-btn{background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--navy);border:none;padding:13px 28px;border-radius:var(--radius-md);font-size:15px;font-weight:700;cursor:pointer;transition:var(--transition);white-space:nowrap;display:flex;align-items:center;gap:8px;font-family:inherit;}
-    .hero-search-btn:hover{transform:translateY(-2px);box-shadow:var(--shadow-gold);}
+    .hero-search-btn{background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--navy);border:none;padding:13px 28px;border-radius:var(--radius-md);font-size:15px;font-weight:700;cursor:pointer;transition:var(--transition);white-space:nowrap;display:flex;align-items:center;gap:8px;font-family:inherit;overflow:hidden;transform:translateZ(0);-webkit-mask-image:-webkit-radial-gradient(white,black);}
+    .hero-search-btn:hover{transform:translateY(-2px) translateZ(0);box-shadow:var(--shadow-gold);}
     .hero-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:36px;}
     .hero-quick-links{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
     .hero-quick-label{font-size:13px;color:rgba(255,255,255,0.5);font-weight:500;}
@@ -106,7 +106,7 @@
     .section-white{background:var(--white);}
     .section-cream{background:var(--cream);}
     /* SERVICES */
-    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;margin-bottom:48px;}
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:48px;}
     .service-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:36px 28px;text-align:center;transition:var(--transition);cursor:pointer;position:relative;overflow:hidden;}
     .service-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--navy),var(--navy-light));opacity:0;transition:var(--transition);}
     .service-card:hover::before{opacity:1;}
@@ -126,7 +126,7 @@
     .dest-panel.active{display:grid;}
     .dest-grid{grid-template-columns:repeat(4,1fr);gap:20px;}
     .dest-card{position:relative;border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:3/4;cursor:pointer;box-shadow:var(--shadow-sm);}
-    .dest-card.wide{grid-column:span 2;}
+    .dest-card.wide{grid-column:span 2;grid-row:span 2;aspect-ratio:auto;}
     .dest-card img{width:100%;height:100%;object-fit:cover;transition:transform 0.6s cubic-bezier(0.4,0,0.2,1);}
     .dest-card:hover img{transform:scale(1.1);}
     .dest-card-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(60,30,5,0.88) 0%,rgba(90,54,16,0.15) 60%,transparent 100%);transition:var(--transition);}
@@ -450,34 +450,9 @@
       </div>
       <div class="hero-actions">
         <a href="https://wa.me/message/JXZMLEVZXMY2D1" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
-        <a href="contact.html" class="btn" style="color:#fff;border:2px solid rgba(255,255,255,0.4);border-radius:100px;"><i class="fas fa-phone-alt"></i> Talk to an Expert</a>
+        <a href="contact.html" class="btn" style="color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,0.4);border-radius:100px;"><i class="fas fa-phone-alt"></i> Talk to an Expert</a>
       </div>
-      <div class="hero-quick-links">
-        <span class="hero-quick-label">Explore:</span>
-        <a href="#section-destinations" class="hero-pill">&#127956; Domestic</a>
-        <a href="#section-destinations" class="hero-pill">&#127758; International</a>
-        <a href="#section-experience" class="hero-pill">&#128145; Honeymoon</a>
-        <a href="#section-experience" class="hero-pill">&#128106; Family</a>
-        <a href="#section-experience" class="hero-pill">&#128101; Group</a>
-      </div>
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <div class="hero-stat-num">5000+</div>
-          <div class="hero-stat-label">Happy Travellers</div>
-        </div>
-        <div class="hero-stat" style="border-left:1px solid rgba(255,255,255,0.15);padding-left:40px;">
-          <div class="hero-stat-num">200+</div>
-          <div class="hero-stat-label">Destinations</div>
-        </div>
-        <div class="hero-stat" style="border-left:1px solid rgba(255,255,255,0.15);padding-left:40px;">
-          <div class="hero-stat-num">10+</div>
-          <div class="hero-stat-label">Years Experience</div>
-        </div>
-        <div class="hero-stat" style="border-left:1px solid rgba(255,255,255,0.15);padding-left:40px;">
-          <div class="hero-stat-num">4.9&#9733;</div>
-          <div class="hero-stat-label">Google Rating</div>
-        </div>
-      </div>
+
     </div>
   </div>
 </section>
