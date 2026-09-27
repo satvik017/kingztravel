@@ -49,11 +49,12 @@
     .navbar-brand img{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);}
     .navbar-brand-text{font-size:22px;font-weight:800;color:var(--white);letter-spacing:-0.5px;}
     .navbar-brand-text span{color:var(--gold);}
-    .nav-menu{display:flex;align-items:center;gap:4px;}
-    .nav-link{padding:8px 14px;border-radius:var(--radius-sm);font-size:14px;font-weight:500;color:rgba(255,240,180,0.92);transition:var(--transition);position:relative;}
+    .nav-menu{display:flex;align-items:center;gap:3px;flex-wrap:nowrap;}
+    .nav-link{padding:7px 11px;border-radius:var(--radius-sm);font-size:13px;font-weight:500;color:rgba(255,240,180,0.92);transition:var(--transition);position:relative;white-space:nowrap;}
     .nav-link:hover,.nav-link.active{color:var(--gold-light);background:rgba(226,175,94,0.15);}
     .nav-item{position:relative;}
     .nav-dropdown{position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%) translateY(8px);background:rgba(90,54,16,0.98);border:1px solid rgba(226,175,94,0.3);border-radius:var(--radius-md);padding:8px;min-width:200px;opacity:0;pointer-events:none;transition:var(--transition);box-shadow:0 20px 60px rgba(123,76,21,0.5);}
+    .nav-dropdown::before{content:'';position:absolute;top:-12px;left:0;right:0;height:12px;}
     .nav-item:hover .nav-dropdown{opacity:1;pointer-events:auto;transform:translateX(-50%) translateY(0);}
     .nav-dropdown a{display:block;padding:9px 14px;font-size:13px;color:rgba(255,240,180,0.85);border-radius:var(--radius-sm);white-space:nowrap;}
     .nav-dropdown a:hover{background:rgba(226,175,94,0.15);color:var(--gold-light);}
@@ -263,8 +264,9 @@
     .fade-up:nth-child(5){transition-delay:0.4s;}
     .fade-up:nth-child(6){transition-delay:0.5s;}
     /* RESPONSIVE */
-    @media(max-width:1024px){.dest-grid{grid-template-columns:repeat(2,1fr);}.dest-card.wide{grid-column:span 1;}.packages-grid{grid-template-columns:repeat(2,1fr);}.footer-grid{grid-template-columns:1fr 1fr 1fr;gap:30px;}.footer-brand{grid-column:1/-1;}}
-    @media(max-width:768px){.nav-menu{display:none;}.nav-hamburger{display:flex;}.section{padding:72px 0;}.hero-search-grid{grid-template-columns:1fr;}.services-grid{grid-template-columns:repeat(2,1fr);}.dest-grid{grid-template-columns:repeat(2,1fr);}.packages-grid{grid-template-columns:1fr;}.experience-grid{grid-template-columns:1fr 1fr;}.b2b-grid{grid-template-columns:1fr;}.why-grid{grid-template-columns:repeat(2,1fr);}.reviews-grid{grid-template-columns:1fr;}.footer-grid{grid-template-columns:1fr 1fr;}.footer-brand{grid-column:1/-1;}}
+    @media(max-width:1080px){.nav-menu{display:none;}.nav-hamburger{display:flex;}}
+    @media(max-width:1024px){.dest-grid{grid-template-columns:repeat(2,1fr);}.dest-card.wide{grid-column:span 1;grid-row:span 1;}.packages-grid{grid-template-columns:repeat(2,1fr);}.footer-grid{grid-template-columns:1fr 1fr 1fr;gap:30px;}.footer-brand{grid-column:1/-1;}}
+    @media(max-width:768px){.section{padding:72px 0;}.hero-search-grid{grid-template-columns:1fr;}.services-grid{grid-template-columns:repeat(2,1fr);}.dest-grid{grid-template-columns:repeat(2,1fr);}.packages-grid{grid-template-columns:1fr;}.experience-grid{grid-template-columns:1fr 1fr;}.b2b-grid{grid-template-columns:1fr;}.why-grid{grid-template-columns:repeat(2,1fr);}.reviews-grid{grid-template-columns:1fr;}.footer-grid{grid-template-columns:1fr 1fr;}.footer-brand{grid-column:1/-1;}}
     @media(max-width:480px){.services-grid{grid-template-columns:1fr;}.dest-grid{grid-template-columns:1fr;}.experience-grid{grid-template-columns:1fr;}.why-grid{grid-template-columns:1fr;}.footer-grid{grid-template-columns:1fr;}.hero-actions{flex-direction:column;align-items:flex-start;}.b2b-card{padding:32px 24px;}}
   </style>
 </head>
@@ -282,16 +284,16 @@
       <li class="nav-item">
         <a href="#section-destinations" class="nav-link">Destinations &#9662;</a>
         <div class="nav-dropdown">
-          <a href="#section-destinations">&#127956; Domestic</a>
-          <a href="#section-destinations">&#127758; International</a>
+          <a href="domestic-travel.html">&#127956; Domestic</a>
+          <a href="international-travel.html">&#127758; International</a>
           <a href="city-guides.html">&#128506; All Destinations</a>
         </div>
       </li>
       <li class="nav-item">
         <a href="#section-packages" class="nav-link">Packages &#9662;</a>
         <div class="nav-dropdown">
-          <a href="#section-packages">&#127470;&#127475; Domestic Packages</a>
-          <a href="#section-packages">&#9992;&#65039; International Packages</a>
+          <a href="domestic-travel.html">&#127470;&#127475; Domestic Packages</a>
+          <a href="international-travel.html">&#9992;&#65039; International Packages</a>
           <a href="#section-experience">&#128145; Honeymoon Packages</a>
           <a href="#section-experience">&#128106; Family Packages</a>
           <a href="#section-experience">&#128101; Group Tours</a>
@@ -343,16 +345,16 @@
       <li class="mobile-nav-item">
         <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-dest')">Destinations <i class="fa fa-chevron-down"></i></button>
         <ul class="mobile-submenu" id="sub-dest">
-          <li><a href="#section-destinations">&#127956; Domestic</a></li>
-          <li><a href="#section-destinations">&#127758; International</a></li>
+          <li><a href="domestic-travel.html">&#127956; Domestic</a></li>
+          <li><a href="international-travel.html">&#127758; International</a></li>
           <li><a href="city-guides.html">&#128506; All Destinations</a></li>
         </ul>
       </li>
       <li class="mobile-nav-item">
         <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-packages')">Packages <i class="fa fa-chevron-down"></i></button>
         <ul class="mobile-submenu" id="sub-packages">
-          <li><a href="#section-packages">&#127470;&#127475; Domestic Packages</a></li>
-          <li><a href="#section-packages">&#9992;&#65039; International Packages</a></li>
+          <li><a href="domestic-travel.html">&#127470;&#127475; Domestic Packages</a></li>
+          <li><a href="international-travel.html">&#9992;&#65039; International Packages</a></li>
           <li><a href="#section-experience">&#128145; Honeymoon Packages</a></li>
           <li><a href="#section-experience">&#128106; Family Packages</a></li>
           <li><a href="#section-experience">&#128101; Group Tours</a></li>
@@ -1044,8 +1046,8 @@
       <div class="footer-col">
         <h4>Packages</h4>
         <ul>
-          <li><a href="#section-packages">&#127470;&#127475; Domestic</a></li>
-          <li><a href="#section-packages">&#9992;&#65039; International</a></li>
+          <li><a href="domestic-travel.html">&#127470;&#127475; Domestic Tours</a></li>
+          <li><a href="international-travel.html">&#9992;&#65039; International Tours</a></li>
           <li><a href="#section-experience">&#128145; Honeymoon</a></li>
           <li><a href="#section-experience">&#128106; Family</a></li>
           <li><a href="#section-experience">&#128101; Group Tours</a></li>
