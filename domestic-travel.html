@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Domestic Tour Packages - Kings Travels | Explore Incredible India</title>
-  <meta name="description" content="Discover India with Kings Travels curated domestic tour packages. From Kashmir to Kerala, Himachal to Andaman - experience unforgettable journeys across India.">
-  <meta name="keywords" content="domestic tour packages, India tour packages, Kashmir tour, Kerala holiday, Himachal packages, Andaman packages, Ladakh tours, Kings Travels">
+  <title>Domestic Tour Packages in India | Holiday Packages | Kings Travels</title>
+  <meta name="description" content="Explore domestic tour packages across India with Kings Travels. Discover customized holidays to Kashmir, Kerala, Himachal, Andaman, Sikkim, Ladakh and more.">
+  <meta name="keywords" content="domestic tour packages, holiday packages in India, Kashmir tour, Kerala holiday, Himachal packages, Andaman packages, Sikkim tours, Ladakh road trip, Kings Travels">
   <link rel="shortcut icon" href="assets/images/logo.jpeg" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -330,8 +330,9 @@
       padding: 24px;
       color: var(--white);
     }
-    .dest-title { font-size: 22px; font-weight: 800; color: var(--white); margin-bottom: 6px; }
-    .dest-desc { font-size: 13px; color: rgba(255, 255, 255, 0.8); line-height: 1.45; margin-bottom: 12px; }
+    .dest-title { font-size: 22px; font-weight: 800; color: var(--white); margin-bottom: 4px; }
+    .dest-subtitle { font-size: 13px; font-weight: 600; color: var(--gold-light); margin-bottom: 6px; letter-spacing: 0.3px; }
+    .dest-desc { font-size: 13px; color: rgba(255, 255, 255, 0.88); line-height: 1.45; margin-bottom: 12px; }
     .dest-link {
       display: inline-flex;
       align-items: center;
@@ -482,7 +483,16 @@
       font-size: 18px;
       font-weight: 800;
       color: var(--navy-dark);
-      margin-bottom: 12px;
+      margin-bottom: 6px;
+    }
+    .tour-dest {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
     .tour-meta {
       display: flex;
@@ -501,12 +511,21 @@
     .tour-route {
       font-size: 12px;
       color: #7a6e5b;
-      margin-bottom: 16px;
+      margin-bottom: 8px;
       display: flex;
       align-items: center;
       gap: 6px;
     }
     .tour-route i { color: var(--navy); font-size: 11px; }
+    .tour-highlights {
+      font-size: 12px;
+      color: var(--gray-500);
+      margin-bottom: 14px;
+      line-height: 1.5;
+      padding-top: 8px;
+      border-top: 1px dashed rgba(123, 76, 21, 0.15);
+    }
+    .tour-highlights strong { color: var(--navy-dark); font-weight: 700; }
     .tour-card-footer {
       margin-top: auto;
       padding-top: 14px;
@@ -525,6 +544,18 @@
       justify-content: center;
       padding: 10px 16px;
       font-size: 13px;
+    }
+    .packages-action-row {
+      display: flex;
+      justify-content: center;
+      margin-top: 36px;
+    }
+    .packages-note {
+      text-align: center;
+      font-size: 13px;
+      color: var(--gray-500);
+      margin-top: 16px;
+      font-style: italic;
     }
 
     /* TRAVEL STYLES */
@@ -564,8 +595,9 @@
       margin-bottom: 8px;
       display: inline-block;
     }
-    .style-title { font-size: 16px; font-weight: 800; color: var(--navy-dark); margin-bottom: 4px; }
-    .style-desc { font-size: 12px; color: var(--gray-500); line-height: 1.45; margin-bottom: 10px; }
+    .style-title { font-size: 16px; font-weight: 800; color: var(--navy-dark); margin-bottom: 2px; }
+    .style-subtitle { font-size: 12px; font-weight: 600; color: var(--navy); margin-bottom: 6px; }
+    .style-desc { font-size: 12px; color: var(--gray-500); line-height: 1.45; margin-bottom: 12px; }
     .style-link {
       font-size: 12px;
       font-weight: 700;
@@ -909,18 +941,6 @@
           <div class="nav-dropdown">
             <a href="domestic-travel.html" style="color:var(--gold-light);background:rgba(226,175,94,0.15);font-weight:700;">&#127956; Domestic</a>
             <a href="international-travel.html">&#127758; International</a>
-            <a href="city-guides.html">&#128506; All Destinations</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a href="index.html#section-packages" class="nav-link">Packages &#9662;</a>
-          <div class="nav-dropdown">
-            <a href="domestic-travel.html">&#127470;&#127475; Domestic Packages</a>
-            <a href="international-travel.html">&#9992;&#65039; International Packages</a>
-            <a href="index.html#section-experience">&#128145; Honeymoon Packages</a>
-            <a href="index.html#section-experience">&#128106; Family Packages</a>
-            <a href="index.html#section-experience">&#128101; Group Tours</a>
-            <a href="contact.html">&#128221; Customized Packages</a>
           </div>
         </li>
         <li class="nav-item">
@@ -970,18 +990,6 @@
           <ul class="mobile-submenu open" id="sub-dest">
             <li><a href="domestic-travel.html" style="color:var(--gold);font-weight:700;">&#127956; Domestic</a></li>
             <li><a href="international-travel.html">&#127758; International</a></li>
-            <li><a href="city-guides.html">&#128506; All Destinations</a></li>
-          </ul>
-        </li>
-        <li class="mobile-nav-item">
-          <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-packages')">Packages <i class="fa fa-chevron-down"></i></button>
-          <ul class="mobile-submenu" id="sub-packages">
-            <li><a href="domestic-travel.html">&#127470;&#127475; Domestic Packages</a></li>
-            <li><a href="international-travel.html">&#9992;&#65039; International Packages</a></li>
-            <li><a href="index.html#section-experience">&#128145; Honeymoon Packages</a></li>
-            <li><a href="index.html#section-experience">&#128106; Family Packages</a></li>
-            <li><a href="index.html#section-experience">&#128101; Group Tours</a></li>
-            <li><a href="contact.html">&#128221; Customized Packages</a></li>
           </ul>
         </li>
         <li class="mobile-nav-item">
@@ -1038,14 +1046,14 @@
     </nav>
   </div>
 
-  <!-- HERO SECTION -->
+  <!-- SECTION 1: HERO SECTION -->
   <section class="domestic-hero">
     <div class="container">
       <div class="hero-top-content">
         <div class="hero-text-block">
           <span class="hero-badge-tag">DISCOVER INCREDIBLE INDIA</span>
-          <h1>Domestic Tour Packages</h1>
-          <p class="hero-desc">From snow-capped mountains to tropical beaches, ancient heritage to vibrant cities &mdash; explore the best of India with our carefully curated domestic tour packages.</p>
+          <h1>Explore India with Our Domestic Tour Packages</h1>
+          <p class="hero-desc">From Kashmir’s snow-covered valleys and Kerala’s peaceful backwaters to Ladakh’s dramatic landscapes and Andaman’s tropical beaches, explore incredible destinations across India with Kings Travels.<br><br>Our domestic tour packages are designed for couples, families, friends and groups, with flexible itineraries, handpicked stays and travel experiences planned around your dates, interests and budget.</p>
           <a href="contact.html" class="btn btn-blue">Plan My India Trip <i class="fas fa-arrow-right"></i></a>
         </div>
         <div class="hero-script-tag">
@@ -1054,48 +1062,48 @@
         </div>
       </div>
 
-      <!-- 4 Feature Badges Bar -->
+      <!-- SECTION 2: QUICK HIGHLIGHTS -->
       <div class="hero-feature-bar">
         <div class="feature-item">
           <div class="feature-icon-circle"><i class="fas fa-map-marked-alt"></i></div>
           <div>
             <div class="feature-title">Handpicked Destinations</div>
-            <div class="feature-desc">Explore India's best</div>
+            <div class="feature-desc">Explore some of India’s most beautiful holiday destinations.</div>
           </div>
         </div>
         <div class="feature-item">
           <div class="feature-icon-circle"><i class="fas fa-route"></i></div>
           <div>
             <div class="feature-title">Customized Itineraries</div>
-            <div class="feature-desc">Travel your way</div>
+            <div class="feature-desc">Plan your journey around your dates, interests and travel style.</div>
           </div>
         </div>
         <div class="feature-item">
-          <div class="feature-icon-circle"><i class="fas fa-tag"></i></div>
+          <div class="feature-icon-circle"><i class="fas fa-sliders-h"></i></div>
           <div>
-            <div class="feature-title">Best Price Guarantee</div>
-            <div class="feature-desc">Value for your money</div>
+            <div class="feature-title">Flexible Travel Options</div>
+            <div class="feature-desc">Choose stays and experiences that suit your plans and budget.</div>
           </div>
         </div>
         <div class="feature-item">
-          <div class="feature-icon-circle"><i class="fas fa-user-shield"></i></div>
+          <div class="feature-icon-circle"><i class="fas fa-headset"></i></div>
           <div>
-            <div class="feature-title">Trusted Travel Experts</div>
-            <div class="feature-desc">Hassle-free journeys</div>
+            <div class="feature-title">Dedicated Travel Support</div>
+            <div class="feature-desc">Get assistance from the planning stage through your journey.</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECTION 2: POPULAR DOMESTIC DESTINATIONS -->
+  <!-- SECTION 3: TOP DESTINATIONS TO EXPLORE IN INDIA -->
   <section class="section section-light" id="destinations">
     <div class="container">
       <div class="section-header-row">
         <div>
-          <span class="section-label">EXPLORE INDIA</span>
-          <h2 class="section-heading">Popular Domestic Destinations</h2>
-          <p class="section-sub">Breathtaking landscapes, rich culture and unforgettable experiences across India.</p>
+          <span class="section-label">EXPLORE INCREDIBLE DESTINATIONS</span>
+          <h2 class="section-heading">Top Destinations to Explore in India</h2>
+          <p class="section-sub">From Himalayan valleys and peaceful hill stations to tropical beaches and island escapes, India offers a different experience in every direction. Explore some of our most popular domestic destinations and find the perfect place for your next holiday.</p>
         </div>
         <a href="city-guides.html" class="view-all-link">View All Destinations <i class="fas fa-arrow-right"></i></a>
       </div>
@@ -1106,8 +1114,9 @@
           <img src="https://images.unsplash.com/photo-1566552881560-0be862a7c445?w=800&q=80" alt="Kashmir" loading="lazy">
           <div class="dest-overlay">
             <h3 class="dest-title">Kashmir</h3>
-            <p class="dest-desc">Snowy mountains, serene lakes and stunning valleys.</p>
-            <span class="dest-link">Explore Packages <i class="fas fa-arrow-right"></i></span>
+            <p class="dest-subtitle">Mountains, Lakes &amp; Scenic Valleys</p>
+            <p class="dest-desc">Discover the beauty of Srinagar, Gulmarg and Pahalgam with peaceful lakes, Shikara rides, snow-covered mountains and breathtaking Himalayan landscapes.</p>
+            <span class="dest-link">Explore Kashmir Packages <i class="fas fa-arrow-right"></i></span>
           </div>
         </div>
 
@@ -1116,8 +1125,9 @@
           <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80" alt="Kerala" loading="lazy">
           <div class="dest-overlay">
             <h3 class="dest-title">Kerala</h3>
-            <p class="dest-desc">Backwaters, beaches, hill stations and God's Own Country.</p>
-            <span class="dest-link">Explore Packages <i class="fas fa-arrow-right"></i></span>
+            <p class="dest-subtitle">Backwaters, Hills &amp; Coastal Beauty</p>
+            <p class="dest-desc">Travel through Munnar’s tea-covered hills, experience the peaceful backwaters of Alleppey and discover Kerala’s beautiful mix of nature, beaches and local culture.</p>
+            <span class="dest-link">Explore Kerala Packages <i class="fas fa-arrow-right"></i></span>
           </div>
         </div>
 
@@ -1126,18 +1136,20 @@
           <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80" alt="Himachal Pradesh" loading="lazy">
           <div class="dest-overlay">
             <h3 class="dest-title">Himachal Pradesh</h3>
-            <p class="dest-desc">Mountains, adventure, charming towns and breathtaking views.</p>
-            <span class="dest-link">Explore Packages <i class="fas fa-arrow-right"></i></span>
+            <p class="dest-subtitle">Mountains, Adventure &amp; Hill Towns</p>
+            <p class="dest-desc">Explore Manali, Shimla and the scenic valleys of Himachal Pradesh with refreshing mountain views, beautiful road journeys and adventure experiences.</p>
+            <span class="dest-link">Explore Himachal Packages <i class="fas fa-arrow-right"></i></span>
           </div>
         </div>
 
-        <!-- 4. Andaman -->
+        <!-- 4. Andaman & Nicobar -->
         <div class="dest-card-clean" onclick="window.location.href='contact.html'">
-          <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800&q=80" alt="Andaman" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800&q=80" alt="Andaman & Nicobar" loading="lazy">
           <div class="dest-overlay">
-            <h3 class="dest-title">Andaman</h3>
-            <p class="dest-desc">Crystal clear waters, white sand beaches and island adventures.</p>
-            <span class="dest-link">Explore Packages <i class="fas fa-arrow-right"></i></span>
+            <h3 class="dest-title">Andaman &amp; Nicobar</h3>
+            <p class="dest-subtitle">Islands, Beaches &amp; Blue Waters</p>
+            <p class="dest-desc">Escape to white-sand beaches, clear waters and beautiful islands while enjoying relaxing tropical days and exciting water experiences.</p>
+            <span class="dest-link">Explore Andaman Packages <i class="fas fa-arrow-right"></i></span>
           </div>
         </div>
 
@@ -1146,8 +1158,9 @@
           <img src="https://images.unsplash.com/photo-1624806992066-5ffcf7ca186b?w=800&q=80" alt="Sikkim" loading="lazy">
           <div class="dest-overlay">
             <h3 class="dest-title">Sikkim</h3>
-            <p class="dest-desc">Himalayan views, serene monasteries and beautiful mountain roads.</p>
-            <span class="dest-link">Explore Packages <i class="fas fa-arrow-right"></i></span>
+            <p class="dest-subtitle">Himalayan Views, Nature &amp; Culture</p>
+            <p class="dest-desc">Discover peaceful monasteries, scenic valleys, winding mountain roads and the unique natural beauty and culture of the Eastern Himalayas.</p>
+            <span class="dest-link">Explore Sikkim Packages <i class="fas fa-arrow-right"></i></span>
           </div>
         </div>
 
@@ -1156,23 +1169,27 @@
           <img src="https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?w=800&q=80" alt="Leh Ladakh" loading="lazy">
           <div class="dest-overlay">
             <h3 class="dest-title">Leh Ladakh</h3>
-            <p class="dest-desc">Dramatic landscapes, high-altitude adventures and unforgettable road trips.</p>
-            <span class="dest-link">Explore Packages <i class="fas fa-arrow-right"></i></span>
+            <p class="dest-subtitle">High Passes, Lakes &amp; Road Trips</p>
+            <p class="dest-desc">Journey through spectacular Himalayan landscapes to Nubra Valley and Pangong Lake, with ancient monasteries, high mountain passes and unforgettable road trips.</p>
+            <span class="dest-link">Explore Leh Ladakh Packages <i class="fas fa-arrow-right"></i></span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECTION 3: EXPLORE INDIA, YOUR WAY -->
+  <!-- SECTION 4: DISCOVER THE BEST OF INDIA WITH KINGS TRAVELS -->
   <section class="story-section">
     <div class="container">
       <div class="story-grid">
         <div class="story-content">
-          <span class="section-label">INDIA AWAITS</span>
-          <h2>Explore India, Your Way</h2>
-          <p class="story-p">India is a land of incredible diversity &mdash; from the majestic Himalayas and peaceful hill stations to golden beaches, spiritual destinations and vibrant cities. At Kings Travels, we create domestic tour packages that match your interests, travel style and budget.</p>
-          <p class="story-p">Whether you're planning a family holiday, a honeymoon, a group tour or a customized getaway, we take care of the details so you can focus on making memories. Our India tour packages include comfortable stays, reliable transport, curated experiences and 24/7 travel support.</p>
+          <span class="section-label">EXPERIENCE INDIA</span>
+          <h2>Discover the Best of India with Kings Travels</h2>
+          <p class="story-p">India has a different experience waiting around every corner. One holiday can take you through snow-covered mountains, another through peaceful backwaters, while the next could lead you to an island beach away from the rush of everyday life.</p>
+          <p class="story-p">That’s why our domestic holiday packages are designed with flexibility in mind.</p>
+          <p class="story-p">Whether you’re planning a family vacation, honeymoon, group holiday or a relaxing getaway with friends, Kings Travels helps you build your journey around the destinations you want to visit and the experiences that matter to you.</p>
+          <p class="story-p">Our domestic travel packages can bring together handpicked stays, transfers, sightseeing and selected experiences based on your travel dates, itinerary and requirements.</p>
+          <p class="story-p" style="font-weight: 700; color: var(--navy-dark);">Choose your destination. Share your plans. We’ll help bring the journey together.</p>
           <div style="margin-top: 28px;">
             <a href="contact.html" class="btn btn-blue">Plan My India Trip <i class="fas fa-arrow-right"></i></a>
           </div>
@@ -1192,15 +1209,16 @@
     </div>
   </section>
 
-  <!-- SECTION 4: FEATURED INDIA TOUR PACKAGES -->
+  <!-- SECTION 5: POPULAR DOMESTIC TOUR PACKAGES -->
   <section class="section section-light" id="packages">
     <div class="container">
       <div class="section-header-row">
         <div>
           <span class="section-label">HANDPICKED FOR YOU</span>
-          <h2 class="section-heading">Featured India Tour Packages</h2>
+          <h2 class="section-heading">Popular Domestic Tour Packages</h2>
+          <p class="section-sub">Looking for inspiration? Explore some of our popular India holidays and customize the itinerary according to your travel dates, hotel preferences and budget.</p>
         </div>
-        <a href="index.html#section-packages" class="view-all-link">View All Packages <i class="fas fa-arrow-right"></i></a>
+        <a href="contact.html" class="view-all-link">View All Domestic Packages <i class="fas fa-arrow-right"></i></a>
       </div>
 
       <div class="packages-4-grid">
@@ -1212,11 +1230,15 @@
           </div>
           <div class="tour-card-body">
             <h3 class="tour-name">Kashmir Delight</h3>
+            <div class="tour-dest"><i class="fas fa-map-marker-alt"></i> Kashmir, India</div>
             <div class="tour-meta"><i class="fas fa-calendar-alt"></i> 5 Nights / 6 Days</div>
-            <div class="tour-route"><i class="fas fa-map-marker-alt"></i> Srinagar &bull; Gulmarg &bull; Pahalgam</div>
+            <div class="tour-route"><i class="fas fa-route"></i> Srinagar &bull; Gulmarg &bull; Pahalgam</div>
+            <div class="tour-highlights">
+              <strong>Highlights:</strong> Shikara Ride &bull; Scenic Valleys &bull; Mountain Views &bull; Local Experiences
+            </div>
             <div class="tour-card-footer">
               <div class="tour-price-label">Starting from</div>
-              <div class="tour-price">&#8377;24,999</div>
+              <div class="tour-price">&#8377;24,999 <span style="font-size:12px;font-weight:400;color:var(--gray-500);">/ person*</span></div>
               <a href="contact.html" class="btn btn-blue tour-btn">View Details <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
@@ -1229,11 +1251,15 @@
           </div>
           <div class="tour-card-body">
             <h3 class="tour-name">Kerala Getaway</h3>
+            <div class="tour-dest"><i class="fas fa-map-marker-alt"></i> Kerala, India</div>
             <div class="tour-meta"><i class="fas fa-calendar-alt"></i> 4 Nights / 5 Days</div>
-            <div class="tour-route"><i class="fas fa-map-marker-alt"></i> Kochi &bull; Munnar &bull; Alleppey</div>
+            <div class="tour-route"><i class="fas fa-route"></i> Kochi &bull; Munnar &bull; Alleppey</div>
+            <div class="tour-highlights">
+              <strong>Highlights:</strong> Tea Gardens &bull; Backwaters &bull; Houseboat Experience &bull; Scenic Drives
+            </div>
             <div class="tour-card-footer">
               <div class="tour-price-label">Starting from</div>
-              <div class="tour-price">&#8377;22,999</div>
+              <div class="tour-price">&#8377;22,999 <span style="font-size:12px;font-weight:400;color:var(--gray-500);">/ person*</span></div>
               <a href="contact.html" class="btn btn-blue tour-btn">View Details <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
@@ -1246,11 +1272,15 @@
           </div>
           <div class="tour-card-body">
             <h3 class="tour-name">Himachal Escape</h3>
+            <div class="tour-dest"><i class="fas fa-map-marker-alt"></i> Himachal Pradesh, India</div>
             <div class="tour-meta"><i class="fas fa-calendar-alt"></i> 5 Nights / 6 Days</div>
-            <div class="tour-route"><i class="fas fa-map-marker-alt"></i> Shimla &bull; Manali &bull; Solang Valley</div>
+            <div class="tour-route"><i class="fas fa-route"></i> Shimla &bull; Manali &bull; Solang Valley</div>
+            <div class="tour-highlights">
+              <strong>Highlights:</strong> Mountain Views &bull; Hill Towns &bull; Scenic Drives &bull; Adventure Experiences
+            </div>
             <div class="tour-card-footer">
               <div class="tour-price-label">Starting from</div>
-              <div class="tour-price">&#8377;21,999</div>
+              <div class="tour-price">&#8377;21,999 <span style="font-size:12px;font-weight:400;color:var(--gray-500);">/ person*</span></div>
               <a href="contact.html" class="btn btn-blue tour-btn">View Details <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
@@ -1263,25 +1293,35 @@
           </div>
           <div class="tour-card-body">
             <h3 class="tour-name">Andaman Bliss</h3>
+            <div class="tour-dest"><i class="fas fa-map-marker-alt"></i> Andaman &amp; Nicobar Islands</div>
             <div class="tour-meta"><i class="fas fa-calendar-alt"></i> 4 Nights / 5 Days</div>
-            <div class="tour-route"><i class="fas fa-map-marker-alt"></i> Port Blair &bull; Havelock &bull; Neil Island</div>
+            <div class="tour-route"><i class="fas fa-route"></i> Port Blair &bull; Havelock &bull; Neil Island</div>
+            <div class="tour-highlights">
+              <strong>Highlights:</strong> Island Hopping &bull; Beautiful Beaches &bull; Water Experiences &bull; Tropical Views
+            </div>
             <div class="tour-card-footer">
               <div class="tour-price-label">Starting from</div>
-              <div class="tour-price">&#8377;28,999</div>
+              <div class="tour-price">&#8377;28,999 <span style="font-size:12px;font-weight:400;color:var(--gray-500);">/ person*</span></div>
               <a href="contact.html" class="btn btn-blue tour-btn">View Details <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="packages-action-row">
+        <a href="contact.html" class="btn btn-blue">View All Domestic Packages <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <p class="packages-note">* Starting prices may vary according to travel dates, hotel category, availability and selected package inclusions.</p>
     </div>
   </section>
 
-  <!-- SECTION 5: CHOOSE YOUR TRAVEL STYLE -->
+  <!-- SECTION 6: HOLIDAYS FOR EVERY KIND OF TRAVELLER -->
   <section class="section section-white">
     <div class="container">
       <div style="text-align: center; margin-bottom: 40px;">
         <span class="section-label">TRAVEL BY EXPERIENCE</span>
-        <h2 class="section-heading">Choose Your Travel Style</h2>
+        <h2 class="section-heading">Holidays for Every Kind of Traveller</h2>
+        <p class="section-sub" style="margin: 0 auto; text-align: center; max-width: 680px;">Every traveller has a different idea of a perfect holiday. Whether you’re travelling as a couple, with your family, with friends or as part of a larger group, find a travel experience that fits the people you’re travelling with.</p>
       </div>
 
       <div class="styles-grid">
@@ -1293,8 +1333,9 @@
           <div class="style-card-content">
             <span class="style-icon"><i class="far fa-heart"></i></span>
             <h4 class="style-title">Honeymoon Holidays</h4>
-            <p class="style-desc">Romantic getaways in India</p>
-            <span class="style-link">Explore Packages <i class="fas fa-arrow-right"></i></span>
+            <div class="style-subtitle">Romantic Escapes for Two</div>
+            <p class="style-desc">Celebrate your time together with beautiful destinations, romantic stays and memorable experiences selected around the kind of honeymoon you have in mind.</p>
+            <span class="style-link">Explore Honeymoon Packages <i class="fas fa-arrow-right"></i></span>
           </div>
         </div>
 
@@ -1306,8 +1347,9 @@
           <div class="style-card-content">
             <span class="style-icon"><i class="fas fa-users"></i></span>
             <h4 class="style-title">Family Holidays</h4>
-            <p class="style-desc">Fun trips for every generation</p>
-            <span class="style-link">Explore Packages <i class="fas fa-arrow-right"></i></span>
+            <div class="style-subtitle">Holidays Everyone Can Enjoy</div>
+            <p class="style-desc">Plan a comfortable family holiday with convenient travel, suitable stays and experiences that give every generation something to look forward to.</p>
+            <span class="style-link">Explore Family Packages <i class="fas fa-arrow-right"></i></span>
           </div>
         </div>
 
@@ -1319,8 +1361,9 @@
           <div class="style-card-content">
             <span class="style-icon"><i class="fas fa-user-friends"></i></span>
             <h4 class="style-title">Group Tours</h4>
-            <p class="style-desc">Travel together, create memories</p>
-            <span class="style-link">Explore Packages <i class="fas fa-arrow-right"></i></span>
+            <div class="style-subtitle">Travel Together, Plan Better</div>
+            <p class="style-desc">Our domestic group tour packages make travelling together easier with coordinated stays, transportation, sightseeing and itineraries for families, friends and corporate groups.</p>
+            <span class="style-link">Explore Group Tours <i class="fas fa-arrow-right"></i></span>
           </div>
         </div>
 
@@ -1332,79 +1375,61 @@
           <div class="style-card-content">
             <span class="style-icon"><i class="fas fa-sliders-h"></i></span>
             <h4 class="style-title">Customized Holidays</h4>
-            <p class="style-desc">A trip designed just for you</p>
-            <span class="style-link">Explore Packages <i class="fas fa-arrow-right"></i></span>
+            <div class="style-subtitle">Your Holiday, Your Choices</div>
+            <p class="style-desc">Choose where you want to go, how many days you want to travel, the type of stay you prefer and the experiences you don’t want to miss. We’ll help shape the itinerary around your plans.</p>
+            <span class="style-link">Customize My Holiday <i class="fas fa-arrow-right"></i></span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECTION 6: WHY PLAN YOUR INDIA HOLIDAY WITH KINGS TRAVELS? -->
+  <!-- SECTION 7: WHY CHOOSE KINGS TRAVELS FOR YOUR INDIA HOLIDAY? -->
   <section class="section section-cream">
     <div class="container">
       <div style="text-align: center; margin-bottom: 44px;">
         <span class="section-label">OUR COMMITMENT</span>
-        <h2 class="section-heading">Why Plan Your India Holiday with Kings Travels?</h2>
+        <h2 class="section-heading">Why Choose Kings Travels for Your India Holiday?</h2>
+        <p class="section-sub" style="margin: 0 auto; text-align: center; max-width: 820px;">A memorable India holiday isn’t about fitting as many places as possible into an itinerary. It’s about choosing the right destinations, comfortable stays and experiences while leaving enough time to actually enjoy them.<br><br>Kings Travels helps bring these details together to create domestic tours that are well planned without making your holiday feel rushed.</p>
       </div>
 
       <div class="commitment-grid">
         <div class="commitment-box">
-          <div class="commit-icon"><i class="fas fa-map-marked-alt"></i></div>
+          <div class="commit-icon"><i class="fas fa-route"></i></div>
           <h4 class="commit-title">Customized Itineraries</h4>
-          <p class="commit-desc">Trips planned around your interests</p>
+          <p class="commit-desc">Your journey can be planned around your destinations, travel dates, interests, preferred pace and budget.</p>
         </div>
         <div class="commitment-box">
           <div class="commit-icon"><i class="fas fa-bed"></i></div>
           <h4 class="commit-title">Handpicked Stays</h4>
-          <p class="commit-desc">Comfortable and reliable accommodation</p>
+          <p class="commit-desc">Choose accommodation based on the comfort, location and experience you want from your holiday.</p>
         </div>
         <div class="commitment-box">
           <div class="commit-icon"><i class="fas fa-shield-alt"></i></div>
           <h4 class="commit-title">Safe &amp; Comfortable Travel</h4>
-          <p class="commit-desc">Well-planned transportation for a hassle-free journey</p>
-        </div>
-        <div class="commitment-box">
-          <div class="commit-icon"><i class="fas fa-headset"></i></div>
-          <h4 class="commit-title">Dedicated Support</h4>
-          <p class="commit-desc">We're here before, during and after your trip</p>
+          <p class="commit-desc">Enjoy convenient transportation and transfers planned according to your route and itinerary.</p>
         </div>
         <div class="commitment-box">
           <div class="commit-icon"><i class="fas fa-calendar-check"></i></div>
           <h4 class="commit-title">Flexible Planning</h4>
-          <p class="commit-desc">Options for every budget and travel style</p>
+          <p class="commit-desc">Change your hotel category, add another night or adjust sightseeing to make the itinerary work better for you.</p>
+        </div>
+        <div class="commitment-box">
+          <div class="commit-icon"><i class="fas fa-headset"></i></div>
+          <h4 class="commit-title">Dedicated Support</h4>
+          <p class="commit-desc">Get assistance with your travel arrangements before departure and during your holiday whenever required.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECTION 7: FROM MOUNTAINS TO BEACHES (HERITAGE BANNER) -->
-  <section class="showcase-banner">
-    <div class="showcase-inner">
-      <div class="showcase-visual">
-        <div class="showcase-quote">
-          <div class="quote-script">So Many Places,<br>So Many Stories</div>
-          <div class="quote-tag">India</div>
-        </div>
-      </div>
-      <div class="showcase-text-col">
-        <span class="section-label">INCREDIBLE EXPERIENCES</span>
-        <h2>From Mountains to Beaches, Find Your Kind of India</h2>
-        <p>Trek through the Himalayas, relax on pristine beaches, explore royal palaces, seek blessings at sacred temples or enjoy the charm of historic cities. India offers a new experience in every direction, and our domestic tour packages are designed to help you discover it all &mdash; your way.</p>
-        <div>
-          <a href="contact.html" class="btn btn-blue">Plan My India Trip <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 8: DOMESTIC TRAVEL FAQS -->
+  <!-- SECTION 8: FAQs ABOUT DOMESTIC TOUR PACKAGES -->
   <section class="section section-light" id="faqs">
     <div class="container">
       <div class="section-header-row">
         <div>
           <span class="section-label">HELP &amp; INFORMATION</span>
-          <h2 class="section-heading">Domestic Travel FAQs</h2>
+          <h2 class="section-heading">FAQs About Domestic Tour Packages</h2>
         </div>
         <a href="contact.html" class="view-all-link">View All FAQs <i class="fas fa-arrow-right"></i></a>
       </div>
@@ -1413,71 +1438,82 @@
         <!-- FAQ 1 -->
         <div class="faq-item active">
           <div class="faq-header" onclick="toggleFaq(this)">
-            <span>1. Can I customize my domestic tour package?</span>
+            <span>1. What is included in a domestic tour package?</span>
             <i class="fas fa-chevron-down"></i>
           </div>
           <div class="faq-body">
-            Yes, absolutely! At Kings Travels, every tour can be fully personalized according to your preferred destinations, number of travel days, preferred hotel category, meal plans, sightseeing interests, and budget.
+            A domestic tour package can include hotel accommodation, transfers, sightseeing and selected activities based on your itinerary. Flights, meals and additional experiences can also be added depending on your destination and travel requirements.
           </div>
         </div>
 
         <!-- FAQ 2 -->
         <div class="faq-item">
           <div class="faq-header" onclick="toggleFaq(this)">
-            <span>2. Which are the best destinations for a family holiday in India?</span>
+            <span>2. Can I customize my domestic tour package?</span>
             <i class="fas fa-chevron-down"></i>
           </div>
           <div class="faq-body">
-            Popular family destinations include Kerala (peaceful houseboats and tea gardens), Kashmir (scenic beauty and Shikara rides), Himachal Pradesh (Manali &amp; Shimla), Rajasthan (royal forts and palaces), and Andaman for beaches and water activities.
+            Yes. Your package can be customized according to your destination, travel dates, number of days, hotel preferences, sightseeing interests, transportation requirements and budget.<br><br>You can start with an existing package or ask Kings Travels to create an itinerary around your own travel plans.
           </div>
         </div>
 
         <!-- FAQ 3 -->
         <div class="faq-item">
           <div class="faq-header" onclick="toggleFaq(this)">
-            <span>3. What is included in a domestic tour package?</span>
+            <span>3. Which are the best destinations for domestic holidays in India?</span>
             <i class="fas fa-chevron-down"></i>
           </div>
           <div class="faq-body">
-            Our standard packages include handpicked hotel or resort accommodation, daily breakfast, comfortable private transportation/cab for all transfers and sightseeing, tolls, parking, and driver allowances. Flight bookings and guided activities can also be added upon request.
+            The right destination depends on the experience you want and the time of year you plan to travel.<br><br>Kashmir and Himachal Pradesh are popular for mountain holidays, Kerala for backwaters and nature, Andaman for beaches and islands, Sikkim for Himalayan scenery and Leh Ladakh for road trips and adventure.
           </div>
         </div>
 
         <!-- FAQ 4 -->
         <div class="faq-item">
           <div class="faq-header" onclick="toggleFaq(this)">
-            <span>4. How early should I book my India tour package?</span>
+            <span>4. How early should I book a domestic tour package?</span>
             <i class="fas fa-chevron-down"></i>
           </div>
           <div class="faq-body">
-            We recommend booking at least 3 to 4 weeks in advance for regular season trips, and 6 to 8 weeks in advance for peak travel seasons (such as summer holidays, Dussehra/Diwali, and Christmas/New Year) to secure the best hotel rates and flight availability.
+            Booking early generally gives you more choice of hotels and transportation, particularly during school holidays, festivals, long weekends and peak travel periods.<br><br>For popular destinations during peak season, planning further in advance can also help you secure better availability.
           </div>
         </div>
 
         <!-- FAQ 5 -->
         <div class="faq-item">
           <div class="faq-header" onclick="toggleFaq(this)">
-            <span>5. Do you provide group tour packages?</span>
+            <span>5. Do you offer domestic tour packages for families and groups?</span>
             <i class="fas fa-chevron-down"></i>
           </div>
           <div class="faq-body">
-            Yes! We manage group tours of all sizes &mdash; including college trips, corporate offsites, extended family getaways, and senior citizen tours with dedicated tour managers and tempo travelers or luxury coaches.
+            Yes. Kings Travels can plan domestic tour packages for families as well as domestic group tour packages for friends, extended families, corporate teams and other groups.<br><br>Packages can be customized with suitable stays, transportation, sightseeing and experiences according to the size and requirements of your group.
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item">
+          <div class="faq-header" onclick="toggleFaq(this)">
+            <span>6. Can flights, hotels and transfers be included in domestic travel packages?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-body">
+            Yes. Domestic travel packages can include hotel stays, airport or railway station transfers, local transportation, sightseeing and selected activities.<br><br>Domestic flight assistance and additional experiences can also be added depending on your itinerary and requirements.
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECTION 9: READY TO EXPLORE INDIA? -->
+  <!-- SECTION 9: FINAL CTA -->
   <section class="cta-mountains">
     <div class="container">
-      <div class="cta-text">
+      <div class="cta-text" style="max-width: 760px; margin: 0 auto; text-align: center;">
         <span class="section-label" style="color: var(--gold-light);">YOUR NEXT JOURNEY AWAITS</span>
         <h2>Ready to Explore India?</h2>
-        <p>Tell us where you'd like to go and we'll help you plan the perfect trip.</p>
-      </div>
-      <div>
-        <a href="contact.html" class="btn btn-white">Plan My Trip <i class="fas fa-arrow-right"></i></a>
+        <p style="margin-bottom: 24px;">From mountain escapes and family holidays to romantic getaways and island adventures, there’s always another side of India waiting to be explored.<br><br>Tell us where you want to go, when you want to travel and what you want from your holiday. Kings Travels will help bring the details together.</p>
+        <div>
+          <a href="contact.html" class="btn btn-white">Plan My India Trip <i class="fas fa-arrow-right"></i></a>
+        </div>
       </div>
     </div>
   </section>
