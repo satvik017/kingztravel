@@ -111,7 +111,7 @@
       padding: 0 24px;
     }
 
-    /* BADGE PILL (MATCHING UI IMAGE) */
+    /* BADGE PILL */
     .badge-pill {
       display: inline-block;
       background: #fceddf;
@@ -126,7 +126,7 @@
       margin-bottom: 16px;
     }
 
-    /* PILL BUTTONS (MATCHING UI IMAGE) */
+    /* PILL BUTTONS */
     .btn-journey {
       display: inline-flex;
       align-items: center;
@@ -154,7 +154,7 @@
       transform: translateX(3px);
     }
 
-    /* NAVBAR (EXACT REPLICA OF INDEX.HTML WITH SERVICES ACTIVE PILL) */
+    /* NAVBAR: IDENTICAL TO INDEX.HTML */
     .navbar {
       position: fixed;
       top: 0;
@@ -203,7 +203,7 @@
     .nav-menu {
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 3px;
       flex-wrap: nowrap;
     }
     .nav-link {
@@ -216,15 +216,9 @@
       position: relative;
       white-space: nowrap;
     }
-    .nav-link:hover {
+    .nav-link:hover, .nav-link.active {
       color: var(--gold-light);
       background: rgba(226,175,94,0.15);
-    }
-    .nav-link.active {
-      color: #ffffff !important;
-      background: linear-gradient(135deg, rgba(200, 135, 42, 0.85), rgba(226, 175, 94, 0.7));
-      border: 1px solid rgba(255, 230, 160, 0.35);
-      font-weight: 700;
     }
     .nav-item {
       position: relative;
@@ -269,11 +263,6 @@
       background: rgba(226,175,94,0.15);
       color: var(--gold-light);
     }
-    .nav-actions {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
     .nav-cta {
       background: linear-gradient(135deg,var(--gold),var(--gold-dark));
       color: var(--navy) !important;
@@ -284,24 +273,6 @@
     .nav-cta:hover {
       transform: translateY(-2px);
       box-shadow: 0 8px 24px rgba(226,175,94,0.4);
-    }
-    .nav-search-btn {
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: rgba(255,240,180,0.92);
-      font-size: 15px;
-      transition: var(--transition);
-      background: rgba(226,175,94,0.12);
-      border: 1px solid rgba(226,175,94,0.25);
-    }
-    .nav-search-btn:hover {
-      background: rgba(226,175,94,0.25);
-      color: var(--gold-light);
-      transform: scale(1.05);
     }
     .nav-hamburger {
       display: none;
@@ -322,7 +293,7 @@
     .nav-hamburger.open span:nth-child(2) { opacity: 0; }
     .nav-hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
 
-    /* MOBILE MENU */
+    /* MOBILE MENU: IDENTICAL TO INDEX.HTML */
     .mobile-menu {
       position: fixed;
       top: 0;
@@ -412,7 +383,7 @@
       box-shadow: var(--shadow-gold);
     }
 
-    /* 1. HERO SECTION (MATCHING UI IMAGE) */
+    /* 1. HERO SECTION */
     .services-hero {
       position: relative;
       padding: 140px 0 100px;
@@ -504,7 +475,7 @@
       filter: drop-shadow(0 2px 6px rgba(0,0,0,0.7));
     }
 
-    /* 2. FEATURES BAR (MATCHING UI IMAGE) */
+    /* 2. FEATURES BAR */
     .services-features-strip {
       background: #fcf9f4;
       border-top: 1px solid var(--border-warm);
@@ -553,7 +524,7 @@
       font-weight: 400;
     }
 
-    /* 3. WHAT WE ARRANGE - 4 CARDS (MATCHING UI IMAGE) */
+    /* 3. WHAT WE ARRANGE (4 SERVICE CARDS) */
     .arrange-section {
       padding: 85px 0 95px;
       background: #faf6f0;
@@ -652,7 +623,7 @@
       font-weight: 400;
     }
 
-    /* 4. A WELL-PLANNED JOURNEY - 3 POLAROIDS & SCRIPT (MATCHING UI IMAGE) */
+    /* 4. A WELL-PLANNED JOURNEY (POLAROID COLLAGE & DUMMY IMAGES) */
     .organized-section {
       padding: 100px 0 110px;
       background: #ffffff;
@@ -679,7 +650,6 @@
       line-height: 1.65;
       margin-bottom: 32px;
     }
-    /* POLAROID DUMMY IMAGES COLLAGE */
     .polaroid-collage-container {
       position: relative;
       height: 460px;
@@ -740,7 +710,6 @@
       object-fit: cover;
       display: block;
     }
-    /* Polaroid 1: Traveler with luggage in airport */
     .polaroid-pos-1 {
       top: 40px;
       left: 10px;
@@ -752,7 +721,6 @@
     .polaroid-pos-1 .polaroid-img-box {
       height: 165px;
     }
-    /* Polaroid 2: Thai longtail boat on turquoise sea */
     .polaroid-pos-2 {
       top: 135px;
       left: 140px;
@@ -764,7 +732,6 @@
     .polaroid-pos-2 .polaroid-img-box {
       height: 175px;
     }
-    /* Polaroid 3: Tropical resort swimming pool & palms */
     .polaroid-pos-3 {
       top: 205px;
       right: 10px;
@@ -777,7 +744,7 @@
       height: 170px;
     }
 
-    /* 5. STEP BY STEP JOURNEY (MATCHING UI IMAGE) */
+    /* 5. STEP BY STEP JOURNEY */
     .steps-section {
       padding: 85px 0 90px;
       background: #fdfbf7;
@@ -846,7 +813,7 @@
       padding-left: 2px;
     }
 
-    /* 6. FAQS ACCORDION (MATCHING UI IMAGE) */
+    /* 6. FAQS ACCORDION */
     .faqs-section {
       padding: 85px 0 95px;
       background: #ffffff;
@@ -916,7 +883,7 @@
       margin: 0;
     }
 
-    /* 7. BOTTOM CTA SECTION (MATCHING UI IMAGE) */
+    /* 7. BOTTOM CTA SECTION */
     .cta-banner-section {
       position: relative;
       padding: 95px 0 100px;
@@ -989,7 +956,7 @@
       transform: translateX(4px);
     }
 
-    /* FOOTER (EXACT REPLICA OF INDEX.HTML) */
+    /* FOOTER: EXACT REPLICA OF INDEX.HTML */
     .footer {
       background: #3c1e05;
       border-top: 1px solid rgba(226,175,94,0.2);
@@ -1206,7 +1173,7 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- NAVBAR (SAME AS HOME PAGE, SERVICES IS A SINGLE LINK TAB) -->
   <nav class="navbar" id="main-navbar">
     <div class="navbar-inner">
       <a href="index.html" class="navbar-brand">
@@ -1222,25 +1189,7 @@
             <a href="international-travel.html">&#127758; International</a>
           </div>
         </li>
-        <li class="nav-item">
-          <a href="index.html#section-packages" class="nav-link">Packages &#9662;</a>
-          <div class="nav-dropdown">
-            <a href="domestic-travel.html">&#127470;&#127475; Domestic Packages</a>
-            <a href="international-travel.html">&#9992;&#65039; International Packages</a>
-            <a href="contact.html">&#128221; Customized Packages</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a href="services.html" class="nav-link active">Services &#9662;</a>
-          <div class="nav-dropdown">
-            <a href="services.html">&#9992;&#65039; Flight Booking</a>
-            <a href="services.html">&#127968; Hotel Booking</a>
-            <a href="services.html">&#128194; Visa Assistance</a>
-            <a href="services.html">&#128652; Transportation</a>
-            <a href="services.html">&#128188; Corporate Travel</a>
-            <a href="services.html">&#127908; MICE</a>
-          </div>
-        </li>
+        <li class="nav-item"><a href="services.html" class="nav-link active">Services</a></li>
         <li class="nav-item">
           <a href="index.html#section-b2b" class="nav-link">B2B &#9662;</a>
           <div class="nav-dropdown">
@@ -1259,22 +1208,19 @@
         </li>
         <li class="nav-item"><a href="city-guides.html" class="nav-link">Travel Guides</a></li>
         <li class="nav-item"><a href="index.html#section-reviews" class="nav-link">Reviews</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link nav-cta">Contact Us</a></li>
       </ul>
-      <div class="nav-actions">
-        <a href="contact.html" class="nav-link nav-cta">Contact Us</a>
-        <a href="index.html#section-home" class="nav-search-btn" aria-label="Search"><i class="fas fa-search"></i></a>
-        <button class="nav-hamburger" id="hamburger-btn" aria-label="Open menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
+      <button class="nav-hamburger" id="hamburger-btn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
-  <!-- MOBILE MENU -->
+  <!-- MOBILE MENU (SAME AS HOME PAGE, SERVICES IS A SINGLE LINK TAB) -->
   <div class="mobile-menu" id="mobile-menu">
     <nav>
       <ul>
-        <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link" style="display:flex;justify-content:space-between;align-items:center;">Home</a></li>
         <li class="mobile-nav-item">
           <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-dest')">Destinations <i class="fa fa-chevron-down"></i></button>
           <ul class="mobile-submenu" id="sub-dest">
@@ -1282,25 +1228,7 @@
             <li><a href="international-travel.html">&#127758; International</a></li>
           </ul>
         </li>
-        <li class="mobile-nav-item">
-          <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-pkgs')">Packages <i class="fa fa-chevron-down"></i></button>
-          <ul class="mobile-submenu" id="sub-pkgs">
-            <li><a href="domestic-travel.html">&#127470;&#127475; Domestic Packages</a></li>
-            <li><a href="international-travel.html">&#9992;&#65039; International Packages</a></li>
-            <li><a href="contact.html">&#128221; Customized Packages</a></li>
-          </ul>
-        </li>
-        <li class="mobile-nav-item">
-          <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-services')">Services <i class="fa fa-chevron-down"></i></button>
-          <ul class="mobile-submenu" id="sub-services">
-            <li><a href="services.html">&#9992;&#65039; Flight Booking</a></li>
-            <li><a href="services.html">&#127968; Hotel Booking</a></li>
-            <li><a href="services.html">&#128194; Visa Assistance</a></li>
-            <li><a href="services.html">&#128652; Transportation</a></li>
-            <li><a href="services.html">&#128188; Corporate Travel</a></li>
-            <li><a href="services.html">&#127908; MICE</a></li>
-          </ul>
-        </li>
+        <li class="mobile-nav-item"><a href="services.html" class="mobile-nav-link" style="display:flex;justify-content:space-between;align-items:center;color:var(--gold-light);">Services</a></li>
         <li class="mobile-nav-item">
           <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-b2b')">B2B <i class="fa fa-chevron-down"></i></button>
           <ul class="mobile-submenu" id="sub-b2b">
@@ -1317,13 +1245,29 @@
             <li><a href="index.html#section-experience">&#128101; Group Travel</a></li>
           </ul>
         </li>
-        <li class="mobile-nav-item"><a href="city-guides.html" class="mobile-nav-link">Travel Guides</a></li>
-        <li class="mobile-nav-item"><a href="index.html#section-reviews" class="mobile-nav-link">Reviews</a></li>
-        <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-about')">About Us <i class="fa fa-chevron-down"></i></button>
+          <ul class="mobile-submenu" id="sub-about">
+            <li><a href="index.html">&#127963; About Kings Travels</a></li>
+            <li><a href="index.html">&#128105;&#8205;&#128188; Managing Director</a></li>
+            <li><a href="index.html#section-why">&#11088; Why Choose Us</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-guides')">Travel Guides <i class="fa fa-chevron-down"></i></button>
+          <ul class="mobile-submenu" id="sub-guides">
+            <li><a href="city-guides.html">&#128221; Travel Blog</a></li>
+            <li><a href="city-guides.html">&#128506; Destination Guides</a></li>
+            <li><a href="city-guides.html">&#128161; Travel Tips</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item"><a href="index.html#section-reviews" class="mobile-nav-link" style="display:flex;justify-content:space-between;align-items:center;">Reviews</a></li>
+        <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link" style="display:flex;justify-content:space-between;align-items:center;">FAQs</a></li>
+        <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link" style="display:flex;justify-content:space-between;align-items:center;">Contact Us</a></li>
       </ul>
       <div class="mobile-menu-footer">
-        <a href="https://wa.me/message/JXZMLEVZXMY2D1" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
-        <a href="contact.html" class="btn btn-primary-index"><i class="fas fa-paper-plane"></i> Plan My Trip</a>
+        <a href="https://wa.me/message/JXZMLEVZXMY2D1" class="btn btn-whatsapp" style="justify-content:center;"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+        <a href="contact.html" class="btn btn-primary" style="justify-content:center;"><i class="fas fa-paper-plane"></i> Plan My Trip</a>
       </div>
     </nav>
   </div>
