@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Services - Kings Travels</title>
-  <meta name="description" content="From airport transfers and comfortable stays to sightseeing and dining arrangements, Kings Travels takes care of all essential travel services for a smooth, well-planned holiday.">
-  <meta name="keywords" content="Kings Travels services, airport transfers, hotel booking, sightseeing tour, travel dining, tour organizer">
+  <title>Travel Services in India | Transfers, Stays & Sightseeing | Kings Travels</title>
+  <meta name="description" content="Explore travel services in India with Kings Travels including airport transfers, room booking, sightseeing and dining services planned around your journey.">
+  <meta name="keywords" content="Travel Services in India, airport transfers, room booking, sightseeing India, dining services, Kings Travels">
   <link rel="shortcut icon" href="assets/images/logo.jpeg" type="image/x-icon">
 
   <!-- Google Fonts: Outfit (exact same as index.html), Playfair Display, and Caveat (authentic handwritten travel script) -->
@@ -558,11 +558,11 @@
       border-radius: 20px;
       overflow: hidden;
       position: relative;
-      min-height: 310px;
+      min-height: 350px;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      padding: 34px 30px;
+      padding: 34px 28px;
       color: #ffffff;
       background-size: cover;
       background-position: center;
@@ -578,12 +578,12 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(10, 6, 2, 0.15) 0%, rgba(15, 8, 3, 0.58) 42%, rgba(10, 5, 2, 0.95) 100%);
+      background: linear-gradient(180deg, rgba(10, 6, 2, 0.2) 0%, rgba(15, 8, 3, 0.65) 35%, rgba(10, 5, 2, 0.96) 100%);
       z-index: 1;
       transition: var(--transition);
     }
     .arrange-card:hover::before {
-      background: linear-gradient(180deg, rgba(10, 6, 2, 0.1) 0%, rgba(15, 8, 3, 0.52) 38%, rgba(10, 5, 2, 0.98) 100%);
+      background: linear-gradient(180deg, rgba(10, 6, 2, 0.15) 0%, rgba(15, 8, 3, 0.58) 32%, rgba(10, 5, 2, 0.98) 100%);
     }
     .arrange-card-inner {
       position: relative;
@@ -610,15 +610,15 @@
     }
     .arrange-card h3 {
       color: #ffffff;
-      font-size: 23px;
+      font-size: 22px;
       font-weight: 800;
       margin-bottom: 10px;
       letter-spacing: -0.3px;
     }
     .arrange-card p {
       font-size: 13.5px;
-      color: rgba(255, 255, 255, 0.88);
-      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.92);
+      line-height: 1.6;
       margin: 0;
       font-weight: 400;
     }
@@ -644,11 +644,35 @@
     .organized-content h2 span {
       color: var(--accent-orange);
     }
+    .organized-moments {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 14px;
+      margin: 20px 0 24px;
+    }
+    .moment-pill {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      background: #fdfaf6;
+      border: 1px solid #ebd9c4;
+      border-radius: 8px;
+      padding: 9px 12px;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: #59412d;
+      line-height: 1.4;
+    }
+    .moment-pill i {
+      color: var(--accent-orange);
+      font-size: 13px;
+      flex-shrink: 0;
+    }
     .organized-content p {
-      font-size: 16px;
+      font-size: 15.5px;
       color: var(--body-text);
       line-height: 1.65;
-      margin-bottom: 32px;
+      margin-bottom: 28px;
     }
     .polaroid-collage-container {
       position: relative;
@@ -822,6 +846,12 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 16px 28px;
+      align-items: start;
+    }
+    .faqs-col {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
     }
     .faq-card {
       background: var(--faq-bg);
@@ -1163,6 +1193,7 @@
       .polaroid-pos-3 .polaroid-img-box { height: 135px; }
       .flight-trail-badge { right: 5px; }
       .flight-script-text { font-size: 20px; }
+      .organized-moments { grid-template-columns: 1fr; }
     }
     @media (max-width: 480px) {
       .footer-grid { grid-template-columns: 1fr; }
@@ -1284,8 +1315,8 @@
             <span class="curr">Services</span>
           </div>
           <div class="badge-pill">OUR SERVICES</div>
-          <h1>Travel Services That<br>Make Every Journey Easier</h1>
-          <p>From airport transfers and comfortable stays to sightseeing and dining arrangements, Kings Travels takes care of the essential travel services so you can enjoy a smooth, well-planned and memorable journey.</p>
+          <h1>Making Every Journey<br>Feel Effortless</h1>
+          <p>Discover thoughtfully planned travel services in India with Kings Travels including airport transfers, room booking, sightseeing and dining services arranged around your destination, itinerary and travel preferences.</p>
           <a href="contact.html" class="btn-journey">Plan My Journey &nbsp;<i class="fas fa-arrow-right"></i></a>
         </div>
         <div class="hero-handwriting-col">
@@ -1298,7 +1329,7 @@
     </div>
   </section>
 
-  <!-- 2. FEATURES BAR STRIP -->
+  <!-- 2. QUICK HIGHLIGHTS -->
   <section class="services-features-strip">
     <div class="container">
       <div class="features-grid">
@@ -1306,50 +1337,50 @@
           <div class="feature-icon-box"><i class="fas fa-car-side"></i></div>
           <div class="feature-info">
             <h4>Comfortable Transfers</h4>
-            <p>Airport, railway station &amp; local travel</p>
+            <p>Airport pickup, railway station and hotel transfers</p>
           </div>
         </div>
         <div class="feature-item">
           <div class="feature-icon-box"><i class="fas fa-bed"></i></div>
           <div class="feature-info">
             <h4>Stay Options</h4>
-            <p>Hotels, camps, resorts and villas</p>
+            <p>Hotels, resorts, camps and villas</p>
           </div>
         </div>
         <div class="feature-item">
           <div class="feature-icon-box"><i class="fas fa-binoculars"></i></div>
           <div class="feature-info">
             <h4>Planned Sightseeing</h4>
-            <p>Explore top attractions with ease</p>
+            <p>Local attractions and sightseeing experiences</p>
           </div>
         </div>
         <div class="feature-item">
           <div class="feature-icon-box"><i class="fas fa-utensils"></i></div>
           <div class="feature-info">
             <h4>Dining Experiences</h4>
-            <p>Enjoy great food at your destination</p>
+            <p>Restaurant and dining arrangements during your trip</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 3. WHAT WE ARRANGE (4 SERVICE CARDS) -->
+  <!-- 3. WHAT WE ARRANGE -->
   <section class="arrange-section">
     <div class="container">
       <div class="section-header-centered">
         <div class="badge-pill">WHAT WE ARRANGE</div>
-        <h2>Everything You Need for a <span>Smooth Holiday</span></h2>
-        <p>We arrange the key travel services that make your trip comfortable, convenient and enjoyable, whether you're exploring destinations in India or abroad.</p>
+        <h2>Everything Your Journey Needs<br><span>All in One Place</span></h2>
+        <p>Great travel is easier when everything works together. Kings Travels brings transfers, accommodation, sightseeing and dining arrangements into one well-planned journey. As an India travel agency, we help travellers organize the essential details of their trip around their destination, dates and preferences&mdash;whether they are exploring India or travelling abroad.</p>
       </div>
 
       <div class="arrange-grid">
-        <!-- Card 1: Airport & Local Transfers -->
+        <!-- Card 1: Transfer – Pickup & Drop -->
         <div class="arrange-card" style="background-image: url('assets/images/service_transfer.jpg');">
           <div class="arrange-card-inner">
             <div class="arrange-circle-icon"><i class="fas fa-car"></i></div>
             <h3>Transfer &ndash; Pickup &amp; Drop</h3>
-            <p>We arrange comfortable airport and railway station pickups and drops, hotel transfers and transportation for your entire tour, so you can travel without any hassle.</p>
+            <p>Make every arrival and departure easier with convenient airport transfers planned around your travel schedule. Kings Travels can help arrange airport pickup and drop, railway station pickups, airport-to-hotel transfers, hotel transfers and local transportation according to your itinerary. Our airport transfer services help connect the different stages of your journey so you can move from one place to the next with greater ease.</p>
           </div>
         </div>
 
@@ -1358,7 +1389,7 @@
           <div class="arrange-card-inner">
             <div class="arrange-circle-icon"><i class="fas fa-bed"></i></div>
             <h3>Accommodation</h3>
-            <p>Choose from a wide range of hotels, camps, resorts and villas at your destination. We help you find suitable stay options based on your preferences, budget and travel style.</p>
+            <p>The right stay can change the way you experience a destination. Kings Travels helps with room booking and accommodation arrangements across hotels, resorts, camps and villas according to your destination, itinerary and travel preferences. Whether you are booking a room for a short getaway or arranging stays for a longer journey, we help connect your accommodation with the rest of your travel plan.</p>
           </div>
         </div>
 
@@ -1367,7 +1398,7 @@
           <div class="arrange-card-inner">
             <div class="arrange-circle-icon"><i class="fas fa-binoculars"></i></div>
             <h3>Sightseeing</h3>
-            <p>Explore popular attractions and hidden gems with sightseeing arranged according to your itinerary. We help you make the most of your time at each destination.</p>
+            <p>A destination is meant to be experienced, not simply visited. Kings Travels helps arrange sightseeing around your itinerary so you can make the most of your time wherever you travel. From local sightseeing and popular tourist attractions to city sightseeing and planned sightseeing tours, your experiences can be organized around your travel schedule and interests.</p>
           </div>
         </div>
 
@@ -1376,21 +1407,27 @@
           <div class="arrange-card-inner">
             <div class="arrange-circle-icon"><i class="fas fa-utensils"></i></div>
             <h3>Food &amp; Dining</h3>
-            <p>Enjoy delicious meals with restaurant and dining arrangements at your destination. We can suggest and arrange suitable dining options based on your preferences.</p>
+            <p>Good food adds another experience to every journey. Kings Travels can help coordinate restaurant and dining services at your destination according to your itinerary and selected travel plan. Dining arrangements can be planned alongside your stay and sightseeing schedule, making it easier to enjoy your destination without having to organize every detail separately.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 4. A WELL-PLANNED JOURNEY (POLAROID COLLAGE & DUMMY IMAGES) -->
+  <!-- 4. A WELL-PLANNED JOURNEY -->
   <section class="organized-section">
     <div class="container">
       <div class="organized-grid">
         <div class="organized-content">
           <div class="badge-pill">A WELL-PLANNED JOURNEY</div>
-          <h2>From Arrival to the Last Day,<br>We Help Keep Your <span>Trip Organized</span></h2>
-          <p>Our travel services work together to give you a comfortable and hassle-free experience. From the moment you arrive at your destination to your return journey, we take care of transfers, stays, sightseeing and dining arrangements, so you can focus on enjoying your trip.</p>
+          <h2>It’s the Little Details<br><span>That Make the Journey</span></h2>
+          <div class="organized-moments">
+            <div class="moment-pill"><i class="fas fa-check-circle"></i> A convenient pickup when you arrive.</div>
+            <div class="moment-pill"><i class="fas fa-check-circle"></i> A comfortable place to stay.</div>
+            <div class="moment-pill"><i class="fas fa-check-circle"></i> Enough time to discover the destination.</div>
+            <div class="moment-pill"><i class="fas fa-check-circle"></i> A good meal after a day of exploring.</div>
+          </div>
+          <p>It’s often the smaller details that turn a trip into a better travel experience. As your India trip planner, Kings Travels helps bring transfers, accommodation, sightseeing and dining arrangements together around one itinerary. Instead of planning each part separately, the important details of your journey can work together from arrival to departure.</p>
           <a href="contact.html" class="btn-journey">Plan My Journey &nbsp;<i class="fas fa-arrow-right"></i></a>
         </div>
 
@@ -1433,12 +1470,12 @@
     </div>
   </section>
 
-  <!-- 5. HOW OUR TRAVEL SERVICES FIT INTO YOUR JOURNEY (STEP BY STEP) -->
+  <!-- 5. HOW IT WORKS -->
   <section class="steps-section">
     <div class="container">
       <div class="section-header-centered">
-        <div class="badge-pill">HOW OUR TRAVEL SERVICES FIT INTO YOUR JOURNEY</div>
-        <h2>A Simple Travel Experience, <span>Step by Step</span></h2>
+        <div class="badge-pill">HOW IT ALL COMES TOGETHER</div>
+        <h2>See How It <span>All Comes Together</span></h2>
       </div>
 
       <div class="steps-flow">
@@ -1451,7 +1488,7 @@
               <span class="step-title-text">Arrive &amp; Transfer</span>
             </div>
           </div>
-          <p>We arrange airport or railway station pickup and drop, along with local transportation.</p>
+          <p>Begin your journey with an airport pickup, railway station pickup or hotel transfer arranged around your arrival and travel itinerary.</p>
         </div>
 
         <!-- Step 2 -->
@@ -1463,7 +1500,7 @@
               <span class="step-title-text">Check In &amp; Stay</span>
             </div>
           </div>
-          <p>Choose from hotels, camps, resorts or villas based on your preferences.</p>
+          <p>Settle into a hotel, resort, camp or villa with room booking arrangements suited to your destination and travel preferences.</p>
         </div>
 
         <!-- Step 3 -->
@@ -1475,7 +1512,7 @@
               <span class="step-title-text">Explore &amp; Sightsee</span>
             </div>
           </div>
-          <p>Enjoy sightseeing at popular attractions as per your itinerary.</p>
+          <p>Experience local sightseeing, popular attractions and destination highlights with sightseeing planned around your itinerary.</p>
         </div>
 
         <!-- Step 4 -->
@@ -1487,91 +1524,119 @@
               <span class="step-title-text">Dine &amp; Enjoy</span>
             </div>
           </div>
-          <p>We help with restaurant and dining arrangements for a better travel experience.</p>
+          <p>Enjoy restaurant and dining arrangements that fit naturally into your travel schedule while you experience the destination.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 6. FREQUENTLY ASKED QUESTIONS -->
+  <!-- 6. FAQs -->
   <section class="faqs-section">
     <div class="container">
       <div class="section-header-centered">
-        <div class="badge-pill">FREQUENTLY ASKED QUESTIONS</div>
-        <h2>Travel Services &ndash; <span>FAQs</span></h2>
+        <div class="badge-pill">GOOD TO KNOW</div>
+        <h2>Good to Know <span>Before You Go</span></h2>
       </div>
 
       <div class="faqs-grid">
-        <!-- FAQ 1 -->
-        <div class="faq-card" onclick="toggleFaq(this)">
-          <div class="faq-head">
-            <h5 class="faq-question-title"><span class="faq-qnum">1.</span> Do you provide airport and railway station pickup and drop?</h5>
-            <i class="fas fa-plus faq-toggle-icon"></i>
+        <!-- Column 1 (FAQs 1 to 4) -->
+        <div class="faqs-col">
+          <!-- FAQ 1 -->
+          <div class="faq-card" onclick="toggleFaq(this)">
+            <div class="faq-head">
+              <h5 class="faq-question-title"><span class="faq-qnum">1.</span> What travel services does Kings Travels provide in India?</h5>
+              <i class="fas fa-plus faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer faq-body">
+              <p>Kings Travels provides travel planning support for transfers, accommodation, sightseeing and dining arrangements. Our travel services in India can be planned around your destination, travel dates, itinerary and individual requirements.</p>
+            </div>
           </div>
-          <div class="faq-answer faq-body">
-            <p>Yes, we arrange prompt and reliable airport and railway station pickup and drop-off services with professional drivers and well-maintained private vehicles.</p>
+
+          <!-- FAQ 2 -->
+          <div class="faq-card" onclick="toggleFaq(this)">
+            <div class="faq-head">
+              <h5 class="faq-question-title"><span class="faq-qnum">2.</span> Does Kings Travels provide airport pickup and drop?</h5>
+              <i class="fas fa-plus faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer faq-body">
+              <p>Yes. Kings Travels can help arrange airport pickup and drop, railway station transfers, hotel transfers and other transportation required according to your travel itinerary.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-card" onclick="toggleFaq(this)">
+            <div class="faq-head">
+              <h5 class="faq-question-title"><span class="faq-qnum">3.</span> Can I arrange an airport-to-hotel transfer?</h5>
+              <i class="fas fa-plus faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer faq-body">
+              <p>Yes. An airport-to-hotel transfer can be arranged according to your arrival details, destination and itinerary. Hotel-to-airport transfers can also be coordinated for your return journey.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-card" onclick="toggleFaq(this)">
+            <div class="faq-head">
+              <h5 class="faq-question-title"><span class="faq-qnum">4.</span> Can Kings Travels help with room booking?</h5>
+              <i class="fas fa-plus faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer faq-body">
+              <p>Yes. Kings Travels can assist with room booking and accommodation arrangements. Depending on your destination and travel requirements, options can include hotels, resorts, camps and villas.</p>
+            </div>
           </div>
         </div>
 
-        <!-- FAQ 4 -->
-        <div class="faq-card" onclick="toggleFaq(this)">
-          <div class="faq-head">
-            <h5 class="faq-question-title"><span class="faq-qnum">4.</span> Do you arrange food and dining options?</h5>
-            <i class="fas fa-plus faq-toggle-icon"></i>
+        <!-- Column 2 (FAQs 5 to 8) -->
+        <div class="faqs-col">
+          <!-- FAQ 5 -->
+          <div class="faq-card" onclick="toggleFaq(this)">
+            <div class="faq-head">
+              <h5 class="faq-question-title"><span class="faq-qnum">5.</span> Is sightseeing included in your travel services?</h5>
+              <i class="fas fa-plus faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer faq-body">
+              <p>Sightseeing can be planned according to your selected itinerary. Depending on the destination, this may include local sightseeing, city sightseeing, popular tourist attractions and other destination experiences.</p>
+            </div>
           </div>
-          <div class="faq-answer faq-body">
-            <p>Yes! We can arrange hotel meal plans (CP, MAP, AP) as well as reservations and curated dining experiences at renowned local specialty restaurants.</p>
-          </div>
-        </div>
 
-        <!-- FAQ 2 -->
-        <div class="faq-card" onclick="toggleFaq(this)">
-          <div class="faq-head">
-            <h5 class="faq-question-title"><span class="faq-qnum">2.</span> What types of accommodation can you arrange?</h5>
-            <i class="fas fa-plus faq-toggle-icon"></i>
+          <!-- FAQ 6 -->
+          <div class="faq-card" onclick="toggleFaq(this)">
+            <div class="faq-head">
+              <h5 class="faq-question-title"><span class="faq-qnum">6.</span> Can I customize my sightseeing itinerary?</h5>
+              <i class="fas fa-plus faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer faq-body">
+              <p>Yes. Your sightseeing plan can be organized around your interests, available time and travel itinerary. You can share the attractions and experiences you would like to explore while planning your journey.</p>
+            </div>
           </div>
-          <div class="faq-answer faq-body">
-            <p>We arrange a diverse range of accommodations including 3-star, 4-star, and 5-star luxury hotels, boutique heritage properties, scenic nature camps, beach resorts, and private pool villas.</p>
-          </div>
-        </div>
 
-        <!-- FAQ 5 -->
-        <div class="faq-card" onclick="toggleFaq(this)">
-          <div class="faq-head">
-            <h5 class="faq-question-title"><span class="faq-qnum">5.</span> Can I customize the travel arrangements as per my preferences?</h5>
-            <i class="fas fa-plus faq-toggle-icon"></i>
+          <!-- FAQ 7 -->
+          <div class="faq-card" onclick="toggleFaq(this)">
+            <div class="faq-head">
+              <h5 class="faq-question-title"><span class="faq-qnum">7.</span> Do you arrange food and dining during a trip?</h5>
+              <i class="fas fa-plus faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer faq-body">
+              <p>Kings Travels can help coordinate restaurant and dining services during your journey. Exact dining or meal arrangements depend on your destination, itinerary and selected travel plan.</p>
+            </div>
           </div>
-          <div class="faq-answer faq-body">
-            <p>Absolutely. Every itinerary is fully customizable. We tailor vehicle choices, hotel tiers, pacing, sightseeing spots, and special activities to your exact preferences and budget.</p>
-          </div>
-        </div>
 
-        <!-- FAQ 3 -->
-        <div class="faq-card" onclick="toggleFaq(this)">
-          <div class="faq-head">
-            <h5 class="faq-question-title"><span class="faq-qnum">3.</span> Is sightseeing included in your travel services?</h5>
-            <i class="fas fa-plus faq-toggle-icon"></i>
-          </div>
-          <div class="faq-answer faq-body">
-            <p>Yes, sightseeing with private point-to-point transfers, entry tickets, and expert local guides can all be incorporated seamlessly into your customized travel package.</p>
-          </div>
-        </div>
-
-        <!-- FAQ 6 -->
-        <div class="faq-card" onclick="toggleFaq(this)">
-          <div class="faq-head">
-            <h5 class="faq-question-title"><span class="faq-qnum">6.</span> Can these services be combined into a complete holiday plan?</h5>
-            <i class="fas fa-plus faq-toggle-icon"></i>
-          </div>
-          <div class="faq-answer faq-body">
-            <p>Yes, all services can be bundled into a comprehensive all-inclusive holiday package covering flights, visa assistance, stays, transfers, sightseeing, and 24/7 dedicated support.</p>
+          <!-- FAQ 8 -->
+          <div class="faq-card" onclick="toggleFaq(this)">
+            <div class="faq-head">
+              <h5 class="faq-question-title"><span class="faq-qnum">8.</span> Can transfers, accommodation and sightseeing be arranged together?</h5>
+              <i class="fas fa-plus faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer faq-body">
+              <p>Yes. Transfers, accommodation, sightseeing and dining arrangements can be coordinated around the same itinerary, helping you keep the essential parts of your journey organized.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 7. BOTTOM CTA SECTION -->
+  <!-- 7. FINAL CTA -->
   <section class="cta-banner-section">
     <div class="cta-banner-overlay"></div>
     <!-- Flight line and pin decorative vector -->
@@ -1587,8 +1652,9 @@
 
     <div class="container">
       <div class="cta-content-box">
-        <h2>Ready to Plan a Smoother Journey?</h2>
-        <p>Tell us your travel plans and preferences, and we'll help you arrange transfers, stays, sightseeing and dining for a comfortable and memorable trip.</p>
+        <div class="badge-pill" style="background: rgba(226,175,94,0.2); color: #f5d08a; border-color: rgba(226,175,94,0.4); margin-bottom: 16px;">START YOUR JOURNEY</div>
+        <h2>Your Next Journey Starts Here</h2>
+        <p>Tell us where you want to go and how you want to travel. From airport transfers and comfortable stays to sightseeing and dining arrangements, Kings Travels helps bring the essential details together around your journey.</p>
         <a href="contact.html" class="btn-cta-orange">Plan My Journey &nbsp;<i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
@@ -1636,10 +1702,10 @@
           </ul>
           <h4 style="margin-top:24px;">Services</h4>
           <ul>
-            <li><a href="services.html">&#9992;&#65039; Flight Booking</a></li>
-            <li><a href="services.html">&#127968; Hotel Booking</a></li>
-            <li><a href="services.html">&#128194; Visa Assistance</a></li>
-            <li><a href="services.html">&#128188; Corporate Travel</a></li>
+            <li><a href="services.html">&#128652; Transfer &ndash; Pickup &amp; Drop</a></li>
+            <li><a href="services.html">&#127968; Accommodation</a></li>
+            <li><a href="services.html">&#127959; Sightseeing</a></li>
+            <li><a href="services.html">&#127869;&#65039; Food &amp; Dining</a></li>
           </ul>
         </div>
         <div class="footer-col">
