@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B2B Travel Agency in India for Travel Agents | Kings Travels</title>
+  <meta name="description" content="Partner with Kings Travels, a B2B travel agency in India offering tour packages, hotels, transport, customized itineraries, group travel and dedicated support.">
+  <meta name="keywords" content="b2b travel agency in india, best b2b travel agency in india, b2b travel companies in india, b2b tour operators in india">
+  <link rel="shortcut icon" href="assets/images/logo.jpeg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root{--gold:#e2af5e;--gold-light:#f5d08a;--gold-dark:#c8872a;--navy:#7b4c15;--navy-mid:#5a3610;--navy-light:#9a6020;--cream:#ffffc2;--white:#ffffff;--gray-100:#fff9d6;--gray-200:#f5eeaa;--gray-500:#8a6a2a;--gray-800:#4a2e0a;--shadow-sm:0 2px 12px rgba(123,76,21,0.10);--shadow-md:0 8px 32px rgba(123,76,21,0.14);--shadow-lg:0 20px 60px rgba(123,76,21,0.18);--shadow-gold:0 8px 32px rgba(226,175,94,0.30);--radius-sm:8px;--radius-md:16px;--radius-lg:24px;--radius-xl:32px;--transition:all 0.35s cubic-bezier(0.4,0,0.2,1);}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;overflow-x:hidden;}
+    body{font-family:'Outfit',sans-serif;background:var(--cream);color:var(--gray-800);line-height:1.6;overflow-x:hidden;}
+    a{text-decoration:none;color:inherit;transition:var(--transition);}
+    img{max-width:100%;display:block;}
+    ul{list-style:none;}
+    button{cursor:pointer;border:none;background:none;font-family:inherit;}
+    .container{max-width:1240px;margin:0 auto;padding:0 24px;}
+    .section-label{display:inline-block;background:linear-gradient(135deg,rgba(212,168,67,0.15),rgba(212,168,67,0.05));border:1px solid rgba(212,168,67,0.3);color:var(--gold-dark);font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:6px 16px;border-radius:100px;margin-bottom:16px;}
+    .section-heading{font-size:clamp(28px,4vw,44px);font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:16px;}
+    .section-heading span{color:var(--gold);}
+    .section-sub{font-size:17px;color:var(--gray-500);max-width:660px;margin-bottom:48px;}
+    .section-header-center{text-align:center;}
+    .section-header-center .section-sub{margin-left:auto;margin-right:auto;}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:100px;font-size:15px;font-weight:600;cursor:pointer;transition:var(--transition);border:none;overflow:hidden;}
+    .btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--navy);box-shadow:var(--shadow-gold);}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(212,168,67,0.4);}
+    .btn-outline-white{background:transparent;box-shadow:inset 0 0 0 1px var(--white);color:var(--white);}
+    .btn-outline-white:hover{background:var(--white);color:var(--navy);}
+    .btn-outline-gold{background:transparent;box-shadow:inset 0 0 0 2px var(--gold);color:var(--gold);}
+    .btn-outline-gold:hover{background:var(--gold);color:var(--navy);}
+    .btn-navy{background:var(--navy);color:var(--white);}
+    .btn-navy:hover{background:var(--navy-light);transform:translateY(-2px);box-shadow:var(--shadow-md);}
+    .btn-whatsapp{background:linear-gradient(135deg,#25D366,#128C7E);color:white;box-shadow:0 8px 24px rgba(37,211,102,0.3);}
+    /* NAVBAR */
+    .navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 24px;background:rgba(123,76,21,0.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(226,175,94,0.25);transition:var(--transition);}
+    .navbar.scrolled{box-shadow:0 4px 30px rgba(0,0,0,0.3);}
+    .navbar-inner{max-width:1240px;margin:0 auto;height:72px;display:flex;align-items:center;justify-content:space-between;}
+    .navbar-brand{display:flex;align-items:center;gap:10px;}
+    .navbar-brand img{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);}
+    .navbar-brand-text{font-size:22px;font-weight:800;color:var(--white);letter-spacing:-0.5px;}
+    .navbar-brand-text span{color:var(--gold);}
+    .nav-menu{display:flex;align-items:center;gap:3px;flex-wrap:nowrap;}
+    .nav-link{padding:7px 11px;border-radius:var(--radius-sm);font-size:13px;font-weight:500;color:rgba(255,240,180,0.92);transition:var(--transition);position:relative;white-space:nowrap;}
+    .nav-link:hover,.nav-link.active{color:var(--gold-light);background:rgba(226,175,94,0.15);}
+    .nav-item{position:relative;}
+    .nav-dropdown{position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%) translateY(8px);background:rgba(90,54,16,0.98);border:1px solid rgba(226,175,94,0.3);border-radius:var(--radius-md);padding:8px;min-width:200px;opacity:0;pointer-events:none;transition:var(--transition);box-shadow:0 20px 60px rgba(123,76,21,0.5);}
+    .nav-dropdown::before{content:'';position:absolute;top:-12px;left:0;right:0;height:12px;}
+    .nav-item:hover .nav-dropdown{opacity:1;pointer-events:auto;transform:translateX(-50%) translateY(0);}
+    .nav-dropdown a{display:block;padding:9px 14px;font-size:13px;color:rgba(255,240,180,0.85);border-radius:var(--radius-sm);white-space:nowrap;}
+    .nav-dropdown a:hover{background:rgba(226,175,94,0.15);color:var(--gold-light);}
+    .nav-cta{background:linear-gradient(135deg,var(--gold),var(--gold-dark)) !important;color:var(--navy)!important;padding:9px 20px!important;border-radius:100px!important;font-weight:700!important;}
+    .nav-hamburger{display:none;flex-direction:column;gap:5px;padding:8px;cursor:pointer;}
+    .nav-hamburger span{display:block;width:24px;height:2px;background:var(--white);border-radius:2px;}
+    /* FOOTER */
+    .footer{background:#3c1e05;border-top:1px solid rgba(226,175,94,0.2);padding:80px 0 0;}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1.2fr;gap:40px;margin-bottom:60px;}
+    .footer-brand img{width:52px;height:52px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);margin-bottom:16px;}
+    .footer-brand-name{font-size:22px;font-weight:800;color:#ffffc2;margin-bottom:12px;}
+    .footer-brand-name span{color:var(--gold-light);}
+    .footer-brand p{font-size:14px;color:rgba(255,220,140,0.55);line-height:1.7;margin-bottom:24px;}
+    .footer-socials{display:flex;gap:10px;}
+    .footer-social{width:38px;height:38px;border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-size:16px;color:rgba(255,220,140,0.65);background:rgba(226,175,94,0.08);border:1px solid rgba(226,175,94,0.15);transition:var(--transition);}
+    .footer-social:hover{background:var(--gold);color:#3c1e05;border-color:var(--gold);transform:translateY(-3px);}
+    .footer-col h4{font-size:14px;font-weight:700;color:#ffffc2;letter-spacing:1px;text-transform:uppercase;margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid rgba(226,175,94,0.25);}
+    .footer-col ul li{margin-bottom:10px;}
+    .footer-col ul li a{font-size:14px;color:rgba(255,220,140,0.55);transition:var(--transition);}
+    .footer-col ul li a:hover{color:var(--gold-light);padding-left:4px;}
+    .footer-contact-item{display:flex;align-items:flex-start;gap:12px;margin-bottom:14px;}
+    .footer-contact-icon{width:34px;height:34px;border-radius:var(--radius-sm);background:rgba(226,175,94,0.1);border:1px solid rgba(226,175,94,0.2);display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--gold-light);flex-shrink:0;margin-top:2px;}
+    .footer-contact-text{font-size:13px;color:rgba(255,220,140,0.6);line-height:1.5;}
+    .footer-contact-text a{color:rgba(255,220,140,0.6);}
+    .footer-bottom{border-top:1px solid rgba(255,220,120,0.08);padding:24px 0;}
+    .footer-bottom-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+    .footer-bottom p{font-size:13px;color:rgba(255,220,140,0.4);}
+    .footer-bottom-links{display:flex;gap:20px;flex-wrap:wrap;}
+    .footer-bottom-links a{font-size:13px;color:rgba(255,220,140,0.4);}
+
+    /* B2B HERO */
+    .b2b-hero {position:relative;background:#0c1e33;color:white;padding:180px 0 100px;overflow:hidden;}
+    .b2b-hero-bg {position:absolute;inset:0;background:url('assets/images/b2b-hero.jpg') center/cover;opacity:0.25;mix-blend-mode:luminosity;}
+    .b2b-hero .container {position:relative;z-index:2;display:grid;grid-template-columns:1fr 400px;gap:60px;align-items:center;}
+    .b2b-badge {display:inline-block;background:var(--gold);color:var(--navy);font-size:12px;font-weight:700;padding:6px 16px;border-radius:4px;text-transform:uppercase;letter-spacing:1px;margin-bottom:24px;}
+    .b2b-hero h1 {font-size:clamp(40px,5vw,56px);font-weight:800;line-height:1.15;margin-bottom:20px;}
+    .b2b-hero h1 span {color:var(--gold);}
+    .b2b-hero p {font-size:18px;color:rgba(255,255,255,0.8);max-width:540px;margin-bottom:40px;}
+    .b2b-features-list {display:flex;flex-direction:column;gap:16px;background:rgba(255,255,255,0.05);padding:32px;border-radius:16px;border:1px solid rgba(255,255,255,0.1);backdrop-filter:blur(10px);}
+    .b2b-feature-item {display:flex;align-items:center;gap:16px;}
+    .b2b-feature-item .icon {width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:white;font-size:16px;}
+    .b2b-feature-item .text {font-size:15px;font-weight:600;}
+    .handwritten {font-family:'Caveat',cursive;font-size:36px;color:white;position:absolute;bottom:-40px;right:0;transform:rotate(-5deg);}
+
+    /* PARTNERS */
+    .section-white {background:white;padding:100px 0;}
+    .partner-grid {display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+    .partner-types {display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+    .partner-card {border:1px solid var(--gray-200);border-radius:16px;padding:32px 24px;text-align:center;background:var(--cream);}
+    .partner-card .icon {width:64px;height:64px;background:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--navy);margin:0 auto 16px;box-shadow:var(--shadow-sm);}
+    .partner-card h3 {font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;}
+    .partner-card p {font-size:13px;color:var(--gray-500);}
+    .partner-banner {position:relative;border-radius:16px;overflow:hidden;background:#0c1e33;}
+    .partner-banner img {width:100%;height:100%;object-fit:cover;opacity:0.4;position:absolute;inset:0;}
+    .partner-banner-content {position:relative;z-index:2;padding:60px 40px;color:white;display:flex;flex-direction:column;justify-content:center;height:100%;}
+    .partner-banner-content h3 {font-size:28px;font-weight:600;line-height:1.3;margin-bottom:40px;}
+    .partner-stats {display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center;}
+    .stat-num {font-size:32px;font-weight:800;}
+    .stat-label {font-size:12px;color:rgba(255,255,255,0.7);margin-top:4px;text-transform:uppercase;letter-spacing:1px;}
+
+    /* SERVICES */
+    .section-light {background:var(--cream);padding:100px 0;}
+    .services-grid {display:grid;grid-template-columns:repeat(7,1fr);gap:16px;margin-top:40px;}
+    .service-item {background:white;border-radius:16px;padding:24px 16px;text-align:center;border:1px solid var(--gray-200);}
+    .service-item .icon {font-size:28px;color:var(--navy);margin-bottom:16px;}
+    .service-item h4 {font-size:14px;font-weight:700;color:var(--navy);margin-bottom:8px;}
+    .service-item p {font-size:12px;color:var(--gray-500);line-height:1.4;}
+
+    /* DESTINATIONS */
+    .section-destinations {background:#0c1e33;color:white;padding:80px 0;}
+    .section-destinations .section-heading {color:white;}
+    .dest-row {display:grid;grid-template-columns:repeat(8,1fr);gap:16px;margin-top:40px;margin-bottom:40px;}
+    .dest-item {position:relative;border-radius:8px;overflow:hidden;aspect-ratio:3/4;}
+    .dest-item img {width:100%;height:100%;object-fit:cover;}
+    .dest-item .name {position:absolute;bottom:0;left:0;right:0;padding:20px 10px 10px;background:linear-gradient(to top, rgba(0,0,0,0.8), transparent);text-align:center;font-size:14px;font-weight:700;}
+
+    /* HOW IT WORKS */
+    .steps-row {display:flex;align-items:center;justify-content:space-between;margin-top:60px;gap:20px;}
+    .step-item {flex:1;position:relative;}
+    .step-num {width:32px;height:32px;background:var(--gold);color:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;margin-bottom:16px;}
+    .step-title {font-size:14px;font-weight:700;color:var(--navy);margin-bottom:6px;}
+    .step-desc {font-size:12px;color:var(--gray-500);line-height:1.4;}
+    .step-arrow {color:var(--gray-500);font-size:12px;}
+
+    /* FINAL CTA */
+    .b2b-cta {background:linear-gradient(to right, #0a1727, #153254);padding:60px 0;color:white;}
+    .b2b-cta .container {display:flex;align-items:center;justify-content:space-between;}
+    .b2b-cta h2 {font-size:28px;font-weight:700;margin-bottom:8px;}
+    .b2b-cta p {color:rgba(255,255,255,0.7);font-size:15px;}
+    
+    @media (max-width: 1024px) {
+      .b2b-hero .container {grid-template-columns:1fr;}
+      .partner-grid {grid-template-columns:1fr;}
+      .services-grid {grid-template-columns:repeat(3,1fr);}
+      .dest-row {grid-template-columns:repeat(4,1fr);}
+      .steps-row {flex-direction:column;align-items:flex-start;}
+      .step-arrow {display:none;}
+      .b2b-cta .container {flex-direction:column;text-align:center;gap:24px;}
+    }
+    @media (max-width: 768px) {
+      .partner-types {grid-template-columns:1fr;}
+      .services-grid {grid-template-columns:repeat(2,1fr);}
+      .dest-row {grid-template-columns:repeat(2,1fr);}
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="main-navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-brand">
+      <img src="assets/images/logo.jpeg" alt="Kings Travels Logo">
+      <div class="navbar-brand-text"><span>Kings</span> Travels</div>
+    </a>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+      <li class="nav-item">
+        <a href="index.html#section-destinations" class="nav-link">Destinations &#9662;</a>
+        <div class="nav-dropdown">
+          <a href="domestic-travel.html">&#127956; Domestic</a>
+          <a href="international-travel.html">&#127758; International</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="services.html" class="nav-link">Services &#9662;</a>
+        <div class="nav-dropdown">
+          <a href="services.html">&#9992;&#65039; Flight Booking</a>
+          <a href="services.html">&#127968; Hotel Booking</a>
+          <a href="services.html">&#128194; Visa Assistance</a>
+          <a href="services.html">&#128652; Transportation</a>
+          <a href="services.html">&#128188; Corporate Travel</a>
+          <a href="services.html">&#127908; MICE</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="b2b.html" class="nav-link active">B2B Partner</a>
+      </li>
+      <li class="nav-item">
+        <a href="city-guides.html" class="nav-link">Travel Guides</a>
+      </li>
+      <li class="nav-item"><a href="index.html#section-reviews" class="nav-link">Reviews</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger-btn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="b2b-hero">
+  <div class="b2b-hero-bg"></div>
+  <div class="container">
+    <div>
+      <div class="b2b-badge">B2B Travel Partner</div>
+      <h1>Grow Your Travel Business<br><span>With Kings Travels</span></h1>
+      <p>Partner with Kings Travels, a trusted B2B travel agency in India, for reliable and flexible travel solutions designed for travel agents, agencies and tour operators. From domestic and international holiday packages to hotel bookings, transportation, customized itineraries, group travel and visa assistance, we help you serve your clients better with competitive B2B rates and dedicated support.</p>
+      <div style="display:flex;gap:16px;">
+        <a href="contact.html" class="btn btn-primary">Become a Partner &rarr;</a>
+        <a href="contact.html" class="btn btn-outline-white"><i class="fas fa-file-alt"></i> Request B2B Quote</a>
+      </div>
+    </div>
+    <div style="position:relative;">
+      <div class="b2b-features-list">
+        <div class="b2b-feature-item">
+          <div class="icon"><i class="fas fa-user-tag"></i></div>
+          <div class="text">Special B2B Rates</div>
+        </div>
+        <div class="b2b-feature-item">
+          <div class="icon"><i class="fas fa-map-marked-alt"></i></div>
+          <div class="text">Wide Destination Network</div>
+        </div>
+        <div class="b2b-feature-item">
+          <div class="icon"><i class="fas fa-headset"></i></div>
+          <div class="text">Dedicated Partner Support</div>
+        </div>
+        <div class="b2b-feature-item">
+          <div class="icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="text">Reliable &amp; Professional Service</div>
+        </div>
+      </div>
+      <div class="handwritten">Let's Grow Together <i class="fas fa-plane" style="font-size:24px;"></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO WE PARTNER WITH -->
+<section class="section-white">
+  <div class="container">
+    <h2 class="section-heading" style="margin-bottom:8px;">Who We <span>Partner With</span></h2>
+    <p class="section-sub" style="margin-bottom:40px;">Kings Travels works with travel professionals across India who need dependable B2B travel support, competitive rates and customized travel solutions for their customers.</p>
+    
+    <div class="partner-grid">
+      <div class="partner-types">
+        <div class="partner-card">
+          <div class="icon"><i class="fas fa-user-tie"></i></div>
+          <h3>Travel Agents</h3>
+          <p>Get reliable B2B support, competitive rates and customized travel solutions to serve your clients with confidence.</p>
+        </div>
+        <div class="partner-card">
+          <div class="icon"><i class="fas fa-briefcase"></i></div>
+          <h3>Travel Agencies</h3>
+          <p>Expand your travel offerings with domestic and international packages, hotels, transportation and complete travel arrangements.</p>
+        </div>
+        <div class="partner-card">
+          <div class="icon"><i class="fas fa-building"></i></div>
+          <h3>Tour Operators</h3>
+          <p>Work with Kings Travels for customized itineraries, group travel arrangements and destination support tailored to your requirements.</p>
+        </div>
+        <div class="partner-card">
+          <div class="icon"><i class="fas fa-users-cog"></i></div>
+          <h3>Corporate Travel Planners</h3>
+          <p>Get flexible travel solutions for corporate trips, group movements, business travel and customized requirements.</p>
+        </div>
+      </div>
+      
+      <div class="partner-banner">
+        <img src="assets/images/b2b-mountains.jpg" alt="Mountains">
+        <div class="partner-banner-content">
+          <h3>"A reliable travel partner for your growing business."</h3>
+          <div class="partner-stats">
+            <div>
+              <div class="stat-num">500+</div>
+              <div class="stat-label">Travel Partners</div>
+            </div>
+            <div>
+              <div class="stat-num">50+</div>
+              <div class="stat-label">Destinations</div>
+            </div>
+            <div>
+              <div class="stat-num">100%</div>
+              <div class="stat-label">Partner Support</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- B2B SERVICES -->
+<section class="section-light">
+  <div class="container">
+    <h2 class="section-heading" style="margin-bottom:8px;">Our B2B <span>Travel Services</span></h2>
+    <p class="section-sub">As a B2B travel agency in India, Kings Travels provides complete travel support to help agents and tour operators manage client requirements efficiently.</p>
+    
+    <div class="services-grid">
+      <div class="service-item">
+        <div class="icon"><i class="fas fa-plane"></i></div>
+        <h4>Domestic &amp; International Packages</h4>
+        <p>Offer your clients customized holiday packages across popular destinations in India and abroad, designed according to their travel dates, budget and preferences.</p>
+      </div>
+      <div class="service-item">
+        <div class="icon"><i class="fas fa-hotel"></i></div>
+        <h4>Hotel Bookings</h4>
+        <p>Get hotel options across different categories and destinations with competitive B2B rates suitable for individual, family and group bookings.</p>
+      </div>
+      <div class="service-item">
+        <div class="icon"><i class="fas fa-car"></i></div>
+        <h4>Transportation</h4>
+        <p>Arrange reliable airport transfers, local transportation, sightseeing vehicles and intercity travel according to your client's itinerary.</p>
+      </div>
+      <div class="service-item">
+        <div class="icon"><i class="fas fa-map"></i></div>
+        <h4>Customized Itineraries</h4>
+        <p>Share your client's requirements with us and receive a customized itinerary based on destination, duration, budget, hotel preference and travel style.</p>
+      </div>
+      <div class="service-item">
+        <div class="icon"><i class="fas fa-users"></i></div>
+        <h4>Group Bookings</h4>
+        <p>Get dedicated assistance for family groups, corporate travel, educational tours and other group travel requirements.</p>
+      </div>
+      <div class="service-item">
+        <div class="icon"><i class="fas fa-passport"></i></div>
+        <h4>Visa Assistance</h4>
+        <p>Receive support for visa-related documentation and application requirements for applicable international destinations.</p>
+      </div>
+      <div class="service-item">
+        <div class="icon"><i class="fas fa-headset"></i></div>
+        <h4>Dedicated Support</h4>
+        <p>Prompt assistance for all your queries</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DESTINATIONS -->
+<section class="section-destinations" style="background:#0c1e33;color:white;padding:100px 0;">
+  <div class="container">
+    <div style="text-align:center;max-width:800px;margin:0 auto 60px;">
+      <h2 class="section-heading" style="color:white;margin-bottom:16px;">Popular Destinations We <span>Serve</span></h2>
+      <p style="color:rgba(255,255,255,0.7);font-size:17px;line-height:1.6;">Give your customers more travel choices with our B2B travel services for popular domestic and international destinations.</p>
+    </div>
+    
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:60px;">
+      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);padding:40px;border-radius:24px;">
+        <h3 style="font-size:24px;font-weight:700;color:var(--gold);margin-bottom:24px;">Domestic</h3>
+        <p style="font-size:16px;line-height:2;color:rgba(255,255,255,0.85);font-weight:500;">
+          Kashmir &bull; Himachal Pradesh &bull; Kerala &bull; Goa &bull; Rajasthan &bull; Uttarakhand &bull; Ladakh &bull; Andaman
+        </p>
+      </div>
+      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);padding:40px;border-radius:24px;">
+        <h3 style="font-size:24px;font-weight:700;color:var(--gold);margin-bottom:24px;">International</h3>
+        <p style="font-size:16px;line-height:2;color:rgba(255,255,255,0.85);font-weight:500;">
+          Dubai &bull; Thailand &bull; Bali &bull; Maldives &bull; Singapore &bull; Vietnam &bull; Malaysia &bull; Europe
+        </p>
+      </div>
+    </div>
+    
+    <div style="text-align:center;max-width:760px;margin:0 auto;">
+      <p style="font-size:16px;color:rgba(255,255,255,0.7);margin-bottom:32px;line-height:1.6;">Whether your client is planning a honeymoon, family holiday, group tour or customized vacation, Kings Travels can help you create a travel plan according to their requirements.</p>
+      <a href="city-guides.html" class="btn" style="background:white;color:var(--navy);font-weight:700;padding:16px 36px;">Explore Destinations</a>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section-white">
+  <div class="container">
+    <h2 class="section-heading" style="margin-bottom:8px;">How B2B Partnership Works</h2>
+    <p class="section-sub">We keep the B2B booking process simple so that you can focus on your customers while we support you with the travel arrangements.</p>
+    
+    <div class="steps-row">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-title">Register as a Partner</div>
+        <div class="step-desc">Join Kings Travels as a B2B travel partner and share your agency details with our team.</div>
+      </div>
+      <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-title">Send Your Requirement</div>
+        <div class="step-desc">Send us your client's destination, travel dates, number of travellers, hotel preference, budget and other requirements.</div>
+      </div>
+      <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-title">Receive B2B Quote</div>
+        <div class="step-desc">Receive a customized quotation with suitable travel options and competitive B2B rates.</div>
+      </div>
+      <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+      <div class="step-item">
+        <div class="step-num">4</div>
+        <div class="step-title">Confirm &amp; Book</div>
+        <div class="step-desc">Once the itinerary and quotation are approved, confirm the booking with our team.</div>
+      </div>
+      <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+      <div class="step-item">
+        <div class="step-num">5</div>
+        <div class="step-title">We Handle the Rest</div>
+        <div class="step-desc">Kings Travels coordinates the confirmed travel arrangements and provides ongoing support for a smooth travel experience.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- WHY PARTNER -->
+<section class="section-light">
+  <div class="container">
+    <div class="section-header-center">
+      <h2 class="section-heading" style="margin-bottom:16px;">Why Partner With <span>Kings Travels?</span></h2>
+      <p class="section-sub">Choosing the right B2B travel partner can help you deliver better travel experiences while growing your business. Kings Travels focuses on reliable service, flexible solutions and long-term partnerships with travel professionals.</p>
+    </div>
+    
+    <div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:24px;margin-top:40px;">
+      <div style="background:white;padding:32px;border-radius:16px;border:1px solid var(--gray-200);box-shadow:var(--shadow-sm);">
+        <div style="font-size:32px;color:var(--gold);margin-bottom:16px;"><i class="fas fa-tags"></i></div>
+        <h4 style="font-size:18px;font-weight:700;color:var(--navy);margin-bottom:12px;">Competitive B2B Rates</h4>
+        <p style="font-size:14px;color:var(--gray-500);line-height:1.6;">Access competitive partner rates across packages, hotels, transportation and other travel services.</p>
+      </div>
+      <div style="background:white;padding:32px;border-radius:16px;border:1px solid var(--gray-200);box-shadow:var(--shadow-sm);">
+        <div style="font-size:32px;color:var(--gold);margin-bottom:16px;"><i class="fas fa-headset"></i></div>
+        <h4 style="font-size:18px;font-weight:700;color:var(--navy);margin-bottom:12px;">Dedicated Partner Support</h4>
+        <p style="font-size:14px;color:var(--gray-500);line-height:1.6;">Get assistance from our team for quotations, itinerary planning, bookings and travel-related requirements.</p>
+      </div>
+      <div style="background:white;padding:32px;border-radius:16px;border:1px solid var(--gray-200);box-shadow:var(--shadow-sm);">
+        <div style="font-size:32px;color:var(--gold);margin-bottom:16px;"><i class="fas fa-sliders-h"></i></div>
+        <h4 style="font-size:18px;font-weight:700;color:var(--navy);margin-bottom:12px;">Customizable Solutions</h4>
+        <p style="font-size:14px;color:var(--gray-500);line-height:1.6;">Every customer is different. We create travel solutions according to destination, budget, duration and specific client requirements.</p>
+      </div>
+      <div style="background:white;padding:32px;border-radius:16px;border:1px solid var(--gray-200);box-shadow:var(--shadow-sm);">
+        <div style="font-size:32px;color:var(--gold);margin-bottom:16px;"><i class="fas fa-shield-alt"></i></div>
+        <h4 style="font-size:18px;font-weight:700;color:var(--navy);margin-bottom:12px;">Reliable Service</h4>
+        <p style="font-size:14px;color:var(--gray-500);line-height:1.6;">We focus on clear communication and dependable coordination from enquiry to booking and travel support.</p>
+      </div>
+      <div style="background:white;padding:32px;border-radius:16px;border:1px solid var(--gray-200);box-shadow:var(--shadow-sm);">
+        <div style="font-size:32px;color:var(--gold);margin-bottom:16px;"><i class="fas fa-globe-asia"></i></div>
+        <h4 style="font-size:18px;font-weight:700;color:var(--navy);margin-bottom:12px;">Wide Destination Network</h4>
+        <p style="font-size:14px;color:var(--gray-500);line-height:1.6;">Offer your clients domestic and international travel options through a single B2B travel partner.</p>
+      </div>
+      <div style="background:white;padding:32px;border-radius:16px;border:1px solid var(--gray-200);box-shadow:var(--shadow-sm);">
+        <div style="font-size:32px;color:var(--gold);margin-bottom:16px;"><i class="fas fa-handshake"></i></div>
+        <h4 style="font-size:18px;font-weight:700;color:var(--navy);margin-bottom:12px;">Long-Term Partnership</h4>
+        <p style="font-size:14px;color:var(--gray-500);line-height:1.6;">We aim to build lasting relationships with travel agents, agencies and tour operators through consistent support and service.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQS -->
+<section class="section-white">
+  <div class="container">
+    <div class="section-header-center">
+      <h2 class="section-heading">Frequently Asked <span>Questions</span></h2>
+    </div>
+    
+    <div style="max-width:860px;margin:40px auto 0;display:flex;flex-direction:column;gap:16px;">
+      <div style="border:1px solid var(--gray-200);border-radius:12px;padding:24px;background:var(--cream);">
+        <h4 style="font-size:17px;font-weight:700;color:var(--navy);margin-bottom:12px;">What B2B travel services does Kings Travels provide?</h4>
+        <p style="font-size:15px;color:var(--gray-500);line-height:1.6;">Kings Travels provides B2B support for domestic and international tour packages, hotel bookings, transportation, customized itineraries, group bookings and visa assistance for travel professionals.</p>
+      </div>
+      <div style="border:1px solid var(--gray-200);border-radius:12px;padding:24px;background:var(--cream);">
+        <h4 style="font-size:17px;font-weight:700;color:var(--navy);margin-bottom:12px;">Who can become a B2B partner with Kings Travels?</h4>
+        <p style="font-size:15px;color:var(--gray-500);line-height:1.6;">Travel agents, travel agencies, tour operators and eligible corporate travel planners can contact Kings Travels for B2B travel requirements and partnership opportunities.</p>
+      </div>
+      <div style="border:1px solid var(--gray-200);border-radius:12px;padding:24px;background:var(--cream);">
+        <h4 style="font-size:17px;font-weight:700;color:var(--navy);margin-bottom:12px;">Does Kings Travels provide customized B2B tour packages?</h4>
+        <p style="font-size:15px;color:var(--gray-500);line-height:1.6;">Yes. Travel partners can share their client's destination, dates, budget, hotel preference and other requirements to request a customized itinerary and quotation.</p>
+      </div>
+      <div style="border:1px solid var(--gray-200);border-radius:12px;padding:24px;background:var(--cream);">
+        <h4 style="font-size:17px;font-weight:700;color:var(--navy);margin-bottom:12px;">How can I request B2B rates from Kings Travels?</h4>
+        <p style="font-size:15px;color:var(--gray-500);line-height:1.6;">You can submit your travel requirement through the B2B enquiry form or contact the Kings Travels team with your client details to request a quotation.</p>
+      </div>
+      <div style="border:1px solid var(--gray-200);border-radius:12px;padding:24px;background:var(--cream);">
+        <h4 style="font-size:17px;font-weight:700;color:var(--navy);margin-bottom:12px;">Does Kings Travels provide both domestic and international travel services?</h4>
+        <p style="font-size:15px;color:var(--gray-500);line-height:1.6;">Yes. Kings Travels supports a range of domestic and international destinations, depending on availability and the specific travel requirement.</p>
+      </div>
+      <div style="border:1px solid var(--gray-200);border-radius:12px;padding:24px;background:var(--cream);">
+        <h4 style="font-size:17px;font-weight:700;color:var(--navy);margin-bottom:12px;">Can Kings Travels handle group travel requirements?</h4>
+        <p style="font-size:15px;color:var(--gray-500);line-height:1.6;">Yes. Travel partners can request customized arrangements for family groups, corporate groups and other group travel requirements.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="b2b-cta">
+  <div class="container">
+    <div>
+      <h2>Ready to Grow Your Travel Business?</h2>
+      <p>Join Kings Travels and get reliable B2B travel services in India for your clients. Whether you need domestic or international packages, hotels, transportation, customized itineraries, group bookings or visa assistance, our team is ready to support your travel business.</p>
+    </div>
+    <div style="display:flex;gap:16px;">
+      <a href="contact.html" class="btn btn-primary" style="color:var(--navy);"><i class="fas fa-user-tie"></i> Become a B2B Partner &rarr;</a>
+      <a href="contact.html" class="btn btn-outline-white"><i class="fas fa-file-alt"></i> Request B2B Quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo.jpeg" alt="Kings Travels">
+        <div class="footer-brand-name"><span>Kings</span> Travels</div>
+        <p>Crafting unforgettable travel experiences across India and the world. Your journey, our expertise - from first inquiry to final return.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/profile.php?id=61552360375058&mibextid=LQQJ4d" class="footer-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/kings_travel2023?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" class="footer-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/kings-travel-31a584291" class="footer-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/message/JXZMLEVZXMY2D1" class="footer-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="footer-social" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Destinations</h4>
+        <ul>
+          <li><a href="index.html#section-destinations">&#127956; Kashmir</a></li>
+          <li><a href="index.html#section-destinations">&#127964; Rajasthan</a></li>
+          <li><a href="index.html#section-destinations">&#127796; Kerala</a></li>
+          <li><a href="index.html#section-destinations">&#127956; Manali</a></li>
+          <li><a href="index.html#section-destinations">&#127958; Goa</a></li>
+          <li><a href="index.html#section-destinations">&#127961; Dubai</a></li>
+          <li><a href="index.html#section-destinations">&#127958; Thailand</a></li>
+          <li><a href="index.html#section-destinations">&#127958; Maldives</a></li>
+          <li><a href="city-guides.html">All Destinations &rarr;</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Packages</h4>
+        <ul>
+          <li><a href="domestic-travel.html">&#127470;&#127475; Domestic Tours</a></li>
+          <li><a href="international-travel.html">&#9992;&#65039; International Tours</a></li>
+          <li><a href="index.html#section-experience">&#128145; Honeymoon</a></li>
+          <li><a href="index.html#section-experience">&#128106; Family</a></li>
+          <li><a href="index.html#section-experience">&#128101; Group Tours</a></li>
+          <li><a href="contact.html">&#128221; Customized</a></li>
+        </ul>
+        <h4 style="margin-top:24px;">Services</h4>
+        <ul>
+          <li><a href="services.html">&#9992;&#65039; Flight Booking</a></li>
+          <li><a href="services.html">&#127968; Hotel Booking</a></li>
+          <li><a href="services.html">&#128194; Visa Assistance</a></li>
+          <li><a href="services.html">&#128188; Corporate Travel</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html">&#127963; About Us</a></li>
+          <li><a href="b2b.html">&#129309; B2B Partner</a></li>
+          <li><a href="index.html#section-why">&#11088; Why Choose Us</a></li>
+          <li><a href="index.html#section-reviews">&#128172; Reviews</a></li>
+          <li><a href="city-guides.html">&#128221; Travel Guides</a></li>
+          <li><a href="contact.html">&#10067; FAQs</a></li>
+          <li><a href="contact.html">&#128222; Contact Us</a></li>
+        </ul>
+        <h4 style="margin-top:24px;">Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Cancellation Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fas fa-phone-alt"></i></div>
+          <div class="footer-contact-text"><a href="tel:+917087771666">+91 70877 71666</a></div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="footer-contact-text"><a href="https://wa.me/message/JXZMLEVZXMY2D1">WhatsApp Us</a><br>Available 9AM - 9PM</div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fas fa-envelope"></i></div>
+          <div class="footer-contact-text"><a href="mailto:info@kingstravels.in">info@kingstravels.in</a></div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="footer-contact-text">Punjab, India<br>Serving Pan India &amp; International</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>&copy; 2024 Kings Travels. All Rights Reserved. Designed &amp; Developed by <a href="#" style="color:var(--gold);">Satvik Development</a>.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Cancellation Policy</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Navbar scroll
+  const navbar = document.getElementById('main-navbar');
+  window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 10); });
+</script>
+</body>
+</html>
