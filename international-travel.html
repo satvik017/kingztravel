@@ -82,51 +82,58 @@
       transition: var(--transition);
       border: none;
       white-space: nowrap;
+      text-decoration: none !important;
     }
+    .btn i { color: inherit; }
     .btn-primary {
-      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
-      color: var(--navy-dark);
-      box-shadow: var(--shadow-gold);
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark)) !important;
+      color: var(--navy) !important;
+      box-shadow: 0 8px 24px rgba(216, 155, 66, 0.35);
     }
     .btn-primary:hover {
       transform: translateY(-2px);
-      box-shadow: 0 12px 35px rgba(200, 135, 42, 0.45);
+      box-shadow: 0 12px 35px rgba(216, 155, 66, 0.5);
+      background: linear-gradient(135deg, var(--gold-light), var(--gold)) !important;
+      color: var(--navy) !important;
     }
     .btn-blue {
-      background: linear-gradient(135deg, #154c79, #0a263d);
-      color: var(--white);
-      box-shadow: 0 8px 24px rgba(15, 59, 95, 0.25);
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark)) !important;
+      color: var(--navy) !important;
+      box-shadow: 0 8px 24px rgba(216, 155, 66, 0.35);
     }
     .btn-blue:hover {
       transform: translateY(-2px);
-      box-shadow: 0 12px 30px rgba(10, 38, 61, 0.35);
-      background: linear-gradient(135deg, #1d6199, #0f3b5f);
+      box-shadow: 0 12px 30px rgba(216, 155, 66, 0.5);
+      background: linear-gradient(135deg, var(--gold-light), var(--gold)) !important;
+      color: var(--navy) !important;
     }
     .btn-white {
-      background: var(--white);
-      color: var(--navy-dark);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      background: #ffffff !important;
+      color: #0A192F !important;
+      font-weight: 800 !important;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
     }
     .btn-white:hover {
-      background: var(--cream);
-      color: var(--navy);
+      background: var(--gold) !important;
+      color: #ffffff !important;
       transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(216, 155, 66, 0.4);
     }
     .btn-sm { padding: 8px 16px; font-size: 13px; }
 
     /* NAVBAR */
-    .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 0 24px; background: rgba(123, 76, 21, 0.97); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(226, 175, 94, 0.25); transition: var(--transition); }
+    .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 0 24px; background: rgba(10, 25, 47, 0.97); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(226, 175, 94, 0.25); transition: var(--transition); }
     .navbar.scrolled { box-shadow: 0 4px 30px rgba(0,0,0,0.3); }
     .navbar-inner { max-width: 1240px; margin: 0 auto; height: 72px; display: flex; align-items: center; justify-content: space-between; }
     .navbar-brand { display: flex; align-items: center; gap: 10px; }
-    .navbar-brand img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gold); }
+    .navbar-brand img { width: 46px; height: 46px; border-radius: 10px; object-fit: cover; border: 2px solid var(--gold); }
     .navbar-brand-text { font-size: 22px; font-weight: 800; color: var(--white); letter-spacing: -0.5px; }
     .navbar-brand-text span { color: var(--gold); }
     .nav-menu { display: flex; align-items: center; gap: 3px; flex-wrap: nowrap; }
     .nav-link { padding: 7px 11px; border-radius: var(--radius-sm); font-size: 13px; font-weight: 500; color: rgba(255, 240, 180, 0.92); transition: var(--transition); position: relative; white-space: nowrap; }
     .nav-link:hover, .nav-link.active { color: var(--gold-light); background: rgba(226, 175, 94, 0.15); }
     .nav-item { position: relative; }
-    .nav-dropdown { position: absolute; top: calc(100% + 8px); left: 50%; transform: translateX(-50%) translateY(8px); background: rgba(90, 54, 16, 0.98); border: 1px solid rgba(226, 175, 94, 0.3); border-radius: var(--radius-md); padding: 8px; min-width: 200px; opacity: 0; pointer-events: none; transition: var(--transition); box-shadow: 0 20px 60px rgba(123, 76, 21, 0.5); }
+    .nav-dropdown { position: absolute; top: calc(100% + 8px); left: 50%; transform: translateX(-50%) translateY(8px); background: rgba(10, 25, 47, 0.98); border: 1px solid rgba(216, 155, 66, 0.3); border-radius: var(--radius-md); padding: 8px; min-width: 200px; opacity: 0; pointer-events: none; transition: var(--transition); box-shadow: 0 20px 60px rgba(10, 25, 47, 0.5); }
     .nav-dropdown::before { content: ''; position: absolute; top: -12px; left: 0; right: 0; height: 12px; }
     .nav-item:hover .nav-dropdown { opacity: 1; pointer-events: auto; transform: translateX(-50%) translateY(0); }
     .nav-dropdown a { display: block; padding: 9px 14px; font-size: 13px; color: rgba(255, 240, 180, 0.85); border-radius: var(--radius-sm); white-space: nowrap; }
@@ -166,7 +173,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(10, 30, 48, 0.72) 0%, rgba(15, 45, 70, 0.58) 50%, rgba(10, 25, 40, 0.88) 100%);
+      background: linear-gradient(180deg, rgba(10, 25, 47, 0.8) 0%, rgba(17, 34, 64, 0.6) 50%, rgba(10, 25, 47, 0.92) 100%);
     }
     .intl-hero .container {
       position: relative;
@@ -295,7 +302,7 @@
     .dest-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 40%, rgba(10, 20, 30, 0.9) 100%);
+      background: linear-gradient(180deg, rgba(10, 25, 47, 0.05) 0%, rgba(10, 25, 47, 0.35) 40%, rgba(10, 25, 47, 0.92) 100%);
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -700,7 +707,7 @@
 
     /* FOOTER */
     .footer {
-      background: var(--navy-dark);
+      background: var(--navy);
       border-top: 1px solid rgba(226, 175, 94, 0.2);
       padding: 80px 0 0;
       color: #ffffc2;
@@ -712,8 +719,8 @@
       margin-bottom: 60px;
     }
     .footer-brand img {
-      width: 52px; height: 52px;
-      border-radius: 50%;
+      width: 56px; height: 56px;
+      border-radius: 12px;
       object-fit: cover;
       border: 2px solid var(--gold);
       margin-bottom: 16px;
@@ -736,7 +743,7 @@
     }
     .footer-social:hover {
       background: var(--gold);
-      color: var(--navy-dark);
+      color: var(--navy);
       transform: translateY(-3px);
     }
     .footer-col h4 {
