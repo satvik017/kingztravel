@@ -1,0 +1,2252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corporate Travel - Business Travel Built Around Your Business | Kings Travels</title>
+  <meta name="description" content="From individual business trips to corporate group travel, conferences and MICE, Kings Travels coordinates stays, airport transfers and seamless itineraries tailored to your schedule.">
+  <meta name="keywords" content="Corporate Travel India, Business Travel Management, MICE Travel, Corporate Group Tours, Executive Travel, Kings Travels Corporate">
+  <link rel="shortcut icon" href="assets/images/logo.jpeg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16443245656"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-16443245656');</script>
+  
+  <style>
+    :root {
+      --gold: #d89b42;
+      --gold-light: #e5b873;
+      --gold-dark: #b57f33;
+      --navy: #0A192F;
+      --navy-mid: #112240;
+      --navy-light: #233554;
+      --cream: #F8F5F0;
+      --cream-light: #FAF8F5;
+      --white: #ffffff;
+      --gray-100: #f1f5f9;
+      --gray-200: #e2e8f0;
+      --gray-500: #64748b;
+      --gray-800: #0f172a;
+      --shadow-sm: 0 2px 12px rgba(10,25,47,0.06);
+      --shadow-md: 0 8px 30px rgba(10,25,47,0.10);
+      --shadow-lg: 0 20px 60px rgba(10,25,47,0.15);
+      --shadow-gold: 0 8px 32px rgba(216,155,66,0.28);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
+      --transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--cream);
+      color: var(--gray-800);
+      line-height: 1.6;
+      overflow-x: hidden;
+      width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-family: inherit;
+    }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+      width: 100%;
+    }
+
+    /* TYPOGRAPHY HELPERS */
+    .section-eyebrow {
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+
+    .section-eyebrow-light {
+      color: var(--gold-light);
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(26px, 3.4vw, 38px);
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+
+    .section-title.light {
+      color: #ffffff;
+    }
+
+    .section-desc {
+      font-size: 15px;
+      color: var(--gray-500);
+      line-height: 1.6;
+    }
+
+    .section-desc.light {
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    /* BUTTONS */
+    .btn-corp-gold {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      color: #ffffff !important;
+      font-weight: 600;
+      font-size: 14.5px;
+      padding: 13px 26px;
+      border-radius: 6px;
+      box-shadow: 0 6px 20px rgba(216, 155, 66, 0.28);
+      transition: var(--transition);
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-corp-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(216, 155, 66, 0.4);
+      color: #ffffff !important;
+    }
+
+    .btn-corp-gold i {
+      font-size: 13px;
+      transition: transform 0.3s ease;
+    }
+
+    .btn-corp-gold:hover i {
+      transform: translateX(3px);
+    }
+
+    /* ==========================================================================
+       NAVBAR (IDENTICAL TO ORIGINAL THEME)
+       ========================================================================== */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 0 24px;
+      background: rgba(10,25,47,0.97);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(226,175,94,0.25);
+      transition: var(--transition);
+    }
+
+    .navbar.scrolled {
+      box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+    }
+
+    .navbar-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .navbar-brand img {
+      width: 46px;
+      height: 46px;
+      border-radius: 10px;
+      object-fit: cover;
+      border: 2px solid var(--gold);
+    }
+
+    .navbar-brand-text {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: -0.5px;
+    }
+
+    .navbar-brand-text span {
+      color: var(--gold);
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      flex-wrap: nowrap;
+    }
+
+    .nav-link {
+      padding: 7px 11px;
+      border-radius: var(--radius-sm);
+      font-size: 13px;
+      font-weight: 500;
+      color: rgba(255,240,180,0.92);
+      transition: var(--transition);
+      position: relative;
+      white-space: nowrap;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--gold-light);
+      background: rgba(226,175,94,0.15);
+    }
+
+    .nav-item {
+      position: relative;
+    }
+
+    .nav-dropdown {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 50%;
+      transform: translateX(-50%) translateY(8px);
+      background: rgba(10,25,47,0.98);
+      border: 1px solid rgba(216,155,66,0.3);
+      border-radius: var(--radius-md);
+      padding: 8px;
+      min-width: 200px;
+      opacity: 0;
+      pointer-events: none;
+      transition: var(--transition);
+      box-shadow: 0 20px 60px rgba(10,25,47,0.5);
+    }
+
+    .nav-dropdown::before {
+      content: '';
+      position: absolute;
+      top: -12px;
+      left: 0;
+      right: 0;
+      height: 12px;
+    }
+
+    .nav-item:hover .nav-dropdown {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .nav-dropdown a {
+      display: block;
+      padding: 9px 14px;
+      font-size: 13px;
+      color: rgba(255,240,180,0.85);
+      border-radius: var(--radius-sm);
+      white-space: nowrap;
+    }
+
+    .nav-dropdown a:hover {
+      background: rgba(226,175,94,0.15);
+      color: var(--gold-light);
+    }
+
+    .nav-cta {
+      background: linear-gradient(135deg,var(--gold),var(--gold-dark)) !important;
+      color: var(--navy) !important;
+      padding: 9px 20px !important;
+      border-radius: 100px !important;
+      font-weight: 700 !important;
+    }
+
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    .nav-hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    .nav-hamburger.open span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .nav-hamburger.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav-hamburger.open span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* MOBILE MENU */
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--navy);
+      z-index: 999;
+      padding: 90px 24px 40px;
+      overflow-y: auto;
+      transform: translateX(100%);
+      transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    .mobile-menu.open {
+      transform: translateX(0);
+    }
+
+    .mobile-nav-item {
+      border-bottom: 1px solid rgba(255,220,120,0.12);
+    }
+
+    .mobile-nav-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 16px 0;
+      font-size: 17px;
+      font-weight: 600;
+      color: #ffffff;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-family: inherit;
+      text-align: left;
+    }
+
+    .mobile-nav-link i {
+      font-size: 12px;
+      color: var(--gold);
+      transition: var(--transition);
+    }
+
+    .mobile-nav-link.open i {
+      transform: rotate(180deg);
+    }
+
+    .mobile-submenu {
+      display: none;
+      padding: 4px 0 16px 16px;
+    }
+
+    .mobile-submenu.open {
+      display: block;
+    }
+
+    .mobile-submenu a {
+      display: block;
+      padding: 9px 0;
+      font-size: 14px;
+      color: rgba(255,220,140,0.7);
+      border-bottom: 1px solid rgba(255,220,120,0.08);
+    }
+
+    .mobile-submenu a:hover {
+      color: var(--gold-light);
+    }
+
+    .mobile-menu-footer {
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg,var(--gold),var(--gold-dark));
+      color: var(--navy);
+      padding: 13px 26px;
+      border-radius: 100px;
+      font-size: 15px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn-whatsapp {
+      background: linear-gradient(135deg,#25D366,#128C7E);
+      color: white;
+      padding: 13px 26px;
+      border-radius: 100px;
+      font-size: 15px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    /* ==========================================================================
+       HERO SECTION
+       ========================================================================== */
+    .corp-hero {
+      position: relative;
+      min-height: 86vh;
+      display: flex;
+      align-items: center;
+      background: #0A192F;
+      overflow: hidden;
+      padding: 150px 0 90px;
+    }
+
+    .corp-hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1920&q=85');
+      background-size: cover;
+      background-position: center right;
+      filter: brightness(0.68);
+      transform: scale(1.02);
+      transition: transform 12s ease;
+    }
+
+    .corp-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        90deg,
+        rgba(10, 25, 47, 0.94) 0%,
+        rgba(10, 25, 47, 0.85) 45%,
+        rgba(10, 25, 47, 0.45) 80%,
+        rgba(10, 25, 47, 0.6) 100%
+      );
+    }
+
+    .corp-hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 650px;
+    }
+
+    .corp-hero-tag {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .corp-hero-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(34px, 4.6vw, 54px);
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.18;
+      margin-bottom: 18px;
+      letter-spacing: -0.5px;
+    }
+
+    .corp-hero-sub {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.82);
+      line-height: 1.65;
+      margin-bottom: 34px;
+      max-width: 580px;
+    }
+
+    /* ==========================================================================
+       HIGHLIGHTS STRIP (BELOW HERO)
+       ========================================================================== */
+    .corp-strip {
+      background: #FAF8F5;
+      border-bottom: 1px solid rgba(10, 25, 47, 0.08);
+      padding: 24px 0;
+    }
+
+    .corp-strip-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .corp-strip-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 6px 12px;
+    }
+
+    .corp-strip-icon {
+      font-size: 22px;
+      color: var(--gold-dark);
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .corp-strip-text h4 {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.25;
+      margin-bottom: 3px;
+    }
+
+    .corp-strip-text p {
+      font-size: 12px;
+      color: var(--gray-500);
+      line-height: 1.4;
+    }
+
+    /* ==========================================================================
+       SECTION 2: WHAT WE HANDLE
+       ========================================================================== */
+    .section-what {
+      padding: 76px 0 84px;
+      background: var(--cream);
+    }
+
+    .what-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .what-card {
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      box-shadow: 0 4px 18px rgba(10, 25, 47, 0.04);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .what-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 36px rgba(10, 25, 47, 0.10);
+      border-color: rgba(216, 155, 66, 0.35);
+    }
+
+    .what-card-img-wrap {
+      position: relative;
+      height: 180px;
+      overflow: hidden;
+    }
+
+    .what-card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    .what-card:hover .what-card-img-wrap img {
+      transform: scale(1.06);
+    }
+
+    .what-card-icon-badge {
+      position: absolute;
+      bottom: -22px;
+      left: 20px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 1.5px solid rgba(216, 155, 66, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-dark);
+      font-size: 16px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+      z-index: 2;
+    }
+
+    .what-card-body {
+      padding: 34px 20px 24px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .what-card-body h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .what-card-body p {
+      font-size: 13px;
+      color: var(--gray-500);
+      line-height: 1.55;
+    }
+
+    .what-cta-wrap {
+      text-align: center;
+      margin-top: 38px;
+    }
+
+    /* ==========================================================================
+       SECTION 3: SCHEDULE COMES FIRST (DARK SECTION)
+       ========================================================================== */
+    .section-schedule {
+      background: #0A192F;
+      position: relative;
+      overflow: hidden;
+      padding: 84px 0;
+    }
+
+    .schedule-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .schedule-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .schedule-content p {
+      font-size: 14.5px;
+      color: rgba(255, 255, 255, 0.82);
+      line-height: 1.65;
+      margin-bottom: 14px;
+    }
+
+    .schedule-checklist {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px 20px;
+      margin-top: 28px;
+    }
+
+    .schedule-check-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #ffffff;
+      font-size: 13.5px;
+      font-weight: 500;
+    }
+
+    .schedule-check-item .check-circle {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      flex-shrink: 0;
+      font-weight: 800;
+    }
+
+    .schedule-image-wrap {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+      border: 1px solid rgba(226, 175, 94, 0.2);
+      height: 380px;
+    }
+
+    .schedule-image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ==========================================================================
+       SECTION 4: MICE & CONFERENCES
+       ========================================================================== */
+    .section-mice {
+      padding: 80px 0;
+      background: #FAF8F5;
+    }
+
+    .mice-top-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 36px;
+      align-items: center;
+      margin-bottom: 48px;
+    }
+
+    .mice-header-text .section-eyebrow {
+      letter-spacing: 1.8px;
+    }
+
+    .mice-banner-img {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(10, 25, 47, 0.08);
+      height: 220px;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .mice-banner-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .mice-features-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .mice-feature-box {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: #ffffff;
+      padding: 22px 18px;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      box-shadow: 0 4px 16px rgba(10, 25, 47, 0.03);
+      transition: var(--transition);
+    }
+
+    .mice-feature-box:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 24px rgba(10, 25, 47, 0.08);
+      border-color: rgba(216, 155, 66, 0.3);
+    }
+
+    .mice-feature-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: rgba(216, 155, 66, 0.12);
+      border: 1px solid rgba(216, 155, 66, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-dark);
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .mice-feature-text h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+
+    .mice-feature-text p {
+      font-size: 12.5px;
+      color: var(--gray-500);
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       SECTION 5: HOW IT WORKS
+       ========================================================================== */
+    .section-works {
+      padding: 80px 0;
+      background: var(--cream);
+    }
+
+    .steps-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+      position: relative;
+    }
+
+    .step-card {
+      position: relative;
+    }
+
+    .step-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .step-icon-badge {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #b57f33;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+      box-shadow: 0 4px 12px rgba(181, 127, 51, 0.28);
+    }
+
+    .step-number {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #b57f33;
+      letter-spacing: -0.5px;
+    }
+
+    .step-divider {
+      flex-grow: 1;
+      height: 1px;
+      background: repeating-linear-gradient(90deg, #d89b42, #d89b42 3px, transparent 3px, transparent 6px);
+      opacity: 0.6;
+    }
+
+    .step-arrow {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 700;
+      opacity: 0.8;
+    }
+
+    .step-card:last-child .step-divider,
+    .step-card:last-child .step-arrow {
+      display: none;
+    }
+
+    .step-card h4 {
+      font-size: 15.5px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+
+    .step-card p {
+      font-size: 13px;
+      color: var(--gray-500);
+      line-height: 1.55;
+    }
+
+    /* ==========================================================================
+       SECTION 6: FAQ ACCORDION
+       ========================================================================== */
+    .section-faq {
+      padding: 80px 0;
+      background: #ffffff;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px 24px;
+      margin-top: 40px;
+    }
+
+    .faq-item {
+      background: #ffffff;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .faq-item:hover {
+      border-color: rgba(216, 155, 66, 0.35);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-item.active {
+      border-color: var(--gold);
+      box-shadow: 0 6px 20px rgba(10, 25, 47, 0.05);
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      text-align: left;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--navy);
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .faq-icon {
+      font-size: 15px;
+      color: var(--gold-dark);
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+      font-weight: 700;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+      color: var(--navy);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      padding: 0 18px;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+      padding: 0 18px 16px;
+    }
+
+    .faq-answer p {
+      font-size: 13.5px;
+      color: var(--gray-500);
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       SECTION 7: BOTTOM BANNER CTA
+       ========================================================================== */
+    .section-bottom-cta {
+      background: #0A192F;
+      position: relative;
+      overflow: hidden;
+      padding: 80px 0;
+    }
+
+    .bottom-cta-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1920&q=85');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.38;
+      filter: brightness(0.65);
+    }
+
+    .bottom-cta-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(10, 25, 47, 0.96) 0%,
+        rgba(10, 25, 47, 0.85) 60%,
+        rgba(10, 25, 47, 0.92) 100%
+      );
+    }
+
+    .bottom-cta-content {
+      position: relative;
+      z-index: 2;
+      max-width: 660px;
+    }
+
+    .bottom-cta-content .section-eyebrow {
+      color: var(--gold-light);
+      margin-bottom: 12px;
+    }
+
+    .bottom-cta-content h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(28px, 3.5vw, 42px);
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.25;
+      margin-bottom: 14px;
+    }
+
+    .bottom-cta-content p {
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    /* ==========================================================================
+       INQUIRY POPUP MODAL
+       ========================================================================== */
+    .corp-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      background: rgba(10, 25, 47, 0.82);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: var(--transition);
+    }
+
+    .corp-modal.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .corp-modal-box {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      width: 100%;
+      max-width: 580px;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 36px 32px;
+      position: relative;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+      border: 1px solid rgba(216, 155, 66, 0.3);
+      transform: translateY(20px);
+      transition: transform 0.35s ease;
+    }
+
+    .corp-modal.open .corp-modal-box {
+      transform: translateY(0);
+    }
+
+    .corp-modal-close {
+      position: absolute;
+      top: 18px;
+      right: 20px;
+      font-size: 20px;
+      color: var(--gray-500);
+      cursor: pointer;
+      background: none;
+      border: none;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+
+    .corp-modal-close:hover {
+      background: var(--gray-100);
+      color: var(--navy);
+    }
+
+    .corp-modal-header {
+      margin-bottom: 24px;
+    }
+
+    .corp-modal-header h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+
+    .corp-modal-header p {
+      font-size: 13.5px;
+      color: var(--gray-500);
+    }
+
+    .corp-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .corp-form-full {
+      grid-column: 1 / -1;
+    }
+
+    .corp-form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .corp-form-group label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: 0.3px;
+    }
+
+    .corp-form-group input,
+    .corp-form-group select,
+    .corp-form-group textarea {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid var(--gray-200);
+      border-radius: 8px;
+      font-size: 14px;
+      color: var(--gray-800);
+      font-family: inherit;
+      background: #fafaf9;
+      transition: var(--transition);
+    }
+
+    .corp-form-group input:focus,
+    .corp-form-group select:focus,
+    .corp-form-group textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+      background: #ffffff;
+      box-shadow: 0 0 0 3px rgba(216, 155, 66, 0.15);
+    }
+
+    .corp-modal-actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .corp-modal-actions .btn-corp-gold {
+      flex: 1;
+    }
+
+    .btn-corp-wa {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #25D366;
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 13px 20px;
+      border-radius: 6px;
+      transition: var(--transition);
+    }
+
+    .btn-corp-wa:hover {
+      background: #1eb855;
+      transform: translateY(-2px);
+    }
+
+    /* ==========================================================================
+       FOOTER (IDENTICAL TO ORIGINAL THEME)
+       ========================================================================== */
+    .footer {
+      background: #0A192F;
+      border-top: 1px solid rgba(226,175,94,0.2);
+      padding: 80px 0 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr 1.2fr;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .footer-brand img {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      object-fit: cover;
+      border: 2px solid var(--gold);
+      margin-bottom: 16px;
+    }
+
+    .footer-brand-name {
+      font-size: 22px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand-name span {
+      color: var(--gold-light);
+    }
+
+    .footer-brand p {
+      font-size: 14px;
+      color: rgba(255,220,140,0.55);
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 10px;
+    }
+
+    .footer-social {
+      width: 38px;
+      height: 38px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: rgba(255,220,140,0.65);
+      background: rgba(226,175,94,0.08);
+      border: 1px solid rgba(226,175,94,0.15);
+      transition: var(--transition);
+    }
+
+    .footer-social:hover {
+      background: var(--gold);
+      color: var(--navy);
+      border-color: var(--gold);
+      transform: translateY(-3px);
+    }
+
+    .footer-col h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(226,175,94,0.25);
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+      font-size: 14px;
+      color: rgba(255,220,140,0.55);
+      transition: var(--transition);
+    }
+
+    .footer-col ul li a:hover {
+      color: var(--gold-light);
+      padding-left: 4px;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .footer-contact-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: var(--radius-sm);
+      background: rgba(226,175,94,0.1);
+      border: 1px solid rgba(226,175,94,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: var(--gold-light);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .footer-contact-text {
+      font-size: 13px;
+      color: rgba(255,220,140,0.6);
+      line-height: 1.5;
+    }
+
+    .footer-contact-text a {
+      color: rgba(255,220,140,0.6);
+    }
+
+    .footer-contact-text a:hover {
+      color: var(--gold-light);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,220,120,0.08);
+      padding: 24px 0;
+    }
+
+    .footer-bottom-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-bottom p {
+      font-size: 13px;
+      color: rgba(255,220,140,0.4);
+    }
+
+    .footer-bottom-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-bottom-links a {
+      font-size: 13px;
+      color: rgba(255,220,140,0.4);
+      transition: var(--transition);
+    }
+
+    .footer-bottom-links a:hover {
+      color: var(--gold-light);
+    }
+
+    /* ==========================================================================
+       WHATSAPP FLOATING BUTTON
+       ========================================================================== */
+    .wa-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg,#25D366,#128C7E);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      color: white;
+      z-index: 999;
+      box-shadow: 0 8px 24px rgba(37,211,102,0.4);
+      transition: var(--transition);
+      animation: waPulse 3s ease-in-out infinite;
+    }
+
+    .wa-float:hover {
+      transform: scale(1.15) translateY(-3px);
+      animation: none;
+    }
+
+    @keyframes waPulse {
+      0%, 100% {
+        box-shadow: 0 8px 24px rgba(37,211,102,0.4);
+      }
+      50% {
+        box-shadow: 0 8px 40px rgba(37,211,102,0.7), 0 0 0 12px rgba(37,211,102,0.08);
+      }
+    }
+
+    /* ==========================================================================
+       RESPONSIVE BREAKPOINTS
+       ========================================================================== */
+    @media (max-width: 1080px) {
+      .nav-menu { display: none; }
+      .nav-hamburger { display: flex; }
+      .corp-strip-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+      .what-grid { grid-template-columns: repeat(2, 1fr); }
+      .schedule-grid { grid-template-columns: 1fr; }
+      .schedule-image-wrap { height: 300px; }
+      .mice-top-grid { grid-template-columns: 1fr; }
+      .mice-features-grid { grid-template-columns: repeat(2, 1fr); }
+      .steps-row { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+      .footer-grid { grid-template-columns: 1fr 1fr 1fr; gap: 30px; }
+      .footer-brand { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 768px) {
+      .container { padding: 0 20px; }
+      .corp-hero { padding: 130px 0 70px; min-height: auto; }
+      .corp-hero-title { font-size: 32px; }
+      .corp-strip-grid { grid-template-columns: 1fr; }
+      .what-grid { grid-template-columns: 1fr; }
+      .schedule-checklist { grid-template-columns: 1fr; }
+      .mice-features-grid { grid-template-columns: 1fr; }
+      .steps-row { grid-template-columns: 1fr; gap: 28px; }
+      .step-divider, .step-arrow { display: none; }
+      .faq-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+      .corp-form { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 480px) {
+      .footer-grid { grid-template-columns: 1fr; }
+      .corp-modal-box { padding: 28px 20px; }
+      .corp-modal-actions { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ==========================================================================
+     NAVBAR (ORIGINAL NAVBAR PRESERVED)
+     ========================================================================== -->
+<nav class="navbar" id="main-navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-brand">
+      <img src="assets/images/logo.jpeg" alt="Kings Travels Logo">
+      <div class="navbar-brand-text"><span>Kings</span> Travels</div>
+    </a>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+      <li class="nav-item">
+        <a href="index.html#section-destinations" class="nav-link">Destinations &#9662;</a>
+        <div class="nav-dropdown">
+          <a href="domestic-travel.html">&#127956; Domestic</a>
+          <a href="international-travel.html">&#127758; International</a>
+        </div>
+      </li>
+      <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+      <li class="nav-item">
+        <a href="b2b.html" class="nav-link">B2B Partner</a>
+      </li>
+      <li class="nav-item">
+        <a href="corporate.html" class="nav-link active">Corporate &#9662;</a>
+        <div class="nav-dropdown">
+          <a href="corporate.html">&#128188; Corporate Travel</a>
+          <a href="corporate.html#section-mice">&#127908; MICE</a>
+          <a href="corporate.html#section-schedule">&#128101; Group Travel</a>
+        </div>
+      </li>
+      <li class="nav-item"><a href="city-guides.html" class="nav-link">Travel Guides</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+      <li class="nav-item"><a href="index.html#section-reviews" class="nav-link">Reviews</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger-btn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ==========================================================================
+     MOBILE MENU (ORIGINAL STRUCTURE PRESERVED)
+     ========================================================================== -->
+<div class="mobile-menu" id="mobile-menu">
+  <nav>
+    <ul>
+      <li class="mobile-nav-item">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+      </li>
+      <li class="mobile-nav-item">
+        <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-dest')">
+          Destinations <i class="fa fa-chevron-down"></i>
+        </button>
+        <ul class="mobile-submenu" id="sub-dest">
+          <li><a href="domestic-travel.html">&#127956; Domestic</a></li>
+          <li><a href="international-travel.html">&#127758; International</a></li>
+        </ul>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="services.html" class="mobile-nav-link">Services</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="b2b.html" class="mobile-nav-link">B2B Partner</a>
+      </li>
+      <li class="mobile-nav-item">
+        <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-corp')" style="color:var(--gold-light);font-weight:700;">
+          Corporate Travel <i class="fa fa-chevron-down"></i>
+        </button>
+        <ul class="mobile-submenu" id="sub-corp" style="display:block;">
+          <li><a href="corporate.html" style="color:var(--gold-light);font-weight:600;">&#128188; Corporate Travel</a></li>
+          <li><a href="corporate.html#section-mice">&#127908; MICE</a></li>
+          <li><a href="corporate.html#section-schedule">&#128101; Group Travel</a></li>
+        </ul>
+      </li>
+      <li class="mobile-nav-item">
+        <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-about')">
+          About Us <i class="fa fa-chevron-down"></i>
+        </button>
+        <ul class="mobile-submenu" id="sub-about">
+          <li><a href="about.html">&#127963; About Kings Travels</a></li>
+          <li><a href="about.html#leadership">&#128105;&#8205;&#128188; Managing Director</a></li>
+          <li><a href="about.html#philosophy">&#11088; Why Choose Us</a></li>
+        </ul>
+      </li>
+      <li class="mobile-nav-item">
+        <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-guides')">
+          Travel Guides <i class="fa fa-chevron-down"></i>
+        </button>
+        <ul class="mobile-submenu" id="sub-guides">
+          <li><a href="city-guides.html">&#128221; Travel Blog</a></li>
+          <li><a href="city-guides.html">&#128506; Destination Guides</a></li>
+          <li><a href="city-guides.html">&#128161; Travel Tips</a></li>
+        </ul>
+      </li>
+      <li class="mobile-nav-item"><a href="index.html#section-reviews" class="mobile-nav-link">Reviews</a></li>
+      <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">FAQs</a></li>
+      <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
+    </ul>
+    <div class="mobile-menu-footer">
+      <a href="https://wa.me/message/APRJYOU4WDQQK1" class="btn btn-whatsapp" style="justify-content:center;"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+      <a href="javascript:void(0)" onclick="openCorpModal()" class="btn btn-primary" style="justify-content:center;"><i class="fas fa-briefcase"></i> Plan Corporate Travel</a>
+    </div>
+  </nav>
+</div>
+
+<!-- ==========================================================================
+     HERO SECTION
+     ========================================================================== -->
+<section class="corp-hero" id="hero">
+  <div class="corp-hero-bg"></div>
+  <div class="corp-hero-overlay"></div>
+  <div class="container">
+    <div class="corp-hero-content">
+      <span class="corp-hero-tag">CORPORATE TRAVEL</span>
+      <h1 class="corp-hero-title">Business Travel Built<br>Around Your Business</h1>
+      <p class="corp-hero-sub">From individual business trips to team travel and corporate events, Kings Travels helps coordinate stays, transfers and travel arrangements around your schedule and requirements.</p>
+      <a href="javascript:void(0)" onclick="openCorpModal('General Corporate Travel')" class="btn-corp-gold">
+        Plan Corporate Travel <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     QUICK HIGHLIGHTS STRIP
+     ========================================================================== -->
+<section class="corp-strip">
+  <div class="container">
+    <div class="corp-strip-grid">
+      <div class="corp-strip-item">
+        <div class="corp-strip-icon">
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="corp-strip-text">
+          <h4>Business Travel</h4>
+          <p>For executives and professionals</p>
+        </div>
+      </div>
+      <div class="corp-strip-item">
+        <div class="corp-strip-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <div class="corp-strip-text">
+          <h4>Group Travel</h4>
+          <p>For teams and corporate groups</p>
+        </div>
+      </div>
+      <div class="corp-strip-item">
+        <div class="corp-strip-icon">
+          <i class="far fa-calendar-alt"></i>
+        </div>
+        <div class="corp-strip-text">
+          <h4>MICE Travel</h4>
+          <p>Meetings, incentives, conferences and events</p>
+        </div>
+      </div>
+      <div class="corp-strip-item">
+        <div class="corp-strip-icon">
+          <i class="fas fa-van-shuttle"></i>
+        </div>
+        <div class="corp-strip-text">
+          <h4>Transfers &amp; Stays</h4>
+          <p>Accommodation and transportation</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     SECTION 2: WHAT WE HANDLE
+     ========================================================================== -->
+<section class="section-what" id="section-services">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-eyebrow">WHAT WE HANDLE</span>
+      <h2 class="section-title">Everything Your Business Trip Needs</h2>
+      <p class="section-desc" style="max-width: 620px; margin: 0 auto;">Complete travel solutions designed for companies, teams and business travellers.</p>
+    </div>
+
+    <div class="what-grid">
+      <!-- Card 1 -->
+      <div class="what-card">
+        <div class="what-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&q=80" alt="Executive on business trip with laptop in lounge">
+          <div class="what-card-icon-badge">
+            <i class="fas fa-briefcase"></i>
+          </div>
+        </div>
+        <div class="what-card-body">
+          <h3>Business Travel</h3>
+          <p>Travel arrangements for executives and professionals, including stays, transfers and itinerary coordination.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="what-card">
+        <div class="what-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=80" alt="Corporate team walking in airport terminal">
+          <div class="what-card-icon-badge">
+            <i class="fas fa-users"></i>
+          </div>
+        </div>
+        <div class="what-card-body">
+          <h3>Corporate Group Travel</h3>
+          <p>Coordinated travel for teams attending meetings, offsites, conferences and business events.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="what-card">
+        <div class="what-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Corporate boardroom and conference table">
+          <div class="what-card-icon-badge">
+            <i class="far fa-calendar-check"></i>
+          </div>
+        </div>
+        <div class="what-card-body">
+          <h3>MICE Travel</h3>
+          <p>Travel planning for meetings, incentive trips, conferences and corporate events.</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="what-card">
+        <div class="what-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=600&q=80" alt="Executive luxury hotel room suite">
+          <div class="what-card-icon-badge">
+            <i class="fas fa-car-side"></i>
+          </div>
+        </div>
+        <div class="what-card-body">
+          <h3>Stays &amp; Transfers</h3>
+          <p>Accommodation, airport transfers, hotel transfers and local transportation coordinated around your schedule.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="what-cta-wrap">
+      <a href="javascript:void(0)" onclick="openCorpModal('Business Requirements')" class="btn-corp-gold">
+        Discuss Your Requirements <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     SECTION 3: SCHEDULE COMES FIRST
+     ========================================================================== -->
+<section class="section-schedule" id="section-schedule">
+  <div class="container">
+    <div class="schedule-grid">
+      <div class="schedule-content">
+        <span class="section-eyebrow section-eyebrow-light">TRAVEL THAT KEEPS BUSINESS MOVING</span>
+        <h2 class="section-title light">Your Schedule Comes First</h2>
+        <p>Business travel leaves little room for disconnected arrangements. Flights arrive at fixed times, meetings follow schedules and teams need to be where they need to be.</p>
+        <p>Kings Travels helps bring accommodation, transfers and travel arrangements together around your business itinerary, making the journey easier to coordinate from arrival to departure.</p>
+        
+        <div class="schedule-checklist">
+          <div class="schedule-check-item">
+            <span class="check-circle"><i class="fas fa-check"></i></span>
+            <span>Travel planned around business schedules</span>
+          </div>
+          <div class="schedule-check-item">
+            <span class="check-circle"><i class="fas fa-check"></i></span>
+            <span>Coordinated stays and transfers</span>
+          </div>
+          <div class="schedule-check-item">
+            <span class="check-circle"><i class="fas fa-check"></i></span>
+            <span>Individual and group arrangements</span>
+          </div>
+          <div class="schedule-check-item">
+            <span class="check-circle"><i class="fas fa-check"></i></span>
+            <span>Flexible travel planning</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule-image-wrap">
+        <img src="https://images.unsplash.com/photo-1506015391300-4802dc74de2e?w=1200&q=80" alt="Business travellers in airport lounge looking at airplane on runway">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     SECTION 4: MICE & CONFERENCES
+     ========================================================================== -->
+<section class="section-mice" id="section-mice">
+  <div class="container">
+    <div class="mice-top-grid">
+      <div class="mice-header-text">
+        <span class="section-eyebrow">MEETINGS • INCENTIVES • CONFERENCES • EVENTS</span>
+        <h2 class="section-title">Business Can Take You Anywhere</h2>
+        <p class="section-desc">From professional meetings to rewarding team experiences, we help coordinate travel for different types of corporate gatherings.</p>
+      </div>
+      <div class="mice-banner-img">
+        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1000&q=80" alt="Corporate conference auditorium with global presentation screen">
+      </div>
+    </div>
+
+    <div class="mice-features-grid">
+      <!-- Item 1: Meetings -->
+      <div class="mice-feature-box">
+        <div class="mice-feature-icon">
+          <i class="fas fa-handshake"></i>
+        </div>
+        <div class="mice-feature-text">
+          <h4>Meetings</h4>
+          <p>Professional travel arrangements around business meetings.</p>
+        </div>
+      </div>
+
+      <!-- Item 2: Incentives -->
+      <div class="mice-feature-box">
+        <div class="mice-feature-icon">
+          <i class="fas fa-trophy"></i>
+        </div>
+        <div class="mice-feature-text">
+          <h4>Incentives</h4>
+          <p>Rewarding destination experiences for teams.</p>
+        </div>
+      </div>
+
+      <!-- Item 3: Conferences -->
+      <div class="mice-feature-box">
+        <div class="mice-feature-icon">
+          <i class="fas fa-chalkboard-user"></i>
+        </div>
+        <div class="mice-feature-text">
+          <h4>Conferences</h4>
+          <p>Coordinated travel for delegates and corporate groups.</p>
+        </div>
+      </div>
+
+      <!-- Item 4: Events -->
+      <div class="mice-feature-box">
+        <div class="mice-feature-icon">
+          <i class="far fa-calendar-check"></i>
+        </div>
+        <div class="mice-feature-text">
+          <h4>Events</h4>
+          <p>Travel arrangements around corporate events and offsites.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     SECTION 5: HOW IT WORKS
+     ========================================================================== -->
+<section class="section-works" id="section-how-it-works">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-eyebrow">HOW IT WORKS</span>
+      <h2 class="section-title">From Requirement to Ready to Travel</h2>
+    </div>
+
+    <div class="steps-row">
+      <!-- Step 01 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-icon-badge">
+            <i class="fas fa-clipboard-list"></i>
+          </div>
+          <span class="step-number">01</span>
+          <div class="step-divider"></div>
+          <span class="step-arrow"><i class="fas fa-chevron-right"></i></span>
+        </div>
+        <h4>Tell Us What You Need</h4>
+        <p>Share your destination, dates, number of travellers and business requirements.</p>
+      </div>
+
+      <!-- Step 02 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-icon-badge">
+            <i class="fas fa-gear"></i>
+          </div>
+          <span class="step-number">02</span>
+          <div class="step-divider"></div>
+          <span class="step-arrow"><i class="fas fa-chevron-right"></i></span>
+        </div>
+        <h4>We Plan the Journey</h4>
+        <p>Suitable stays, transfers and travel arrangements are organized around your schedule.</p>
+      </div>
+
+      <!-- Step 03 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-icon-badge">
+            <i class="far fa-calendar-check"></i>
+          </div>
+          <span class="step-number">03</span>
+          <div class="step-divider"></div>
+          <span class="step-arrow"><i class="fas fa-chevron-right"></i></span>
+        </div>
+        <h4>We Coordinate the Details</h4>
+        <p>The required arrangements are brought together into one confirmed travel plan.</p>
+      </div>
+
+      <!-- Step 04 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-icon-badge">
+            <i class="fas fa-plane-departure"></i>
+          </div>
+          <span class="step-number">04</span>
+        </div>
+        <h4>Your Team Travels</h4>
+        <p>Your travellers follow the planned itinerary while focusing on the purpose of their trip.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     SECTION 6: FAQ ACCORDION
+     ========================================================================== -->
+<section class="section-faq" id="section-faq">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-eyebrow">GOOD TO KNOW</span>
+      <h2 class="section-title">Corporate Travel Questions Answered</h2>
+      <p class="section-desc">Find answers to common questions about our corporate travel services.</p>
+    </div>
+
+    <div class="faq-grid">
+      <!-- Col 1 -->
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>1. &nbsp;Can you arrange travel for individual business travellers?</span>
+          <span class="faq-icon"><i class="fas fa-plus"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, we coordinate flights, hotel accommodations, airport transfers and fast-track itinerary management for solo executives, founders and professionals to match their exact business schedule.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>4. &nbsp;Can accommodation and airport transfers be arranged together?</span>
+          <span class="faq-icon"><i class="fas fa-plus"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, we bundle executive hotel stays with pre-scheduled, private airport transfers and on-demand local cabs, ensuring completely seamless connectivity throughout your visit.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>2. &nbsp;Do you arrange corporate group travel?</span>
+          <span class="faq-icon"><i class="fas fa-plus"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, we manage group flight ticketing, luxury coaches, hotel room blocks, team-building outings and corporate offsites for teams of any size across domestic and international destinations.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>5. &nbsp;Can corporate travel arrangements be customized?</span>
+          <span class="faq-icon"><i class="fas fa-plus"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>Every arrangement is 100% customized to your company's travel guidelines, preferred airline tiers, corporate hotel budgets, and meeting timetables.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>3. &nbsp;What does MICE travel include?</span>
+          <span class="faq-icon"><i class="fas fa-plus"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>MICE includes venue selection, conference hall setups, audio-visual technical support, delegate travel logistics, incentive tours, awards dinners, and dedicated on-ground trip managers.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>6. &nbsp;How can we get a corporate travel plan or quote?</span>
+          <span class="faq-icon"><i class="fas fa-plus"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>You can fill out our corporate request form, call our corporate desk directly at +91 70877 71666, or message us on WhatsApp for a fast, customized corporate travel proposal.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     SECTION 7: BOTTOM BANNER CTA
+     ========================================================================== -->
+<section class="section-bottom-cta">
+  <div class="bottom-cta-bg"></div>
+  <div class="bottom-cta-overlay"></div>
+  <div class="container">
+    <div class="bottom-cta-content">
+      <span class="section-eyebrow">READY FOR BUSINESS</span>
+      <h2>Let's Make Your Next Business Trip Work Better</h2>
+      <p>Tell us where your team needs to go and what the journey requires. We'll help bring the essential travel arrangements together around your business.</p>
+      <a href="javascript:void(0)" onclick="openCorpModal('Next Business Trip')" class="btn-corp-gold">
+        Discuss Your Travel Requirements <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     INQUIRY POPUP MODAL
+     ========================================================================== -->
+<div class="corp-modal" id="corpModal">
+  <div class="corp-modal-box">
+    <button class="corp-modal-close" onclick="closeCorpModal()" aria-label="Close dialog">&times;</button>
+    <div class="corp-modal-header">
+      <span class="section-eyebrow" style="margin-bottom:4px;">CORPORATE DESK</span>
+      <h3>Plan Your Corporate Travel</h3>
+      <p>Share your details below and our corporate travel manager will contact you promptly with a customized itinerary.</p>
+    </div>
+
+    <form class="corp-form" id="corpForm" onsubmit="handleCorpSubmit(event)">
+      <div class="corp-form-group">
+        <label for="corp-name">Full Name *</label>
+        <input type="text" id="corp-name" placeholder="e.g. Rahul Sharma" required>
+      </div>
+
+      <div class="corp-form-group">
+        <label for="corp-company">Company / Organization *</label>
+        <input type="text" id="corp-company" placeholder="e.g. Acme Technologies" required>
+      </div>
+
+      <div class="corp-form-group">
+        <label for="corp-phone">Phone / WhatsApp *</label>
+        <input type="tel" id="corp-phone" placeholder="e.g. +91 98765 43210" required>
+      </div>
+
+      <div class="corp-form-group">
+        <label for="corp-email">Official Email *</label>
+        <input type="email" id="corp-email" placeholder="e.g. rahul@company.com" required>
+      </div>
+
+      <div class="corp-form-group">
+        <label for="corp-service">Service Required</label>
+        <select id="corp-service">
+          <option value="Business Travel">Executive Business Travel</option>
+          <option value="Corporate Group Travel">Corporate Group Travel / Offsite</option>
+          <option value="MICE & Conferences">MICE / Conference / Event</option>
+          <option value="Stays & Transfers">Corporate Stays &amp; Transfers</option>
+        </select>
+      </div>
+
+      <div class="corp-form-group">
+        <label for="corp-pax">Estimated Travelers</label>
+        <input type="number" id="corp-pax" min="1" placeholder="e.g. 5">
+      </div>
+
+      <div class="corp-form-group corp-form-full">
+        <label for="corp-dest">Destination &amp; Preferred Dates</label>
+        <input type="text" id="corp-dest" placeholder="e.g. Mumbai / Dubai, next month">
+      </div>
+
+      <div class="corp-form-group corp-form-full">
+        <label for="corp-message">Specific Requirements (Optional)</label>
+        <textarea id="corp-message" rows="3" placeholder="Hotel category, conference facilities, airport pick-up requirements..."></textarea>
+      </div>
+
+      <div class="corp-form-full corp-modal-actions">
+        <button type="submit" class="btn-corp-gold">
+          Submit Corporate Request <i class="fas fa-paper-plane"></i>
+        </button>
+        <a href="javascript:void(0)" onclick="sendWhatsAppInquiry()" class="btn-corp-wa">
+          <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- ==========================================================================
+     FOOTER (ORIGINAL FOOTER PRESERVED)
+     ========================================================================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo.jpeg" alt="Kings Travels Logo">
+        <div class="footer-brand-name"><span>Kings</span> Travels</div>
+        <p>A premier travel agency in India crafting personalized journeys that go beyond the ordinary package. Domestic escapes, international holidays, flights, stays and complete travel care.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/kingstravels_official" class="footer-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/message/APRJYOU4WDQQK1" class="footer-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="tel:+917087771666" class="footer-social" aria-label="Phone"><i class="fas fa-phone"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Top Destinations</h4>
+        <ul>
+          <li><a href="domestic-travel.html">&#127956; Kashmir</a></li>
+          <li><a href="domestic-travel.html">&#127796; Kerala</a></li>
+          <li><a href="domestic-travel.html">&#9968; Himachal Pradesh</a></li>
+          <li><a href="domestic-travel.html">&#127754; Andaman</a></li>
+          <li><a href="international-travel.html">&#127961; Dubai</a></li>
+          <li><a href="international-travel.html">&#127796; Bali</a></li>
+          <li><a href="international-travel.html">&#127962; Europe</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">&#9992; Flight Booking</a></li>
+          <li><a href="services.html">&#127976; Hotel Booking</a></li>
+          <li><a href="services.html">&#128706; Visa Assistance</a></li>
+          <li><a href="services.html">&#128663; Car Rentals</a></li>
+          <li><a href="services.html">&#127942; Custom Packages</a></li>
+          <li><a href="services.html">&#128101; Group Tours</a></li>
+          <li><a href="corporate.html">&#128188; Corporate Travel</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">&#127963; About Us</a></li>
+          <li><a href="b2b.html">&#129309; B2B Partner</a></li>
+          <li><a href="corporate.html">&#128188; Corporate Travel</a></li>
+          <li><a href="index.html#section-why">&#11088; Why Choose Us</a></li>
+          <li><a href="index.html#section-reviews">&#128172; Reviews</a></li>
+          <li><a href="city-guides.html">&#128221; Travel Guides</a></li>
+          <li><a href="contact.html">&#10067; FAQs</a></li>
+          <li><a href="contact.html">&#128222; Contact Us</a></li>
+        </ul>
+        <h4 style="margin-top:24px;">Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Cancellation Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fas fa-phone-alt"></i></div>
+          <div class="footer-contact-text"><a href="tel:+917087771666">+91 70877 71666</a></div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="footer-contact-text"><a href="https://wa.me/message/APRJYOU4WDQQK1">WhatsApp Us</a><br>Available 9AM - 9PM</div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fas fa-envelope"></i></div>
+          <div class="footer-contact-text"><a href="mailto:info@kingstravels.in">info@kingstravels.in</a></div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="footer-contact-text">Punjab, India<br>Serving Pan India &amp; International</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>&copy; 2024 Kings Travels. All Rights Reserved. Designed &amp; Developed by <a href="#" style="color:var(--gold);">Satvik Development</a>.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Cancellation Policy</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/message/APRJYOU4WDQQK1" class="wa-float" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- ==========================================================================
+     SCRIPTS
+     ========================================================================== -->
+<script>
+  // Navbar scroll background
+  const navbar = document.getElementById('main-navbar');
+  window.addEventListener('scroll', () => {
+    if (navbar) {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    }
+  });
+
+  // Mobile Hamburger Toggle
+  const hamburger = document.getElementById('hamburger-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+      document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+
+  // Mobile Submenu Accordions
+  function toggleMobileSubmenu(id) {
+    const submenu = document.getElementById(id);
+    if (!submenu) return;
+    const btn = submenu.previousElementSibling;
+    const isOpen = submenu.classList.contains('open');
+    document.querySelectorAll('.mobile-submenu').forEach(s => s.classList.remove('open'));
+    document.querySelectorAll('.mobile-nav-link').forEach(b => b.classList.remove('open'));
+    if (!isOpen) {
+      submenu.classList.add('open');
+      if (btn) btn.classList.add('open');
+    }
+  }
+
+  // FAQ Accordion
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const wasActive = item.classList.contains('active');
+    
+    // Close others for clean single-expanded view
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+    
+    if (!wasActive) {
+      item.classList.add('active');
+    }
+  }
+
+  // Modal Functionality
+  function openCorpModal(serviceType) {
+    const modal = document.getElementById('corpModal');
+    if (modal) {
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      if (serviceType) {
+        const select = document.getElementById('corp-service');
+        if (select) {
+          for (let i = 0; i < select.options.length; i++) {
+            if (select.options[i].text.toLowerCase().includes(serviceType.toLowerCase())) {
+              select.selectedIndex = i;
+              break;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  function closeCorpModal() {
+    const modal = document.getElementById('corpModal');
+    if (modal) {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  }
+
+  // Close modal when clicking on backdrop
+  const corpModal = document.getElementById('corpModal');
+  if (corpModal) {
+    corpModal.addEventListener('click', (e) => {
+      if (e.target === corpModal) {
+        closeCorpModal();
+      }
+    });
+  }
+
+  // Escape key to close modal
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeCorpModal();
+    }
+  });
+
+  // Handle Form Submission
+  function handleCorpSubmit(e) {
+    e.preventDefault();
+    const name = document.getElementById('corp-name').value;
+    const company = document.getElementById('corp-company').value;
+    const phone = document.getElementById('corp-phone').value;
+    const email = document.getElementById('corp-email').value;
+    const service = document.getElementById('corp-service').value;
+    const pax = document.getElementById('corp-pax').value || 'Not specified';
+    const dest = document.getElementById('corp-dest').value || 'To be decided';
+    const message = document.getElementById('corp-message').value || 'None';
+
+    const text = `*New Corporate Travel Inquiry - Kings Travels*%0A%0A` +
+      `*Name:* ${encodeURIComponent(name)}%0A` +
+      `*Company:* ${encodeURIComponent(company)}%0A` +
+      `*Phone:* ${encodeURIComponent(phone)}%0A` +
+      `*Email:* ${encodeURIComponent(email)}%0A` +
+      `*Service:* ${encodeURIComponent(service)}%0A` +
+      `*Travelers:* ${encodeURIComponent(pax)}%0A` +
+      `*Destination/Dates:* ${encodeURIComponent(dest)}%0A` +
+      `*Notes:* ${encodeURIComponent(message)}`;
+
+    alert(`Thank you, ${name}! Your corporate travel inquiry has been received. Our team will contact you shortly.`);
+    closeCorpModal();
+    document.getElementById('corpForm').reset();
+  }
+
+  // Direct WhatsApp Inquiry
+  function sendWhatsAppInquiry() {
+    const name = document.getElementById('corp-name').value || 'Corporate Client';
+    const company = document.getElementById('corp-company').value || '';
+    const service = document.getElementById('corp-service').value || 'Corporate Travel';
+    
+    let text = `Hello Kings Travels, I would like to inquire about ${service}`;
+    if (company) text += ` for ${company}`;
+    if (name && name !== 'Corporate Client') text += `. My name is ${name}`;
+    
+    window.open(`https://wa.me/message/APRJYOU4WDQQK1?text=${encodeURIComponent(text)}`, '_blank');
+  }
+</script>
+</body>
+</html>
