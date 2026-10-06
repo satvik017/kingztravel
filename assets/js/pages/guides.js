@@ -21,3 +21,5 @@ function switchDestTab(tab) {
     if (panelIndia) panelIndia.style.display = 'none';
   }
 }
+
+window.switchDestTab = switchDestTab;

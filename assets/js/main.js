@@ -15,11 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 2. Mobile Hamburger & Navigation Menu
-  const hamburger = document.getElementById('hamburger-btn') || document.querySelector('.hamburger');
+  const hamburger = document.getElementById('hamburger-btn') || document.querySelector('.nav-hamburger') || document.querySelector('.hamburger');
   const mobileMenu = document.getElementById('mobile-menu') || document.querySelector('.mobile-menu');
 
   if (hamburger && mobileMenu) {
-    hamburger.addEventListener('click', () => {
+    hamburger.addEventListener('click', (e) => {
+      e.stopPropagation();
       hamburger.classList.toggle('open');
       mobileMenu.classList.toggle('open');
       document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
@@ -133,3 +134,7 @@ function toggleFaq(element) {
     }
   }
 }
+
+// Global window attachments for inline event handlers
+window.toggleMobileSubmenu = toggleMobileSubmenu;
+window.toggleFaq = toggleFaq;

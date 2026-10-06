@@ -21,6 +21,8 @@ function switchTab(tab) {
   }
 }
 
+window.switchTab = switchTab;
+
 // Initialize Home Elements on DOM Ready
 document.addEventListener('DOMContentLoaded', () => {
   // Set min date for departure datepicker

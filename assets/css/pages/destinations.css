@@ -681,10 +681,38 @@
       color: var(--gold-light);
       text-align: right;
     }
-    @media (max-width: 1080px) {
-      .destinations-8-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (max-width: 768px) {
-      .destinations-8-grid { grid-template-columns: 1fr; }
-    }
+/* ==========================================================================
+   DESTINATIONS RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1080px) {
+  .hero-top-content { flex-direction: column; }
+  .hero-script-tag { text-align: left; padding-top: 0; }
+  .hero-feature-bar { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .feature-item { border-right: none; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 12px; }
+  .destinations-grid, .destinations-8-grid { grid-template-columns: repeat(2, 1fr); }
+  .packages-4-grid { grid-template-columns: repeat(2, 1fr); }
+  .styles-grid { grid-template-columns: repeat(2, 1fr); }
+  .commitment-grid { grid-template-columns: repeat(3, 1fr); }
+  .showcase-inner { grid-template-columns: 1fr; }
+  .story-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  .hero-feature-bar { grid-template-columns: 1fr; }
+  .destinations-grid, .destinations-8-grid { grid-template-columns: 1fr; }
+  .story-grid { grid-template-columns: 1fr; }
+  .packages-4-grid { grid-template-columns: 1fr; }
+  .styles-grid { grid-template-columns: 1fr; }
+  .commitment-grid { grid-template-columns: 1fr 1fr; }
+  .showcase-text-col { padding: 40px 24px; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .cta-ocean .container, .cta-mountains .container { flex-direction: column; align-items: flex-start; text-align: left; }
+}
+
+@media (max-width: 480px) {
+  .commitment-grid { grid-template-columns: 1fr; }
+  .dest-card-clean { height: 260px; }
+  .tour-card { margin-bottom: 16px; }
+}
 

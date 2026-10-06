@@ -79,3 +79,8 @@ function sendWhatsAppInquiry() {
   
   window.open(`https://wa.me/message/APRJYOU4WDQQK1?text=${encodeURIComponent(text)}`, '_blank');
 }
+
+window.openCorpModal = openCorpModal;
+window.closeCorpModal = closeCorpModal;
+window.handleCorpSubmit = handleCorpSubmit;
+window.sendWhatsAppInquiry = sendWhatsAppInquiry;

@@ -2,6 +2,12 @@
    KINGS TRAVELS - SERVICES PAGE SPECIFIC STYLES
    ========================================================================== */
 
+:root {
+  --body-text: #594535;
+  --dark-text: #20130a;
+  --border-warm: #ece3d5;
+}
+
 /* 1. HERO SECTION */
     .services-hero {
       position: relative;
@@ -646,6 +652,12 @@
       .organized-moments { grid-template-columns: 1fr; }
     }
     @media (max-width: 480px) {
+      .services-hero { padding: 110px 0 40px; min-height: auto; }
+      .cta-content-box { margin-left: 0; padding: 0 10px; }
+      .polaroid-collage-container { height: 300px; max-width: 320px; margin: 0 auto; }
+      .polaroid-pos-1 { width: 140px; height: 130px; }
+      .polaroid-pos-2 { width: 160px; height: 140px; left: 50px; top: 80px; }
+      .polaroid-pos-3 { width: 150px; height: 135px; top: 140px; }
       .footer-grid { grid-template-columns: 1fr; }
       .hero-text-col h1 { font-size: 30px; }
       .arrange-card { min-height: 280px; padding: 24px 20px; }
