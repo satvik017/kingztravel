@@ -113,6 +113,54 @@
       flex-wrap: wrap;
     }
 
+    .guide-hero-features {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 36px;
+    }
+
+    .guide-hero-feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 14px 16px;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+    }
+
+    .guide-hero-feature-item:hover {
+      background: rgba(255, 255, 255, 0.14);
+      border-color: rgba(216, 155, 66, 0.4);
+      transform: translateY(-2px);
+    }
+
+    .guide-hero-feature-item i {
+      color: var(--gold-light);
+      font-size: 18px;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .guide-hero-feature-item strong {
+      display: block;
+      color: #ffffff;
+      font-size: 13.5px;
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+
+    .guide-hero-feature-item p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 11.5px;
+      line-height: 1.4;
+    }
+
     .guide-hero-pill {
       display: inline-flex;
       align-items: center;
@@ -185,9 +233,8 @@
     /* DESTINATION GRID LAYOUT */
     .dest-guide-grid {
       display: grid;
-      grid-template-columns: 1.15fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
       align-items: stretch;
     }
 
@@ -535,6 +582,13 @@
       line-height: 1.25;
     }
 
+    .tip-card-body p {
+      font-size: 12.5px;
+      color: var(--gray-600);
+      line-height: 1.55;
+      margin: 0;
+    }
+
     .tip-list {
       display: flex;
       flex-direction: column;
@@ -641,6 +695,13 @@
       color: rgba(255, 255, 255, 0.6);
       font-weight: 500;
       margin-top: 2px;
+    }
+
+    .season-card p {
+      font-size: 12.5px;
+      color: rgba(255, 255, 255, 0.82);
+      line-height: 1.55;
+      margin: 0;
     }
 
     .season-dest-list {
@@ -837,6 +898,7 @@
     @media (max-width: 1080px) {
       .nav-menu { display: none; }
       .nav-hamburger { display: flex; }
+      .guide-hero-features { grid-template-columns: repeat(2, 1fr); }
       .dest-guide-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
       .dest-featured-card { grid-row: span 1; grid-column: 1 / -1; height: auto; }
       .dest-featured-img-wrap { height: 320px; flex: none; }
@@ -852,6 +914,7 @@
       .container { padding: 0 20px; }
       .guide-hero { padding: 130px 0 70px; min-height: auto; }
       .guide-hero-title { font-size: 34px; }
+      .guide-hero-features { grid-template-columns: 1fr; }
       .dest-guide-grid { grid-template-columns: 1fr; }
       .dest-featured-info { grid-template-columns: 1fr; }
       .exp-grid { grid-template-columns: 1fr; }
