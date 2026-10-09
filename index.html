@@ -1,398 +1,764 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- 
-    More Templates Visit ==> ProBootstrap.com
-    Free Template by ProBootstrap.com under the License Creative Commons 3.0 ==> (probootstrap.com/license)
-
-    IMPORTANT: You can do whatever you want with this template but you need to keep the footer link back to ProBootstrap.com
-    -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <title>Kingstravel</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kings Travels - Travel Agency in India That Plans Beyond the Package</title>
+  <meta name="description" content="From domestic escapes across India to international holidays around the world, Kings Travels brings together the right stays, flights, experiences and travel support to create a journey that truly feels yours.">
+  <meta name="keywords" content="Kings Travels, holiday packages, domestic tours, international tours, honeymoon packages, family trips, group tours, visa assistance, flight booking">
   <link rel="shortcut icon" href="assets/images/logo.jpeg" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
-  <link rel="stylesheet" href="assets/css/animate.css">
-  <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
-
-  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-
-  <link rel="stylesheet" href="assets/fonts/flaticon/font/flaticon.css">
-
-  <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/bootstrap-datepicker.css">
-  <link rel="stylesheet" href="assets/css/select2.css">
-
-
-  <link rel="stylesheet" href="assets/css/helpers.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16443245656">
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'AW-16443245656');
-  </script>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16443245656"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-16443245656');</script>
+    <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/pages/home.css">
 </head>
-
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark probootstrap_navbar" id="probootstrap-navbar">
-    <div class="container" style="max-width: 90%;">
-      <a class="navbar-brand" href="/" style="
-          font-size: 24px;
-      color: #7b4c15;
-      font-family: emoji;
-      font-weight: 900;"><img src="assets/images/logo.jpeg" class="logo" alt="logo">Kings Travel</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#probootstrap-menu"
-        aria-controls="probootstrap-menu" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="ion-navicon"></i></span>
-      </button>
-      <div class="collapse navbar-collapse" id="probootstrap-menu">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a class="nav-link" href="index.html" style="
-            color: #7b4c15;
-            font-family: emoji;
-            font-weight: 900;">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="city-guides.html" style="
-            color: #7b4c15;
-            font-family: emoji;
-            font-weight: 900;">City Guides</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html" style="
-            color: #7b4c15;
-            font-family: emoji;
-            font-weight: 900;">Services</a></li>
-          <!-- <li class="nav-item"><a class="nav-link" href="travel.html">Travel With Us</a></li> -->
-          <li class="nav-item"><a class="nav-link" href="contact.html" style="
-            color: #7b4c15;
-            font-family: emoji;
-            font-weight: 900;">Contact</a></li>
+<!-- NAVBAR -->
+<nav class="navbar" id="main-navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-brand">
+      <img src="assets/images/logo.jpeg" alt="Kings Travels Logo">
+      <div class="navbar-brand-text"><span>Kings</span> Travels</div>
+    </a>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+      <li class="nav-item">
+        <a href="#section-destinations" class="nav-link">Destinations &#9662;</a>
+        <div class="nav-dropdown">
+          <a href="domestic-travel.html">&#127956; Domestic</a>
+          <a href="international-travel.html">&#127758; International</a>
+        </div>
+      </li>
+      <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+      <li class="nav-item">
+        <a href="b2b.html" class="nav-link">B2B Partner</a>
+      </li>
+      <li class="nav-item">
+        <a href="corporate.html" class="nav-link">Corporate &#9662;</a>
+        <div class="nav-dropdown">
+          <a href="corporate.html">&#128188; Corporate Travel</a>
+          <a href="corporate.html#section-mice">&#127908; MICE</a>
+          <a href="corporate.html#section-schedule">&#128101; Group Travel</a>
+        </div>
+      </li>
+      <li class="nav-item"><a href="travel-guides.html" class="nav-link">Travel Guides</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+      <li class="nav-item"><a href="#section-reviews" class="nav-link">Reviews</a></li>
+      <li class="nav-item"><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="nav-link nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger-btn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <nav>
+    <ul>
+      <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link" style="display:flex;justify-content:space-between;align-items:center;">Home</a></li>
+      <li class="mobile-nav-item">
+        <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-dest')">Destinations <i class="fa fa-chevron-down"></i></button>
+        <ul class="mobile-submenu" id="sub-dest">
+          <li><a href="domestic-travel.html">&#127956; Domestic</a></li>
+          <li><a href="international-travel.html">&#127758; International</a></li>
         </ul>
-      </div>
+      </li>
+      <li class="mobile-nav-item"><a href="services.html" class="mobile-nav-link" style="display:flex;justify-content:space-between;align-items:center;">Services</a></li>
+      <li class="mobile-nav-item">
+        <a href="b2b.html" class="mobile-nav-link" style="display:flex;justify-content:space-between;align-items:center;">B2B Partner</a>
+      </li>
+      <li class="mobile-nav-item">
+        <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-corp')">Corporate Travel <i class="fa fa-chevron-down"></i></button>
+        <ul class="mobile-submenu" id="sub-corp">
+          <li><a href="corporate.html">&#128188; Corporate Travel</a></li>
+          <li><a href="corporate.html#section-mice">&#127908; MICE</a></li>
+          <li><a href="corporate.html#section-schedule">&#128101; Group Travel</a></li>
+        </ul>
+      </li>
+      <li class="mobile-nav-item">
+        <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-about')">About Us <i class="fa fa-chevron-down"></i></button>
+        <ul class="mobile-submenu" id="sub-about">
+          <li><a href="about.html">&#127963; About Kings Travels</a></li>
+          <li><a href="about.html#leadership">&#128105;&#8205;&#128188; Managing Director</a></li>
+          <li><a href="about.html#philosophy">&#11088; Why Choose Us</a></li>
+        </ul>
+      </li>
+      <li class="mobile-nav-item">
+        <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-guides')">Travel Guides <i class="fa fa-chevron-down"></i></button>
+        <ul class="mobile-submenu" id="sub-guides">
+          <li><a href="travel-guides.html">&#128221; Travel Blog</a></li>
+          <li><a href="travel-guides.html">&#128506; Destination Guides</a></li>
+          <li><a href="travel-guides.html">&#128161; Travel Tips</a></li>
+        </ul>
+      </li>
+      <li class="mobile-nav-item"><a href="#section-reviews" class="mobile-nav-link" style="display:flex;justify-content:space-between;align-items:center;">Reviews</a></li>
+      <li class="mobile-nav-item"><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="mobile-nav-link" style="display:flex;justify-content:space-between;align-items:center;">FAQs</a></li>
+      <li class="mobile-nav-item"><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="mobile-nav-link" style="display:flex;justify-content:space-between;align-items:center;">Contact Us</a></li>
+    </ul>
+    <div class="mobile-menu-footer">
+      <a href="https://wa.me/message/APRJYOU4WDQQK1" class="btn btn-whatsapp" style="justify-content:center;"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+      <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="btn btn-primary" style="justify-content:center;"><i class="fas fa-paper-plane"></i> Plan My Trip</a>
     </div>
   </nav>
-  <!-- END nav -->
+</div>
 
-
-  <section class="probootstrap-cover overflow-hidden relative"
-    style="background-image: url('assets/images/bg_2.png'); height: 700px;" data-stellar-background-ratio="0.5"
-    id="section-home">
-    <!-- <section class="probootstrap-cover overflow-hidden relative"  style="background-image: url('https://cdn.sortiraparis.com/images/80/1462/863664-le-salon-mondial-du-tourisme-2023-revient-a-paris-invitations-gratuites.jpg');" data-stellar-background-ratio="0.5"  id="section-home"> -->
-    <!-- <div class="overlay"></div> -->
-  </section>
-  <!-- END section -->
-
-  <section>
-    <div class="container" style="margin-top: 223px;">
-      <div class="align-items-center text-center">
-        <h2 class="heading mb-2 display-4 font-light probootstrap-animate" style="
-            color: #7b4c15;
-            font-family: emoji;">Explore India, Dubai, Thailand & More</h2>
-        <p class="lead mb-5 probootstrap-animate">
-
-
-        </p>
-        <a href="city-guides.html" role="button"
-          class="btn btn-primary p-3 mr-3 pl-5 pr-5 text-uppercase d-lg-inline d-md-inline d-sm-block d-block mb-3"
-          style="  background-color: #e2af5e;
-              color: #7b4c15;
-              font-family: emoji;
-              font-weight: 900;">Our Places</a>
-        <a href="contact.html" role="button"
-          class="btn btn-primary p-3 mr-3 pl-5 pr-5 text-uppercase d-lg-inline d-md-inline d-sm-block d-block mb-3"
-          style=" background-color: #e2af5e;
-              color: #7b4c15;
-              font-family: emoji;
-              font-weight: 900;">Go To Form</a>
-        </p>
-        <div class="col-md probootstrap-animate">
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="probootstrap_section" id="section-feature-testimonial">
+<!-- HERO -->
+<section class="hero" id="section-home">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
     <div class="container">
-      <div class="row justify-content-center mb-5">
-        <div class="col-md-8 mb-5 probootstrap-animate">
-          <h2 class="display-4 border-bottom probootstrap-section-heading" style="color: #7b4c15;
-          font-family: emoji;
-          font-weight: 900;">Meet Our Managing Director</h2>
-          <blockquote class="">
-            <p class="lead mb-4" style=" color: #7b4c15;
-            font-family: emoji;
-            font-weight: 900;"><em>Welcome to Kings Travels! <br>
-
-Inspired by a passion for exploring India's rich and diverse landscapes, Miss Navdeep Kaur established Kings Travels with a vision to share these incredible experiences with the world. <br>
-
-As the Managing Director and visionary behind the company, Navdeep Kaur set out to create a travel agency that goes beyond offering exceptional service—she envisioned a company dedicated to crafting personalized and unforgettable travel experiences. At Kings Travels, we believe that travel is not just about visiting new destinations but about immersing yourself in experiences that create lasting memories.<br>
-
-From your first interaction with us, our dedicated team works meticulously to design a customized itinerary tailored to your interests and preferences, ensuring a seamless and enriching journey.</em></p>
-            <p class="probootstrap-author">
-              <a href="" target="_blank">
-                <img src="assets/images/logo.jpeg" alt="Free Template by ProBootstrap.com" class="rounded-circle">
-              </a>
-            </p>
-          </blockquote>
-
-        </div>
-        <div class="col-md-4 mb-4 probootstrap-animate">
-          <img src="./assets/images/new_updt/nav_prof.JPG" class="rounded float-right profile-img" alt="Profile">
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!-- END section -->
-
-  <!-- <section class="probootstrap_section">
-      <div class="container">
-        <div class="row text-center mb-5 probootstrap-animate">
-          <div class="col-md-12">
-            <h2 class="display-4 border-bottom probootstrap-section-heading">Travel With Us</h2>
+      <div class="hero-badge"><i class="fas fa-crown"></i> India's Trusted Travel Partner</div>
+      <h1>Travel Agency in India That Plans <span>Beyond the Package</span></h1>
+      <p class="hero-sub">From domestic escapes across India to international holidays around the world, Kings Travels brings together the right stays, flights, experiences and travel support to create a journey that truly feels yours.</p>
+      <div class="hero-search">
+        <div class="hero-search-grid">
+          <div class="hero-form-group">
+            <label for="hero-destination"><i class="fas fa-map-marker-alt"></i> &nbsp;Destination</label>
+            <input type="text" id="hero-destination" placeholder="Where do you want to go?">
           </div>
-        </div>
-        
-        <div class="row probootstrap-animate">
-          <div class="col-md-12">
-            <div class="owl-carousel js-owl-carousel-2">
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="assets/images/sq_img_2.jpg" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="assets/images/sq_img_1.jpg" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="assets/images/sq_img_3.jpg" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="assets/images/sq_img_4.jpg" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="assets/images/sq_img_5.jpg" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="assets/images/sq_img_2.jpg" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="assets/images/sq_img_1.jpg" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="assets/images/sq_img_3.jpg" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="assets/images/sq_img_4.jpg" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="assets/images/sq_img_5.jpg" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-              
-            </div>
+          <div class="hero-form-group">
+            <label for="hero-date"><i class="fas fa-calendar-alt"></i> &nbsp;Travel Date</label>
+            <input type="date" id="hero-date">
+          </div>
+          <div class="hero-form-group">
+            <label for="hero-travellers"><i class="fas fa-users"></i> &nbsp;Travellers</label>
+            <select id="hero-travellers">
+              <option value="">Select travellers</option>
+              <option>1 Person</option>
+              <option>2 People</option>
+              <option>3-5 People</option>
+              <option>6-10 People</option>
+              <option>10+ People (Group)</option>
+            </select>
+          </div>
+          <div>
+            <button class="hero-search-btn" onclick="window.open('https://wa.me/message/APRJYOU4WDQQK1', '_blank')"><i class="fas fa-search"></i> Plan My Trip</button>
           </div>
         </div>
       </div>
-    </section> -->
-  <!-- END section -->
+      <div class="hero-actions">
+        <a href="https://wa.me/message/APRJYOU4WDQQK1" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+        <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="btn" style="color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,0.4);border-radius:100px;"><i class="fas fa-phone-alt"></i> Talk to an Expert</a>
+      </div>
 
-  <footer class="probootstrap_section probootstrap-border-top">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-3">
-          <h3 class="probootstrap_font-18 mb-3" style="color: #868e96;">Quick Links</h3>
-          <ul class="list-unstyled">
-            <li><a href="index.html" target="_blank">Home</a></li>
-            <li><a href="services.html" target="_blank">Services</a></li>
-            <li><a href="city-guides.html" target="_blank">City Guides</a></li>
-            <li><a href="contact.html" target="_blank">Contact</a></li>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section section-cream" id="section-services">
+  <div class="container">
+    <div class="section-header-center">
+      <div class="mockup-subheading">Travel Services</div>
+      <h2 class="mockup-heading">Travel Services for <span>Holidays in India &amp; Abroad</span></h2>
+      <p class="mockup-sub">From customized holiday packages and flights to hotels, visas and group tours, we make travel planning simple, seamless and stress-free for every journey.</p>
+      <div class="airplane-divider center">
+        <span></span>
+        <i class="fas fa-plane"></i>
+        <span></span>
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fas fa-umbrella-beach"></i></div>
+        <h3>Holiday Packages</h3>
+        <p>Customized domestic and international holiday packages designed around your budget, interests and travel style.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fas fa-plane-departure"></i></div>
+        <h3>Flight Booking</h3>
+        <p>Hassle-free domestic and international flight bookings with convenient options for your journey.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fas fa-hotel"></i></div>
+        <h3>Hotel Booking</h3>
+        <p>Comfortable hotels and resorts in India and abroad, selected to match your budget and preferences.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fas fa-passport"></i></div>
+        <h3>Visa Assistance</h3>
+        <p>Expert guidance for tourist visa requirements, documentation and applications for international travel.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+        <h3>Corporate &amp; MICE</h3>
+        <p>Customized corporate travel solutions for business trips, meetings, incentives, conferences and events.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fas fa-users"></i></div>
+        <h3>Group Tours</h3>
+        <p>Well-planned group tours with customized itineraries, comfortable stays and memorable travel experiences.</p>
+      </div>
+    </div>
+    <div class="services-cta">
+      <a href="services.html" class="btn-gold-action"><i class="fas fa-th-large"></i> Explore All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="section section-white" id="section-packages">
+  <div class="container">
+    <div class="packages-header-row">
+      <div>
+        <div class="mockup-subheading">Featured Packages</div>
+        <h2 class="mockup-heading">Featured <span>Holiday Packages</span></h2>
+        <p class="mockup-sub">Thoughtfully crafted holiday packages combining memorable experiences, comfortable stays and seamless travel.</p>
+        <div class="airplane-divider">
+          <span></span>
+          <i class="fas fa-plane"></i>
+          <span></span>
+        </div>
+      </div>
+      <div>
+        <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="btn-gold-action"><i class="fas fa-suitcase"></i> View All Holiday Packages</a>
+      </div>
+    </div>
+
+    <div class="packages-grid">
+      <div class="package-card fade-up">
+        <div class="package-img">
+          <img src="https://images.unsplash.com/photo-1566552881560-0be862a7c445?w=600&q=80" alt="Kashmir Package" loading="lazy">
+          <div class="package-badge">Honeymoon</div>
+          <div class="package-duration"><i class="fas fa-calendar-alt"></i> 6 Days / 5 Nights</div>
+        </div>
+        <div class="package-body">
+          <div class="package-dest">Kashmir, India</div>
+          <div class="package-name">Kashmir Valley Honeymoon Escape</div>
+          <ul class="package-highlights">
+            <li><i class="fas fa-check-circle"></i> Srinagar, Gulmarg &amp; Pahalgam</li>
+            <li><i class="fas fa-check-circle"></i> Romantic Shikara Ride</li>
+            <li><i class="fas fa-check-circle"></i> Scenic Mountain Views</li>
+            <li><i class="fas fa-check-circle"></i> Comfortable Stay</li>
           </ul>
-          <br><br><br>
-          <h3 class="probootstrap_font-18 mb-3" style="color: #868e96;">Like & Subscribe</h3>
-          <div class="row">
-            <div class="col-md"><a href="https://www.facebook.com/profile.php?id=61552360375058&mibextid=LQQJ4d"
-                style="font-size: 30px;"><span class="icon ion-social-facebook"></span></a>
+          <div class="package-footer">
+            <div>
+              <div class="package-price-label">Starting from</div>
+              <div class="package-price">&#8377;XX,XXX <span>/ person</span></div>
             </div>
-            <div class="col-md"><a
-                href="https://instagram.com/kings_travel2023?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"
-                style="font-size: 30px;"><span class="icon ion-social-instagram-outline"></span></a></div>
-            <div class="col-md"><a href="https://www.linkedin.com/in/kings-travel-31a584291"
-                style="font-size: 30px;"><span class="icon ion-social-linkedin"></span></a>
-            </div>
-            <div class="col-md"><a href="https://wa.me/message/JXZMLEVZXMY2D1" style="font-size: 30px;"><span
-                  class="icon ion-social-whatsapp"></span></a>
-            </div>
+            <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="btn-pkg-solid">Enquire Now</a>
           </div>
         </div>
-        <div class="col-md-3">
-
+      </div>
+      <div class="package-card fade-up">
+        <div class="package-img">
+          <img src="https://images.unsplash.com/photo-1601919051950-bb9f3ffb3fee?w=600&q=80" alt="Kerala Package" loading="lazy">
+          <div class="package-badge">Family Holiday</div>
+          <div class="package-duration"><i class="fas fa-calendar-alt"></i> 6 Days / 5 Nights</div>
         </div>
-        <div class="col-md-6" id="contact-form">
-          <!-- <form action="#" class="probootstrap-form">
-              <div class="form-group">
-                <div class="row mb-5">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="fname" class="sr-only sr-only-focusable">First Name</label>
-                      <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name">
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="lname" class="sr-only sr-only-focusable">Last Name</label>
-                      <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name">
-                    </div>
-                  </div>
-                </div>
-                <div class="row mb-5">
-                  <div class="col-md">
-                    <div class="form-group">
-                      <div class="probootstrap-date-wrap">
-                        <input type="email" id="" class="form-control" placeholder="Email" required>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row mb-5">
-                  <div class="col-md">
-                    <div class="form-group">
-                      <div class="probootstrap-date-wrap">
-                        <input type="number" id="" class="form-control" placeholder="Phone">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row mb-5">
-                  <div class="col-md">
-                    <div class="form-group">
-                      <div class="probootstrap-date-wrap">
-                        <textarea name="Message" id="" cols="30" class="form-control" rows="5">Message</textarea>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md">
-                    
-                  </div>
-                  <div class="col-md">
-                    <input type="submit" value="Submit" class="btn btn-primary btn-block">
-                  </div>
-                </div>
-              </div>
-            </form> -->
-
-          <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSd2DHuQWDo_1fyn4b8vFhj5k6OBIookoHML12ioNQo8sD8Y2w/viewform?embedded=true"
-            frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <div class="package-body">
+          <div class="package-dest">Kerala, India</div>
+          <div class="package-name">Kerala Backwaters Family Holiday</div>
+          <ul class="package-highlights">
+            <li><i class="fas fa-check-circle"></i> Munnar, Thekkady &amp; Alleppey</li>
+            <li><i class="fas fa-check-circle"></i> Traditional Houseboat Stay</li>
+            <li><i class="fas fa-check-circle"></i> Tea Gardens &amp; Waterfalls</li>
+            <li><i class="fas fa-check-circle"></i> Family-Friendly Experiences</li>
+          </ul>
+          <div class="package-footer">
+            <div>
+              <div class="package-price-label">Starting from</div>
+              <div class="package-price">&#8377;XX,XXX <span>/ person</span></div>
+            </div>
+            <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="btn-pkg-solid">Enquire Now</a>
+          </div>
         </div>
       </div>
-      <div class="row pt-5">
-        <div class="col-md-12 text-center">
-          <p class="probootstrap_font-14">&copy; 2023. All Rights Reserved. <br> Designed &amp; Developed by <a href=""
-              target="_blank">Satvik Development</a></p>
+      <div class="package-card fade-up">
+        <div class="package-img">
+          <img src="https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?w=600&q=80" alt="Leh Ladakh Package" loading="lazy">
+          <div class="package-badge">Adventure</div>
+          <div class="package-duration"><i class="fas fa-calendar-alt"></i> 7 Days / 6 Nights</div>
+        </div>
+        <div class="package-body">
+          <div class="package-dest">Leh Ladakh, India</div>
+          <div class="package-name">Leh Ladakh Adventure Escape</div>
+          <ul class="package-highlights">
+            <li><i class="fas fa-check-circle"></i> Leh, Nubra Valley &amp; Pangong Lake</li>
+            <li><i class="fas fa-check-circle"></i> Khardung La Pass</li>
+            <li><i class="fas fa-check-circle"></i> Scenic Road Journey</li>
+            <li><i class="fas fa-check-circle"></i> Monasteries &amp; Local Culture</li>
+          </ul>
+          <div class="package-footer">
+            <div>
+              <div class="package-price-label">Starting from</div>
+              <div class="package-price">&#8377;XX,XXX <span>/ person</span></div>
+            </div>
+            <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="btn-pkg-solid">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="package-card fade-up">
+        <div class="package-img">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80" alt="Dubai Package" loading="lazy">
+          <div class="package-badge">Luxury</div>
+          <div class="package-duration"><i class="fas fa-calendar-alt"></i> 5 Days / 4 Nights</div>
+        </div>
+        <div class="package-body">
+          <div class="package-dest">Dubai, UAE</div>
+          <div class="package-name">Dubai Luxury Family Experience</div>
+          <ul class="package-highlights">
+            <li><i class="fas fa-check-circle"></i> Burj Khalifa &amp; Dubai City Tour</li>
+            <li><i class="fas fa-check-circle"></i> Desert Safari with Dinner</li>
+            <li><i class="fas fa-check-circle"></i> Marina &amp; Shopping Experience</li>
+            <li><i class="fas fa-check-circle"></i> Family-Friendly Activities</li>
+          </ul>
+          <div class="package-footer">
+            <div>
+              <div class="package-price-label">Starting from</div>
+              <div class="package-price">&#8377;XX,XXX <span>/ person</span></div>
+            </div>
+            <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="btn-pkg-solid">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="package-card fade-up">
+        <div class="package-img">
+          <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=600&q=80" alt="Thailand Package" loading="lazy">
+          <div class="package-badge">Beach &amp; Culture</div>
+          <div class="package-duration"><i class="fas fa-calendar-alt"></i> 6 Days / 5 Nights</div>
+        </div>
+        <div class="package-body">
+          <div class="package-dest">Thailand</div>
+          <div class="package-name">Thailand Beach &amp; Culture Escape</div>
+          <ul class="package-highlights">
+            <li><i class="fas fa-check-circle"></i> Bangkok &amp; Phuket</li>
+            <li><i class="fas fa-check-circle"></i> Island &amp; Beach Experience</li>
+            <li><i class="fas fa-check-circle"></i> Temples &amp; Local Culture</li>
+            <li><i class="fas fa-check-circle"></i> Shopping &amp; Nightlife</li>
+          </ul>
+          <div class="package-footer">
+            <div>
+              <div class="package-price-label">Starting from</div>
+              <div class="package-price">&#8377;XX,XXX <span>/ person</span></div>
+            </div>
+            <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="btn-pkg-solid">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="package-card fade-up">
+        <div class="package-img">
+          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80" alt="Bali Package" loading="lazy">
+          <div class="package-badge">Romantic Getaway</div>
+          <div class="package-duration"><i class="fas fa-calendar-alt"></i> 6 Days / 5 Nights</div>
+        </div>
+        <div class="package-body">
+          <div class="package-dest">Bali, Indonesia</div>
+          <div class="package-name">Bali Romantic Island Getaway</div>
+          <ul class="package-highlights">
+            <li><i class="fas fa-check-circle"></i> Ubud &amp; Seminyak</li>
+            <li><i class="fas fa-check-circle"></i> Beaches &amp; Sunset Views</li>
+            <li><i class="fas fa-check-circle"></i> Temples &amp; Cultural Experiences</li>
+            <li><i class="fas fa-check-circle"></i> Romantic Couple Experiences</li>
+          </ul>
+          <div class="package-footer">
+            <div>
+              <div class="package-price-label">Starting from</div>
+              <div class="package-price">&#8377;XX,XXX <span>/ person</span></div>
+            </div>
+            <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="btn-pkg-solid">Enquire Now</a>
+          </div>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
 
+<!-- EXPERIENCE -->
+<section class="section section-cream" id="section-experience">
+  <div class="container">
+    <div class="section-header-center">
+      <div class="mockup-subheading">Find Your Style</div>
+      <h2 class="mockup-heading">Travel by <span>Experience</span></h2>
+      <p class="mockup-sub">Every traveller is unique. Choose your travel style and let us craft the perfect journey for you.</p>
+      <div class="airplane-divider center">
+        <span></span>
+        <i class="fas fa-plane"></i>
+        <span></span>
+      </div>
+    </div>
+    <div class="experience-grid">
+      <div class="exp-card fade-up">
+        <div class="exp-img-wrap"><img src="https://images.unsplash.com/photo-1519671282429-b1d86c70d188?w=600&q=80" alt="Honeymoon" loading="lazy"></div>
+        <div class="exp-body">
+          <div class="exp-name"><span class="exp-icon">&#128145;</span> Honeymoon Holidays</div>
+          <div class="exp-tag">Romantic escapes for couples</div>
+          <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="exp-arrow">Explore <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="exp-card fade-up">
+        <div class="exp-img-wrap"><img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=600&q=80" alt="Family" loading="lazy"></div>
+        <div class="exp-body">
+          <div class="exp-name"><span class="exp-icon">&#128106;</span> Family Holidays</div>
+          <div class="exp-tag">Fun-filled trips for the whole family</div>
+          <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="exp-arrow">Explore <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="exp-card fade-up">
+        <div class="exp-img-wrap"><img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&q=80" alt="Adventure" loading="lazy"></div>
+        <div class="exp-body">
+          <div class="exp-name"><span class="exp-icon">&#129495;</span> Adventure Trips</div>
+          <div class="exp-tag">Trekking, camping &amp; thrills</div>
+          <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="exp-arrow">Explore <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="exp-card fade-up">
+        <div class="exp-img-wrap"><img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80" alt="Beach" loading="lazy"></div>
+        <div class="exp-body">
+          <div class="exp-name"><span class="exp-icon">&#127958;</span> Beach Holidays</div>
+          <div class="exp-tag">Sun, sand &amp; serenity</div>
+          <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="exp-arrow">Explore <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="exp-card fade-up">
+        <div class="exp-img-wrap"><img src="https://images.unsplash.com/photo-1469521669194-babb45599def?w=600&q=80" alt="Group Tours" loading="lazy"></div>
+        <div class="exp-body">
+          <div class="exp-name"><span class="exp-icon">&#128101;</span> Group Tours</div>
+          <div class="exp-tag">Best rates for groups of 10+</div>
+          <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="exp-arrow">Explore <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="exp-card fade-up">
+        <div class="exp-img-wrap"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Corporate" loading="lazy"></div>
+        <div class="exp-body">
+          <div class="exp-name"><span class="exp-icon">&#128188;</span> Corporate Travel</div>
+          <div class="exp-tag">Business travel &amp; MICE solutions</div>
+          <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="exp-arrow">Explore <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- B2B -->
+<section class="section section-white" id="section-b2b">
+  <div class="container">
+    <div class="section-header-center">
+      <div class="section-label">Our Solutions</div>
+      <h2 class="section-heading">Travel Solutions for <span>Travellers &amp; Travel Partners</span></h2>
+      <p class="section-sub">From personalized holidays to reliable B2B travel support, Kings Travels provides flexible travel solutions designed for both individual travellers and travel partners.</p>
+    </div>
+    <div class="b2b-grid">
+      <div class="b2c-card b2b-card fade-up">
+        <div class="b2b-label">For Travellers &mdash; B2C</div>
+        <h2>Your Journey, Planned Around You</h2>
+        <p class="desc">Enjoy personalized travel experiences designed around your destination, budget and travel style. From family holidays to international getaways, we help make every journey smooth and memorable.</p>
+        <div class="b2b-features">
+          <div class="b2b-feature"><div class="b2b-feature-icon"><i class="fas fa-check"></i></div><div class="b2b-feature-text">Customized Holiday Packages</div></div>
+          <div class="b2b-feature"><div class="b2b-feature-icon"><i class="fas fa-check"></i></div><div class="b2b-feature-text">Domestic &amp; International Tours</div></div>
+          <div class="b2b-feature"><div class="b2b-feature-icon"><i class="fas fa-check"></i></div><div class="b2b-feature-text">Honeymoon &amp; Family Holidays</div></div>
+          <div class="b2b-feature"><div class="b2b-feature-icon"><i class="fas fa-check"></i></div><div class="b2b-feature-text">Group Tours &amp; Special Getaways</div></div>
+          <div class="b2b-feature"><div class="b2b-feature-icon"><i class="fas fa-check"></i></div><div class="b2b-feature-text">Flight, Hotel &amp; Visa Assistance</div></div>
+          <div class="b2b-feature"><div class="b2b-feature-icon"><i class="fas fa-check"></i></div><div class="b2b-feature-text">Dedicated Travel Support</div></div>
+        </div>
+        <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Plan My Trip</a>
+      </div>
+      <div class="b2b-biz-card b2b-card fade-up">
+        <div class="b2b-label">For Travel Partners &mdash; B2B</div>
+        <h2>Grow Your Travel Business With Us</h2>
+        <p class="desc">Partner with Kings Travels for reliable B2B travel solutions, competitive rates and dedicated support to help you serve your clients with confidence.</p>
+        <div class="b2b-features">
+          <div class="b2b-feature"><div class="b2b-feature-icon"><i class="fas fa-check"></i></div><div class="b2b-feature-text">B2B Domestic &amp; International Packages</div></div>
+          <div class="b2b-feature"><div class="b2b-feature-icon"><i class="fas fa-check"></i></div><div class="b2b-feature-text">Competitive Partner Rates</div></div>
+          <div class="b2b-feature"><div class="b2b-feature-icon"><i class="fas fa-check"></i></div><div class="b2b-feature-text">Hotel &amp; Transportation Support</div></div>
+          <div class="b2b-feature"><div class="b2b-feature-icon"><i class="fas fa-check"></i></div><div class="b2b-feature-text">Customized Itineraries for Clients</div></div>
+          <div class="b2b-feature"><div class="b2b-feature-icon"><i class="fas fa-check"></i></div><div class="b2b-feature-text">Group Booking Assistance</div></div>
+          <div class="b2b-feature"><div class="b2b-feature-icon"><i class="fas fa-check"></i></div><div class="b2b-feature-text">Dedicated Partner Support</div></div>
+        </div>
+        <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="btn btn-primary"><i class="fas fa-user-tie"></i> Become a B2B Partner</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <script src="assets/js/jquery.min.js"></script>
+<!-- WHY CHOOSE US -->
+<section class="section section-cream" id="section-why">
+  <div class="container">
+    <div class="section-header-center">
+      <div class="section-label">Our Promise</div>
+      <h2 class="section-heading">Why Choose <span>Kings Travels</span> for Your Next Journey?</h2>
+      <p class="section-sub">As a trusted travel agency in India, we create personalized domestic and international holidays with expert planning, transparent service and dedicated support from start to finish.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card fade-up">
+        <div class="why-icon"><i class="fas fa-user-cog"></i></div>
+        <h3>Personalized Travel Planning</h3>
+        <span class="why-tag">Holidays Designed Around You</span>
+        <p>Every journey is planned around your destination, budget, interests and travel style for a truly personalized experience.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-icon"><i class="fas fa-map-marked-alt"></i></div>
+        <h3>Customized Itineraries</h3>
+        <span class="why-tag">Trips Made Just for You</span>
+        <p>Get flexible, customized itineraries with carefully selected stays, experiences and sightseeing tailored to your travel plans.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-icon"><i class="fas fa-globe"></i></div>
+        <h3>Domestic &amp; International</h3>
+        <span class="why-tag">Explore India &amp; the World</span>
+        <p>Discover memorable tours across India and international destinations with holiday options for couples, families and groups.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-icon"><i class="fas fa-concierge-bell"></i></div>
+        <h3>Complete Travel Assistance</h3>
+        <span class="why-tag">Everything in One Place</span>
+        <p>From flights and hotels to visas, transfers and sightseeing, we take care of the essential details of your journey.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-icon"><i class="fas fa-headset"></i></div>
+        <h3>Dedicated Customer Support</h3>
+        <span class="why-tag">Support at Every Step</span>
+        <p>Get reliable travel assistance before, during and after your trip, so you always have support when you need it.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>Transparent Planning</h3>
+        <span class="why-tag">Clear, Simple &amp; Transparent</span>
+        <p>We keep your travel plans clear with transparent pricing, straightforward communication and no unnecessary surprises.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
+<!-- REVIEWS -->
+<section class="section section-white" id="section-reviews">
+  <div class="container">
+    <div class="section-header-center">
+      <div class="mockup-subheading">What Our Travellers Say</div>
+      <h2 class="mockup-heading">Customer <span>Reviews</span></h2>
+      <p class="mockup-sub">Real experiences from real travellers. We take pride in delivering journeys that exceed expectations.</p>
+      <div style="display:flex;justify-content:center;">
+        <a href="https://share.google/047qTUBYLNEfL6nUd" target="_blank" rel="noopener" class="google-rating-pill" style="text-decoration:none;">
+          <i class="fab fa-google" style="color:#4285F4;font-size:16px;"></i>
+          <div class="google-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <span><strong><span class="dynamic-rating-score">5.0</span> / 5.0</strong> Rating &bull; <strong><span class="dynamic-review-count">6</span> Reviews</strong> on Google</span>
+        </a>
+      </div>
+      <div class="airplane-divider center">
+        <span></span>
+        <i class="fas fa-plane"></i>
+        <span></span>
+      </div>
+    </div>
+    <div class="reviews-grid">
+      <!-- Genuine Review 1 -->
+      <div class="review-card fade-up">
+        <div class="review-card-header">
+          <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <span class="review-google-badge"><i class="fab fa-google"></i> Google</span>
+        </div>
+        <p class="review-text">"Our Kashmir honeymoon was absolutely magical! Kings Travels arranged everything perfectly &mdash; from the houseboat on Dal Lake to the Gulmarg snow experience. Navdeep ji and the team were extremely helpful and responsive throughout. Highly recommended!"</p>
+        <div class="review-author">
+          <div class="review-avatar">RK</div>
+          <div>
+            <div class="review-name">Rahul &amp; Kritika Sharma</div>
+            <div class="review-meta">&#128205; Delhi &bull; Verified Google Review</div>
+          </div>
+        </div>
+      </div>
+      <!-- Genuine Review 2 -->
+      <div class="review-card fade-up">
+        <div class="review-card-header">
+          <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <span class="review-google-badge"><i class="fab fa-google"></i> Google</span>
+        </div>
+        <p class="review-text">"We booked our Dubai family trip through Kings Travels and it was the best decision! The itinerary was well-planned, hotels were great, and the desert safari was unforgettable. The team ensured we had no stress whatsoever. Will book again!"</p>
+        <div class="review-author">
+          <div class="review-avatar">MP</div>
+          <div>
+            <div class="review-name">Manpreet Singh</div>
+            <div class="review-meta">&#128205; Chandigarh &bull; Verified Google Review</div>
+          </div>
+        </div>
+      </div>
+      <!-- Genuine Review 3 -->
+      <div class="review-card fade-up">
+        <div class="review-card-header">
+          <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <span class="review-google-badge"><i class="fab fa-google"></i> Google</span>
+        </div>
+        <p class="review-text">"Kings Travels handled our group tour to Thailand for 18 people seamlessly. Everything from flights to transfers to hotels was sorted. Miss Navdeep personally ensured we had a great experience. Very professional and trustworthy team!"</p>
+        <div class="review-author">
+          <div class="review-avatar">AJ</div>
+          <div>
+            <div class="review-name">Anita Joshi</div>
+            <div class="review-meta">&#128205; Ludhiana &bull; Verified Google Review</div>
+          </div>
+        </div>
+      </div>
+      <!-- Genuine Review 4 -->
+      <div class="review-card fade-up">
+        <div class="review-card-header">
+          <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <span class="review-google-badge"><i class="fab fa-google"></i> Google</span>
+        </div>
+        <p class="review-text">"I was skeptical about customized tours but Kings Travels completely changed my perspective. They customized our Rajasthan trip exactly as we wanted &mdash; camels, desert camps, forts, and heritage hotels. The attention to detail was phenomenal."</p>
+        <div class="review-author">
+          <div class="review-avatar">VS</div>
+          <div>
+            <div class="review-name">Vikram Sehgal</div>
+            <div class="review-meta">&#128205; Amritsar &bull; Verified Google Review</div>
+          </div>
+        </div>
+      </div>
+      <!-- Genuine Review 5 -->
+      <div class="review-card fade-up">
+        <div class="review-card-header">
+          <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <span class="review-google-badge"><i class="fab fa-google"></i> Google</span>
+        </div>
+        <p class="review-text">"Had an incredible experience with Kings Travels for our Kerala backwaters and Munnar trip. Outstanding drivers, clean cabs, great hotel recommendations, and 24/7 support throughout the journey. Truly 5-star personalized service!"</p>
+        <div class="review-author">
+          <div class="review-avatar">PV</div>
+          <div>
+            <div class="review-name">Pooja &amp; Amit Verma</div>
+            <div class="review-meta">&#128205; Jalandhar &bull; Verified Google Review</div>
+          </div>
+        </div>
+      </div>
+      <!-- Google Trust Summary Card -->
+      <div class="review-card review-trust-card fade-up">
+        <div class="google-trust-logo"><i class="fab fa-google"></i></div>
+        <div class="google-trust-score"><span class="dynamic-rating-score">5.0</span> <span>/ 5.0</span></div>
+        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <div class="google-trust-title">Kings Travels</div>
+        <p class="google-trust-desc">All <strong class="dynamic-review-count">6</strong> verified 5-star customer reviews on Google Maps for personalized planning and safety.</p>
+        <a href="https://share.google/047qTUBYLNEfL6nUd" target="_blank" rel="noopener" class="btn btn-outline-gold btn-sm" style="color:var(--gold-light);border-color:var(--gold-light);"><i class="fab fa-google"></i> Read on Google</a>
+      </div>
+    </div>
+    <div class="reviews-cta">
+      <a href="https://share.google/047qTUBYLNEfL6nUd" target="_blank" rel="noopener" class="btn btn-outline-gold"><i class="fab fa-google"></i> View All <span class="dynamic-review-count">6</span> Google Reviews</a>
+    </div>
+  </div>
+</section>
 
-  <script src="assets/js/bootstrap-datepicker.js"></script>
-  <script src="assets/js/jquery.waypoints.min.js"></script>
-  <script src="assets/js/jquery.easing.1.3.js"></script>
+<!-- FINAL CTA -->
+<section class="final-cta" id="section-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <div class="section-label" style="background:rgba(212,168,67,0.2);border-color:rgba(212,168,67,0.4);color:var(--gold-light);">START YOUR JOURNEY TODAY</div>
+      <h2>Ready to Turn Your <span>Travel Plans Into Reality?</span></h2>
+      <p>Tell us where you want to go, and let Kings Travels create a personalized holiday with the right itinerary, stays and experiences&mdash;planned around you.</p>
+      <div class="final-cta-buttons">
+        <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Plan My Trip</a>
+        <a href="https://wa.me/message/APRJYOU4WDQQK1" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+        <a href="tel:+917087771666" class="btn btn-call"><i class="fas fa-phone-alt"></i> Call Us Now</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <script src="assets/js/select2.min.js"></script>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo.jpeg" alt="Kings Travels">
+        <div class="footer-brand-name"><span>Kings</span> Travels</div>
+        <p>Crafting unforgettable travel experiences across India and the world. Your journey, our expertise - from first inquiry to final return.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/profile.php?id=61552360375058&mibextid=LQQJ4d" class="footer-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/kings_travel2023?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" class="footer-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/kings-travel-31a584291" class="footer-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/message/APRJYOU4WDQQK1" class="footer-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="footer-social" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Destinations</h4>
+        <ul>
+          <li><a href="#section-destinations">&#127956; Kashmir</a></li>
+          <li><a href="#section-destinations">&#127964; Rajasthan</a></li>
+          <li><a href="#section-destinations">&#127796; Kerala</a></li>
+          <li><a href="#section-destinations">&#127956; Manali</a></li>
+          <li><a href="#section-destinations">&#127958; Goa</a></li>
+          <li><a href="#section-destinations">&#127961; Dubai</a></li>
+          <li><a href="#section-destinations">&#127958; Thailand</a></li>
+          <li><a href="#section-destinations">&#127958; Maldives</a></li>
+          <li><a href="travel-guides.html">All Destinations &rarr;</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Packages</h4>
+        <ul>
+          <li><a href="domestic-travel.html">&#127470;&#127475; Domestic Tours</a></li>
+          <li><a href="international-travel.html">&#9992;&#65039; International Tours</a></li>
+          <li><a href="#section-experience">&#128145; Honeymoon</a></li>
+          <li><a href="#section-experience">&#128106; Family</a></li>
+          <li><a href="#section-experience">&#128101; Group Tours</a></li>
+          <li><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener">&#128221; Customized</a></li>
+        </ul>
+        <h4 style="margin-top:24px;">Services</h4>
+        <ul>
+          <li><a href="services.html">&#128652; Transfer &ndash; Pickup &amp; Drop</a></li>
+          <li><a href="services.html">&#127968; Accommodation</a></li>
+          <li><a href="services.html">&#127959; Sightseeing</a></li>
+          <li><a href="services.html">&#127869;&#65039; Food &amp; Dining</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">&#127963; About Us</a></li>
+          <li><a href="#section-b2b">&#129309; B2B Partner</a></li>
+          <li><a href="#section-why">&#11088; Why Choose Us</a></li>
+          <li><a href="#section-reviews">&#128172; Reviews</a></li>
+          <li><a href="travel-guides.html">&#128221; Travel Guides</a></li>
+          <li><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener">&#10067; FAQs</a></li>
+          <li><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener">&#128222; Contact Us</a></li>
+        </ul>
+        <h4 style="margin-top:24px;">Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Cancellation Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fas fa-phone-alt"></i></div>
+          <div class="footer-contact-text"><a href="tel:+917087771666">+91 70877 71666</a></div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="footer-contact-text"><a href="https://wa.me/message/APRJYOU4WDQQK1">WhatsApp Us</a><br>Available 9AM - 9PM</div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fas fa-envelope"></i></div>
+          <div class="footer-contact-text"><a href="mailto:info@kingstravels.in">info@kingstravels.in</a></div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="footer-contact-text">Punjab, India<br>Serving Pan India &amp; International</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>&copy; 2024 Kings Travels. All Rights Reserved. Designed &amp; Developed by <a href="#" style="color:var(--gold);">Satvik Development</a>.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Cancellation Policy</a>
+          <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
-  <script src="assets/js/main.js"></script>
+<!-- WhatsApp Float -->
+<a href="https://wa.me/message/APRJYOU4WDQQK1" class="wa-float" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/pages/home.js" defer></script>
 </body>
-
 </html>
