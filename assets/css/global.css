@@ -475,6 +475,127 @@ button {
   color: var(--navy);
 }
 
+/* Circular Phone Icon & Contact CTA button */
+.contact-icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  border-radius: 50%;
+  border: 1.8px solid currentColor;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  vertical-align: middle;
+  line-height: 1;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-icon-circle i {
+  font-size: 10px;
+  line-height: 1;
+  display: block;
+}
+
+.nav-link.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  color: var(--navy) !important;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 8px 16px;
+  border-radius: 100px;
+  box-shadow: 0 4px 14px rgba(216, 155, 66, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  margin-left: 6px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.2px;
+}
+
+.nav-link.nav-cta .contact-icon-circle {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  border: 1.6px solid var(--navy);
+  color: var(--navy);
+}
+
+.nav-link.nav-cta:hover {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  color: var(--navy) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(216, 155, 66, 0.45);
+}
+
+.nav-link.nav-cta:hover .contact-icon-circle {
+  transform: rotate(15deg) scale(1.08);
+}
+
+.mobile-nav-cta {
+  background: rgba(216, 155, 66, 0.12) !important;
+  border: 1px solid rgba(216, 155, 66, 0.3) !important;
+  border-radius: 12px !important;
+  padding: 12px 16px !important;
+  margin-top: 10px;
+  color: var(--gold-light) !important;
+}
+
+.mobile-nav-cta .contact-icon-circle {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+.footer-link-icon {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  border-width: 1.5px;
+  margin-right: 8px;
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+.footer-link-icon i {
+  font-size: 8.5px;
+}
+
+.footer-col ul li a:hover .footer-link-icon {
+  transform: rotate(15deg) scale(1.1);
+  color: var(--gold-light);
+  border-color: var(--gold-light);
+}
+
+.footer-head-icon {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  border-width: 1.5px;
+  margin-right: 8px;
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+.footer-head-icon i {
+  font-size: 9px;
+}
+
+.footer-bottom-icon {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  border-width: 1.2px;
+  margin-right: 6px;
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+.footer-bottom-icon i {
+  font-size: 7.5px;
+}
+
 /* ==========================================================================
    MOBILE HAMBURGER BUTTON
    ========================================================================== */
@@ -772,6 +893,8 @@ button {
   font-size: 14px;
   color: rgba(255, 220, 140, 0.55);
   transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
 }
 
 .footer-col ul li a:hover {
@@ -818,9 +941,9 @@ button {
 .footer-contact-icon {
   width: 34px;
   height: 34px;
-  border-radius: var(--radius-sm);
+  border-radius: 50%;
   background: rgba(226, 175, 94, 0.1);
-  border: 1px solid rgba(226, 175, 94, 0.2);
+  border: 1.5px solid rgba(226, 175, 94, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -828,6 +951,13 @@ button {
   color: var(--gold-light);
   flex-shrink: 0;
   margin-top: 2px;
+  transition: var(--transition);
+}
+
+.footer-contact-item:hover .footer-contact-icon {
+  transform: rotate(15deg) scale(1.08);
+  border-color: var(--gold);
+  color: var(--gold);
 }
 
 .footer-contact-text {
