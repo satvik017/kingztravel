@@ -1,755 +1,822 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Corporate Travel Management &amp; Business Travel | Kings Travels</title>
-  <meta name="description" content="Plan corporate travel with Kings Travels. Explore business travel, corporate group travel, MICE, stays and transfers coordinated around your company's requirements.">
-  <meta name="keywords" content="Corporate Travel India, Business Travel Management, MICE Travel, Corporate Group Tours, Executive Travel, Kings Travels Corporate">
+  <meta name="description"
+    content="Plan corporate travel with Kings Travels. Explore business travel, corporate group travel, MICE, stays and transfers coordinated around your company's requirements.">
+  <meta name="keywords"
+    content="Corporate Travel India, Business Travel Management, MICE Travel, Corporate Group Tours, Executive Travel, Kings Travels Corporate">
   <link rel="shortcut icon" href="assets/images/logo.jpeg" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16443245656"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-16443245656');</script>
-  
-    <link rel="stylesheet" href="assets/css/global.css">
+  <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-16443245656');</script>
+
+  <link rel="stylesheet" href="assets/css/global.css">
   <link rel="stylesheet" href="assets/css/pages/corporate.css">
 </head>
+
 <body>
 
-<!-- ==========================================================================
+  <!-- ==========================================================================
      NAVBAR (ORIGINAL NAVBAR PRESERVED)
      ========================================================================== -->
-<nav class="navbar" id="main-navbar">
-  <div class="navbar-inner">
-    <a href="index.html" class="navbar-brand">
-      <img src="assets/images/logo.jpeg" alt="Kings Travels Logo">
-      <div class="navbar-brand-text"><span>Kings</span> Travels</div>
-    </a>
-    <ul class="nav-menu">
-      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-      <li class="nav-item">
-        <a href="index.html#section-destinations" class="nav-link">Destinations &#9662;</a>
-        <div class="nav-dropdown">
-          <a href="domestic-travel.html">&#127956; Domestic</a>
-          <a href="international-travel.html">&#127758; International</a>
-        </div>
-      </li>
-      <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-      <li class="nav-item">
-        <a href="b2b.html" class="nav-link">B2B Partner</a>
-      </li>
-      <li class="nav-item">
-        <a href="corporate.html" class="nav-link active">Corporate &#9662;</a>
-        <div class="nav-dropdown">
-          <a href="corporate.html">&#128188; Corporate Travel</a>
-          <a href="corporate.html#section-mice">&#127908; MICE</a>
-          <a href="corporate.html#section-schedule">&#128101; Group Travel</a>
-        </div>
-      </li>
-      <li class="nav-item"><a href="travel-guides.html" class="nav-link">Travel Guides</a></li>
-      <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-      <li class="nav-item"><a href="index.html#section-reviews" class="nav-link">Reviews</a></li>
-      <li class="nav-item"><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="nav-link nav-cta">Contact Us</a></li>
-    </ul>
-    <button class="nav-hamburger" id="hamburger-btn" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
-
-<!-- ==========================================================================
-     MOBILE MENU (ORIGINAL STRUCTURE PRESERVED)
-     ========================================================================== -->
-<div class="mobile-menu" id="mobile-menu">
-  <nav>
-    <ul>
-      <li class="mobile-nav-item">
-        <a href="index.html" class="mobile-nav-link">Home</a>
-      </li>
-      <li class="mobile-nav-item">
-        <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-dest')">
-          Destinations <i class="fa fa-chevron-down"></i>
-        </button>
-        <ul class="mobile-submenu" id="sub-dest">
-          <li><a href="domestic-travel.html">&#127956; Domestic</a></li>
-          <li><a href="international-travel.html">&#127758; International</a></li>
-        </ul>
-      </li>
-      <li class="mobile-nav-item">
-        <a href="services.html" class="mobile-nav-link">Services</a>
-      </li>
-      <li class="mobile-nav-item">
-        <a href="b2b.html" class="mobile-nav-link">B2B Partner</a>
-      </li>
-      <li class="mobile-nav-item">
-        <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-corp')" style="color:var(--gold-light);font-weight:700;">
-          Corporate Travel <i class="fa fa-chevron-down"></i>
-        </button>
-        <ul class="mobile-submenu" id="sub-corp" style="display:block;">
-          <li><a href="corporate.html" style="color:var(--gold-light);font-weight:600;">&#128188; Corporate Travel</a></li>
-          <li><a href="corporate.html#section-mice">&#127908; MICE</a></li>
-          <li><a href="corporate.html#section-schedule">&#128101; Group Travel</a></li>
-        </ul>
-      </li>
-      <li class="mobile-nav-item">
-        <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-about')">
-          About Us <i class="fa fa-chevron-down"></i>
-        </button>
-        <ul class="mobile-submenu" id="sub-about">
-          <li><a href="about.html">&#127963; About Kings Travels</a></li>
-          <li><a href="about.html#leadership">&#128105;&#8205;&#128188; Managing Director</a></li>
-          <li><a href="about.html#philosophy">&#11088; Why Choose Us</a></li>
-        </ul>
-      </li>
-      <li class="mobile-nav-item">
-        <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-guides')">
-          Travel Guides <i class="fa fa-chevron-down"></i>
-        </button>
-        <ul class="mobile-submenu" id="sub-guides">
-          <li><a href="travel-guides.html">&#128221; Travel Blog</a></li>
-          <li><a href="travel-guides.html">&#128506; Destination Guides</a></li>
-          <li><a href="travel-guides.html">&#128161; Travel Tips</a></li>
-        </ul>
-      </li>
-      <li class="mobile-nav-item"><a href="index.html#section-reviews" class="mobile-nav-link">Reviews</a></li>
-      <li class="mobile-nav-item"><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="mobile-nav-link">FAQs</a></li>
-      <li class="mobile-nav-item"><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="mobile-nav-link">Contact Us</a></li>
-    </ul>
-    <div class="mobile-menu-footer">
-      <a href="https://wa.me/message/APRJYOU4WDQQK1" class="btn btn-whatsapp" style="justify-content:center;"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
-      <a href="javascript:void(0)" onclick="openCorpModal()" class="btn btn-primary" style="justify-content:center;"><i class="fas fa-briefcase"></i> Plan Corporate Travel</a>
+  <nav class="navbar" id="main-navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <img src="assets/images/logo.jpeg" alt="Kings Travels Logo">
+        <div class="navbar-brand-text"><span>Kings</span> Travels</div>
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item">
+          <a href="index.html#section-destinations" class="nav-link">Destinations &#9662;</a>
+          <div class="nav-dropdown">
+            <a href="domestic-travel.html">&#127956; Domestic</a>
+            <a href="international-travel.html">&#127758; International</a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+        <li class="nav-item">
+          <a href="b2b.html" class="nav-link">B2B Partner</a>
+        </li>
+        <li class="nav-item">
+          <a href="corporate.html" class="nav-link active">Corporate &#9662;</a>
+          <div class="nav-dropdown">
+            <a href="corporate.html">&#128188; Corporate Travel</a>
+            <a href="corporate.html#section-mice">&#127908; MICE</a>
+            <a href="corporate.html#section-schedule">&#128101; Group Travel</a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="travel-guides.html" class="nav-link">Travel Guides</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+        <li class="nav-item"><a href="index.html#section-reviews" class="nav-link">Reviews</a></li>
+        <li class="nav-item"><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener"
+            class="nav-link nav-cta"><span class="contact-icon-circle"><i class="fas fa-phone-alt"></i></span> Contact
+            Us</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger-btn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
-</div>
 
-<!-- ==========================================================================
+  <!-- ==========================================================================
+     MOBILE MENU (ORIGINAL STRUCTURE PRESERVED)
+     ========================================================================== -->
+  <div class="mobile-menu" id="mobile-menu">
+    <nav>
+      <ul>
+        <li class="mobile-nav-item">
+          <a href="index.html" class="mobile-nav-link">Home</a>
+        </li>
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-dest')">
+            Destinations <i class="fa fa-chevron-down"></i>
+          </button>
+          <ul class="mobile-submenu" id="sub-dest">
+            <li><a href="domestic-travel.html">&#127956; Domestic</a></li>
+            <li><a href="international-travel.html">&#127758; International</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="services.html" class="mobile-nav-link">Services</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="b2b.html" class="mobile-nav-link">B2B Partner</a>
+        </li>
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-corp')"
+            style="color:var(--gold-light);font-weight:700;">
+            Corporate Travel <i class="fa fa-chevron-down"></i>
+          </button>
+          <ul class="mobile-submenu" id="sub-corp" style="display:block;">
+            <li><a href="corporate.html" style="color:var(--gold-light);font-weight:600;">&#128188; Corporate Travel</a>
+            </li>
+            <li><a href="corporate.html#section-mice">&#127908; MICE</a></li>
+            <li><a href="corporate.html#section-schedule">&#128101; Group Travel</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-about')">
+            About Us <i class="fa fa-chevron-down"></i>
+          </button>
+          <ul class="mobile-submenu" id="sub-about">
+            <li><a href="about.html">&#127963; About Kings Travels</a></li>
+            <li><a href="about.html#leadership">&#128105;&#8205;&#128188; Managing Director</a></li>
+            <li><a href="about.html#philosophy">&#11088; Why Choose Us</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-guides')">
+            Travel Guides <i class="fa fa-chevron-down"></i>
+          </button>
+          <ul class="mobile-submenu" id="sub-guides">
+            <li><a href="travel-guides.html">&#128221; Travel Blog</a></li>
+            <li><a href="travel-guides.html">&#128506; Destination Guides</a></li>
+            <li><a href="travel-guides.html">&#128161; Travel Tips</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item"><a href="index.html#section-reviews" class="mobile-nav-link">Reviews</a></li>
+        <li class="mobile-nav-item"><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener"
+            class="mobile-nav-link">FAQs</a></li>
+        <li class="mobile-nav-item"><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener"
+            class="mobile-nav-link" style="display:flex;justify-content:space-between;align-items:center;"><span><span
+                class="contact-icon-circle" style="margin-right:8px;vertical-align:middle;"><i
+                  class="fas fa-phone-alt"></i></span> Contact Us</span></a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <a href="https://wa.me/message/APRJYOU4WDQQK1" class="btn btn-whatsapp" style="justify-content:center;"><i
+            class="fab fa-whatsapp"></i> WhatsApp Us</a>
+        <a href="javascript:void(0)" onclick="openCorpModal()" class="btn btn-primary"
+          style="justify-content:center;"><i class="fas fa-briefcase"></i> Plan Corporate Travel</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ==========================================================================
      HERO SECTION
      ========================================================================== -->
-<section class="corp-hero" id="hero">
-  <div class="corp-hero-bg"></div>
-  <div class="corp-hero-overlay"></div>
-  <div class="container">
-    <div class="corp-hero-content">
-      <span class="corp-hero-tag">CORPORATE TRAVEL</span>
-      <h1 class="corp-hero-title">Corporate Travel Management<br>That Keeps Business Moving</h1>
-      <p class="corp-hero-sub">From individual business travel to corporate groups, meetings and events, Kings Travels helps companies coordinate stays, transfers and essential travel arrangements around their schedules and requirements. Whether it's an important business trip, a team movement or a corporate event, we bring the journey together so your people can stay focused on business.</p>
-      <a href="javascript:void(0)" onclick="openCorpModal('Plan Corporate Travel')" class="btn-corp-gold">
-        Plan Corporate Travel <i class="fas fa-arrow-right"></i>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ==========================================================================
-     QUICK HIGHLIGHTS STRIP
-     ========================================================================== -->
-<section class="corp-strip">
-  <div class="container">
-    <div class="corp-strip-grid">
-      <div class="corp-strip-item">
-        <div class="corp-strip-icon">
-          <i class="fas fa-briefcase"></i>
-        </div>
-        <div class="corp-strip-text">
-          <h4>Business Travel</h4>
-          <p>For executives and professionals</p>
-        </div>
-      </div>
-      <div class="corp-strip-item">
-        <div class="corp-strip-icon">
-          <i class="fas fa-users"></i>
-        </div>
-        <div class="corp-strip-text">
-          <h4>Group Travel</h4>
-          <p>For teams and corporate groups</p>
-        </div>
-      </div>
-      <div class="corp-strip-item">
-        <div class="corp-strip-icon">
-          <i class="far fa-calendar-alt"></i>
-        </div>
-        <div class="corp-strip-text">
-          <h4>MICE Travel</h4>
-          <p>Meetings, incentives, conferences &amp; events</p>
-        </div>
-      </div>
-      <div class="corp-strip-item">
-        <div class="corp-strip-icon">
-          <i class="fas fa-van-shuttle"></i>
-        </div>
-        <div class="corp-strip-text">
-          <h4>Transfers &amp; Stays</h4>
-          <p>Accommodation and transportation</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ==========================================================================
-     SECTION 2: WHAT WE HANDLE
-     ========================================================================== -->
-<section class="section-what" id="section-services">
-  <div class="container">
-    <div class="text-center">
-      <span class="section-eyebrow">WHAT WE HANDLE</span>
-      <h2 class="section-title">Everything Your Business Trip Needs in One Place</h2>
-      <p class="section-desc" style="max-width: 780px; margin: 0 auto;">Business travel involves more than getting from one destination to another. Timings, accommodation, transfers and team movements all need to work around the same business schedule. Kings Travels brings these essential arrangements together through practical corporate travel management for companies, professionals and business groups.</p>
-    </div>
-
-    <div class="what-grid">
-      <!-- Card 1 -->
-      <div class="what-card">
-        <div class="what-card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&q=80" alt="Executive on business trip with laptop in lounge">
-          <div class="what-card-icon-badge">
-            <i class="fas fa-briefcase"></i>
-          </div>
-        </div>
-        <div class="what-card-body">
-          <h3>Business Travel</h3>
-          <div class="what-card-tagline">Travel That Works Around Your Schedule</div>
-          <p>From executives and professionals to employees travelling for meetings, we help coordinate stays, transfers and travel arrangements around the purpose and timing of each business trip.</p>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="what-card">
-        <div class="what-card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=80" alt="Corporate team walking in airport terminal">
-          <div class="what-card-icon-badge">
-            <i class="fas fa-users"></i>
-          </div>
-        </div>
-        <div class="what-card-body">
-          <h3>Corporate Group Travel</h3>
-          <div class="what-card-tagline">Keep Your Team Moving Together</div>
-          <p>Planning travel for multiple employees requires careful coordination. We help organize travel arrangements for corporate groups attending meetings, conferences, company offsites and business events.</p>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="what-card">
-        <div class="what-card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Corporate boardroom and conference table">
-          <div class="what-card-icon-badge">
-            <i class="far fa-calendar-check"></i>
-          </div>
-        </div>
-        <div class="what-card-body">
-          <h3>MICE Travel</h3>
-          <div class="what-card-tagline">Bringing Business and Experiences Together</div>
-          <p>For meetings, incentive trips, conferences and corporate events, Kings Travels helps coordinate the travel requirements around your organization's plans.</p>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="what-card">
-        <div class="what-card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=600&q=80" alt="Executive luxury hotel room suite">
-          <div class="what-card-icon-badge">
-            <i class="fas fa-car-side"></i>
-          </div>
-        </div>
-        <div class="what-card-body">
-          <h3>Stays &amp; Transfers</h3>
-          <div class="what-card-tagline">Connected From Arrival to Departure</div>
-          <p>We coordinate suitable accommodation with airport, hotel and local transfers, helping business travellers move according to their planned itinerary.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="what-cta-wrap">
-      <a href="javascript:void(0)" onclick="openCorpModal('Discuss Your Requirements')" class="btn-corp-gold">
-        Discuss Your Requirements <i class="fas fa-arrow-right"></i>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ==========================================================================
-     SECTION 3: FEATURE / BENEFITS
-     ========================================================================== -->
-<section class="section-schedule" id="section-schedule">
-  <div class="container">
-    <div class="schedule-grid">
-      <div class="schedule-content">
-        <span class="section-eyebrow section-eyebrow-light">TRAVEL THAT KEEPS BUSINESS MOVING</span>
-        <h2 class="section-title light">Because in Business Travel Every Hour Matters</h2>
-        <p>A successful business trip depends on more than a confirmed destination. Arrival times need to connect with hotel check-ins, transfers need to work around meetings, and team movements need to follow the business schedule.</p>
-        <p>Kings Travels helps bring these arrangements together around your itinerary, making business travel easier to coordinate from arrival to departure.</p>
-        
-        <div class="schedule-checklist">
-          <div class="schedule-check-item">
-            <span class="check-circle"><i class="fas fa-check"></i></span>
-            <div class="schedule-check-text">
-              <strong>Travel Around Business Schedules</strong>
-              <p>Arrangements planned around your itinerary and timings.</p>
-            </div>
-          </div>
-          <div class="schedule-check-item">
-            <span class="check-circle"><i class="fas fa-check"></i></span>
-            <div class="schedule-check-text">
-              <strong>Coordinated Stays &amp; Transfers</strong>
-              <p>Accommodation and transportation working together.</p>
-            </div>
-          </div>
-          <div class="schedule-check-item">
-            <span class="check-circle"><i class="fas fa-check"></i></span>
-            <div class="schedule-check-text">
-              <strong>Individual &amp; Group Travel</strong>
-              <p>Suitable for executives, employees and corporate teams.</p>
-            </div>
-          </div>
-          <div class="schedule-check-item">
-            <span class="check-circle"><i class="fas fa-check"></i></span>
-            <div class="schedule-check-text">
-              <strong>Flexible Travel Planning</strong>
-              <p>Arrangements adapted to different business requirements.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="schedule-image-wrap">
-        <img src="https://images.unsplash.com/photo-1506015391300-4802dc74de2e?w=1200&q=80" alt="Business travellers in airport lounge looking at airplane on runway">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ==========================================================================
-     SECTION 4: MICE
-     ========================================================================== -->
-<section class="section-mice" id="section-mice">
-  <div class="container">
-    <div class="mice-top-grid">
-      <div class="mice-header-text">
-        <span class="section-eyebrow">MEETINGS - INCENTIVES - CONFERENCES - EVENTS</span>
-        <h2 class="section-title">When Business Brings People Together</h2>
-        <p class="section-desc">Corporate travel isn't always about one person travelling for a meeting. Sometimes it means bringing teams, delegates or employees together in one destination. Kings Travels helps coordinate travel around MICE and business tourism, connecting the essential arrangements with your meeting, incentive, conference or corporate event plans.</p>
-      </div>
-      <div class="mice-banner-img">
-        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1000&q=80" alt="Corporate conference auditorium with global presentation screen">
-      </div>
-    </div>
-
-    <div class="mice-features-grid">
-      <!-- Item 1: Meetings -->
-      <div class="mice-feature-box">
-        <div class="mice-feature-icon">
-          <i class="fas fa-handshake"></i>
-        </div>
-        <div class="mice-feature-text">
-          <h4>Meetings</h4>
-          <span class="mice-feature-tagline">Be There When It Matters</span>
-          <p>Travel and stay arrangements coordinated around important meetings and professional engagements.</p>
-        </div>
-      </div>
-
-      <!-- Item 2: Incentives -->
-      <div class="mice-feature-box">
-        <div class="mice-feature-icon">
-          <i class="fas fa-trophy"></i>
-        </div>
-        <div class="mice-feature-text">
-          <h4>Incentives</h4>
-          <span class="mice-feature-tagline">Reward Success With an Experience</span>
-          <p>Travel arrangements for incentive trips created around teams, employees and company achievements.</p>
-        </div>
-      </div>
-
-      <!-- Item 3: Conferences -->
-      <div class="mice-feature-box">
-        <div class="mice-feature-icon">
-          <i class="fas fa-chalkboard-user"></i>
-        </div>
-        <div class="mice-feature-text">
-          <h4>Conferences</h4>
-          <span class="mice-feature-tagline">Move Your People With a Plan</span>
-          <p>Coordinated arrangements for employees, delegates and corporate groups travelling for conferences.</p>
-        </div>
-      </div>
-
-      <!-- Item 4: Corporate Events -->
-      <div class="mice-feature-box">
-        <div class="mice-feature-icon">
-          <i class="far fa-calendar-check"></i>
-        </div>
-        <div class="mice-feature-text">
-          <h4>Corporate Events</h4>
-          <span class="mice-feature-tagline">Bring the Team Together</span>
-          <p>Travel, accommodation and transfers coordinated around company events, offsites and corporate gatherings.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ==========================================================================
-     SECTION 5: HOW IT WORKS
-     ========================================================================== -->
-<section class="section-works" id="section-how-it-works">
-  <div class="container">
-    <div class="text-center">
-      <span class="section-eyebrow">HOW IT WORKS</span>
-      <h2 class="section-title">From Business Requirements to Ready to Travel</h2>
-    </div>
-
-    <div class="steps-row">
-      <!-- Step 01 -->
-      <div class="step-card">
-        <div class="step-header">
-          <div class="step-icon-badge">
-            <i class="fas fa-clipboard-list"></i>
-          </div>
-          <span class="step-number">01</span>
-          <div class="step-divider"></div>
-          <span class="step-arrow"><i class="fas fa-chevron-right"></i></span>
-        </div>
-        <h4>Tell Us What You Need</h4>
-        <p>Share your destination, dates, number of travellers, business schedule and any important travel requirements.</p>
-      </div>
-
-      <!-- Step 02 -->
-      <div class="step-card">
-        <div class="step-header">
-          <div class="step-icon-badge">
-            <i class="fas fa-gear"></i>
-          </div>
-          <span class="step-number">02</span>
-          <div class="step-divider"></div>
-          <span class="step-arrow"><i class="fas fa-chevron-right"></i></span>
-        </div>
-        <h4>We Plan the Journey</h4>
-        <p>We bring together suitable stays, transfers and travel arrangements around your itinerary and business requirements.</p>
-      </div>
-
-      <!-- Step 03 -->
-      <div class="step-card">
-        <div class="step-header">
-          <div class="step-icon-badge">
-            <i class="far fa-calendar-check"></i>
-          </div>
-          <span class="step-number">03</span>
-          <div class="step-divider"></div>
-          <span class="step-arrow"><i class="fas fa-chevron-right"></i></span>
-        </div>
-        <h4>We Coordinate the Details</h4>
-        <p>The selected arrangements are organized into one coordinated travel plan, helping make the journey easier for individuals and teams.</p>
-      </div>
-
-      <!-- Step 04 -->
-      <div class="step-card">
-        <div class="step-header">
-          <div class="step-icon-badge">
-            <i class="fas fa-plane-departure"></i>
-          </div>
-          <span class="step-number">04</span>
-        </div>
-        <h4>Your Team Is Ready to Travel</h4>
-        <p>With the essential arrangements in place, your travellers can focus on their meetings, events and business commitments.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ==========================================================================
-     SECTION 6: FAQS
-     ========================================================================== -->
-<section class="section-faq" id="section-faq">
-  <div class="container">
-    <div class="text-center">
-      <span class="section-eyebrow">GOOD TO KNOW</span>
-      <h2 class="section-title">Corporate Travel Questions Answered</h2>
-    </div>
-
-    <div class="faq-grid">
-      <!-- FAQ 1 -->
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          <span>What is corporate travel management?</span>
-          <span class="faq-icon"><i class="fas fa-plus"></i></span>
-        </button>
-        <div class="faq-answer">
-          <p>Corporate travel management is the planning and coordination of travel undertaken for business purposes. It can include arranging business trips, accommodation, transfers, group movements and other travel requirements according to a company's schedule and needs.</p>
-        </div>
-      </div>
-
-      <!-- FAQ 2 -->
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          <span>What is the difference between business travel and corporate travel?</span>
-          <span class="faq-icon"><i class="fas fa-plus"></i></span>
-        </button>
-        <div class="faq-answer">
-          <p>Business travel usually refers to a trip taken for professional purposes, such as a meeting, conference or company event. Corporate travel is the broader process of coordinating these journeys for employees, executives and teams.</p>
-        </div>
-      </div>
-
-      <!-- FAQ 3 -->
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          <span>Can Kings Travels arrange corporate group travel?</span>
-          <span class="faq-icon"><i class="fas fa-plus"></i></span>
-        </button>
-        <div class="faq-answer">
-          <p>Yes. Kings Travels can help coordinate travel arrangements for corporate groups attending meetings, conferences, company events and offsites, based on the group's itinerary and requirements.</p>
-        </div>
-      </div>
-
-      <!-- FAQ 4 -->
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          <span>What is MICE travel?</span>
-          <span class="faq-icon"><i class="fas fa-plus"></i></span>
-        </button>
-        <div class="faq-answer">
-          <p>MICE stands for Meetings, Incentives, Conferences and Events. It covers business-related travel associated with professional meetings, incentive trips, conferences and corporate events.</p>
-        </div>
-      </div>
-
-      <!-- FAQ 5 -->
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          <span>Can accommodation and transfers be arranged together?</span>
-          <span class="faq-icon"><i class="fas fa-plus"></i></span>
-        </button>
-        <div class="faq-answer">
-          <p>Yes. Accommodation and airport, hotel or local transfers can be coordinated around the same business itinerary, helping keep different parts of the journey connected.</p>
-        </div>
-      </div>
-
-      <!-- FAQ 6 -->
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          <span>Can corporate travel arrangements be customized?</span>
-          <span class="faq-icon"><i class="fas fa-plus"></i></span>
-        </button>
-        <div class="faq-answer">
-          <p>Yes. Corporate travel arrangements can be planned according to your destination, dates, number of travellers, business schedule and specific travel requirements.</p>
-        </div>
-      </div>
-
-      <!-- FAQ 7 -->
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          <span>How do I plan a business trip for employees?</span>
-          <span class="faq-icon"><i class="fas fa-plus"></i></span>
-        </button>
-        <div class="faq-answer">
-          <p>Start with the destination, travel dates, number of employees, meeting or event schedule, accommodation requirements and local transportation needs. These details can then be brought together into a coordinated business travel plan.</p>
-        </div>
-      </div>
-
-      <!-- FAQ 8 -->
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          <span>How can I request a corporate travel quote from Kings Travels?</span>
-          <span class="faq-icon"><i class="fas fa-plus"></i></span>
-        </button>
-        <div class="faq-answer">
-          <p>Share your company name, destination, preferred dates, number of travellers and travel requirements with Kings Travels. The team can then discuss suitable arrangements for your business trip.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ==========================================================================
-     SECTION 7: FINAL CTA
-     ========================================================================== -->
-<section class="section-bottom-cta">
-  <div class="bottom-cta-bg"></div>
-  <div class="bottom-cta-overlay"></div>
-  <div class="container">
-    <div class="bottom-cta-content">
-      <span class="section-eyebrow">READY FOR BUSINESS</span>
-      <h2>Let's Make Your Next Business Trip Work Better</h2>
-      <p>From an individual executive travelling for an important meeting to an entire team attending a corporate event, every business journey has different requirements. Tell Kings Travels where your people need to go, when they need to be there and what the journey requires. We'll help coordinate the essential travel arrangements around your business.</p>
-      <a href="javascript:void(0)" onclick="openCorpModal('Discuss Your Travel Requirements')" class="btn-corp-gold">
-        Discuss Your Travel Requirements <i class="fas fa-arrow-right"></i>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ==========================================================================
-     INQUIRY POPUP MODAL
-     ========================================================================== -->
-<div class="corp-modal" id="corpModal">
-  <div class="corp-modal-box">
-    <button class="corp-modal-close" onclick="closeCorpModal()" aria-label="Close dialog">&times;</button>
-    <div class="corp-modal-header">
-      <span class="section-eyebrow" style="margin-bottom:4px;">CORPORATE DESK</span>
-      <h3>Plan Your Corporate Travel</h3>
-      <p>Share your details below and our corporate travel manager will contact you promptly with a customized itinerary.</p>
-    </div>
-
-    <form class="corp-form" id="corpForm" onsubmit="handleCorpSubmit(event)">
-      <div class="corp-form-group">
-        <label for="corp-name">Full Name *</label>
-        <input type="text" id="corp-name" placeholder="e.g. Rahul Sharma" required>
-      </div>
-
-      <div class="corp-form-group">
-        <label for="corp-company">Company / Organization *</label>
-        <input type="text" id="corp-company" placeholder="e.g. Acme Technologies" required>
-      </div>
-
-      <div class="corp-form-group">
-        <label for="corp-phone">Phone / WhatsApp *</label>
-        <input type="tel" id="corp-phone" placeholder="e.g. +91 98765 43210" required>
-      </div>
-
-      <div class="corp-form-group">
-        <label for="corp-email">Official Email *</label>
-        <input type="email" id="corp-email" placeholder="e.g. rahul@company.com" required>
-      </div>
-
-      <div class="corp-form-group">
-        <label for="corp-service">Service Required</label>
-        <select id="corp-service">
-          <option value="Business Travel">Executive Business Travel</option>
-          <option value="Corporate Group Travel">Corporate Group Travel / Offsite</option>
-          <option value="MICE & Conferences">MICE / Conference / Event</option>
-          <option value="Stays & Transfers">Corporate Stays &amp; Transfers</option>
-        </select>
-      </div>
-
-      <div class="corp-form-group">
-        <label for="corp-pax">Estimated Travelers</label>
-        <input type="number" id="corp-pax" min="1" placeholder="e.g. 5">
-      </div>
-
-      <div class="corp-form-group corp-form-full">
-        <label for="corp-dest">Destination &amp; Preferred Dates</label>
-        <input type="text" id="corp-dest" placeholder="e.g. Mumbai / Dubai, next month">
-      </div>
-
-      <div class="corp-form-group corp-form-full">
-        <label for="corp-message">Specific Requirements (Optional)</label>
-        <textarea id="corp-message" rows="3" placeholder="Hotel category, conference facilities, airport pick-up requirements..."></textarea>
-      </div>
-
-      <div class="corp-form-full corp-modal-actions">
-        <button type="submit" class="btn-corp-gold">
-          Submit Corporate Request <i class="fas fa-paper-plane"></i>
-        </button>
-        <a href="javascript:void(0)" onclick="sendWhatsAppInquiry()" class="btn-corp-wa">
-          <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+  <section class="corp-hero" id="hero">
+    <div class="corp-hero-bg"></div>
+    <div class="corp-hero-overlay"></div>
+    <div class="container">
+      <div class="corp-hero-content">
+        <span class="corp-hero-tag">CORPORATE TRAVEL</span>
+        <h1 class="corp-hero-title">Corporate Travel Management<br>That Keeps Business Moving</h1>
+        <p class="corp-hero-sub">From individual business travel to corporate groups, meetings and events, Kings Travels
+          helps companies coordinate stays, transfers and essential travel arrangements around their schedules and
+          requirements. Whether it's an important business trip, a team movement or a corporate event, we bring the
+          journey together so your people can stay focused on business.</p>
+        <a href="javascript:void(0)" onclick="openCorpModal('Plan Corporate Travel')" class="btn-corp-gold">
+          Plan Corporate Travel <i class="fas fa-arrow-right"></i>
         </a>
       </div>
-    </form>
-  </div>
-</div>
+    </div>
+  </section>
 
-<!-- ==========================================================================
+  <!-- ==========================================================================
+     QUICK HIGHLIGHTS STRIP
+     ========================================================================== -->
+  <section class="corp-strip">
+    <div class="container">
+      <div class="corp-strip-grid">
+        <div class="corp-strip-item">
+          <div class="corp-strip-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="corp-strip-text">
+            <h4>Business Travel</h4>
+            <p>For executives and professionals</p>
+          </div>
+        </div>
+        <div class="corp-strip-item">
+          <div class="corp-strip-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="corp-strip-text">
+            <h4>Group Travel</h4>
+            <p>For teams and corporate groups</p>
+          </div>
+        </div>
+        <div class="corp-strip-item">
+          <div class="corp-strip-icon">
+            <i class="far fa-calendar-alt"></i>
+          </div>
+          <div class="corp-strip-text">
+            <h4>MICE Travel</h4>
+            <p>Meetings, incentives, conferences &amp; events</p>
+          </div>
+        </div>
+        <div class="corp-strip-item">
+          <div class="corp-strip-icon">
+            <i class="fas fa-van-shuttle"></i>
+          </div>
+          <div class="corp-strip-text">
+            <h4>Transfers &amp; Stays</h4>
+            <p>Accommodation and transportation</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     SECTION 2: WHAT WE HANDLE
+     ========================================================================== -->
+  <section class="section-what" id="section-services">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-eyebrow">WHAT WE HANDLE</span>
+        <h2 class="section-title">Everything Your Business Trip Needs in One Place</h2>
+        <p class="section-desc" style="max-width: 780px; margin: 0 auto;">Business travel involves more than getting
+          from one destination to another. Timings, accommodation, transfers and team movements all need to work around
+          the same business schedule. Kings Travels brings these essential arrangements together through practical
+          corporate travel management for companies, professionals and business groups.</p>
+      </div>
+
+      <div class="what-grid">
+        <!-- Card 1 -->
+        <div class="what-card">
+          <div class="what-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&q=80"
+              alt="Executive on business trip with laptop in lounge">
+            <div class="what-card-icon-badge">
+              <i class="fas fa-briefcase"></i>
+            </div>
+          </div>
+          <div class="what-card-body">
+            <h3>Business Travel</h3>
+            <div class="what-card-tagline">Travel That Works Around Your Schedule</div>
+            <p>From executives and professionals to employees travelling for meetings, we help coordinate stays,
+              transfers and travel arrangements around the purpose and timing of each business trip.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="what-card">
+          <div class="what-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=80"
+              alt="Corporate team walking in airport terminal">
+            <div class="what-card-icon-badge">
+              <i class="fas fa-users"></i>
+            </div>
+          </div>
+          <div class="what-card-body">
+            <h3>Corporate Group Travel</h3>
+            <div class="what-card-tagline">Keep Your Team Moving Together</div>
+            <p>Planning travel for multiple employees requires careful coordination. We help organize travel
+              arrangements for corporate groups attending meetings, conferences, company offsites and business events.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="what-card">
+          <div class="what-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80"
+              alt="Corporate boardroom and conference table">
+            <div class="what-card-icon-badge">
+              <i class="far fa-calendar-check"></i>
+            </div>
+          </div>
+          <div class="what-card-body">
+            <h3>MICE Travel</h3>
+            <div class="what-card-tagline">Bringing Business and Experiences Together</div>
+            <p>For meetings, incentive trips, conferences and corporate events, Kings Travels helps coordinate the
+              travel requirements around your organization's plans.</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="what-card">
+          <div class="what-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=600&q=80"
+              alt="Executive luxury hotel room suite">
+            <div class="what-card-icon-badge">
+              <i class="fas fa-car-side"></i>
+            </div>
+          </div>
+          <div class="what-card-body">
+            <h3>Stays &amp; Transfers</h3>
+            <div class="what-card-tagline">Connected From Arrival to Departure</div>
+            <p>We coordinate suitable accommodation with airport, hotel and local transfers, helping business travellers
+              move according to their planned itinerary.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="what-cta-wrap">
+        <a href="javascript:void(0)" onclick="openCorpModal('Discuss Your Requirements')" class="btn-corp-gold">
+          Discuss Your Requirements <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     SECTION 3: FEATURE / BENEFITS
+     ========================================================================== -->
+  <section class="section-schedule" id="section-schedule">
+    <div class="container">
+      <div class="schedule-grid">
+        <div class="schedule-content">
+          <span class="section-eyebrow section-eyebrow-light">TRAVEL THAT KEEPS BUSINESS MOVING</span>
+          <h2 class="section-title light">Because in Business Travel Every Hour Matters</h2>
+          <p>A successful business trip depends on more than a confirmed destination. Arrival times need to connect with
+            hotel check-ins, transfers need to work around meetings, and team movements need to follow the business
+            schedule.</p>
+          <p>Kings Travels helps bring these arrangements together around your itinerary, making business travel easier
+            to coordinate from arrival to departure.</p>
+
+          <div class="schedule-checklist">
+            <div class="schedule-check-item">
+              <span class="check-circle"><i class="fas fa-check"></i></span>
+              <div class="schedule-check-text">
+                <strong>Travel Around Business Schedules</strong>
+                <p>Arrangements planned around your itinerary and timings.</p>
+              </div>
+            </div>
+            <div class="schedule-check-item">
+              <span class="check-circle"><i class="fas fa-check"></i></span>
+              <div class="schedule-check-text">
+                <strong>Coordinated Stays &amp; Transfers</strong>
+                <p>Accommodation and transportation working together.</p>
+              </div>
+            </div>
+            <div class="schedule-check-item">
+              <span class="check-circle"><i class="fas fa-check"></i></span>
+              <div class="schedule-check-text">
+                <strong>Individual &amp; Group Travel</strong>
+                <p>Suitable for executives, employees and corporate teams.</p>
+              </div>
+            </div>
+            <div class="schedule-check-item">
+              <span class="check-circle"><i class="fas fa-check"></i></span>
+              <div class="schedule-check-text">
+                <strong>Flexible Travel Planning</strong>
+                <p>Arrangements adapted to different business requirements.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule-image-wrap">
+          <img src="https://images.unsplash.com/photo-1506015391300-4802dc74de2e?w=1200&q=80"
+            alt="Business travellers in airport lounge looking at airplane on runway">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     SECTION 4: MICE
+     ========================================================================== -->
+  <section class="section-mice" id="section-mice">
+    <div class="container">
+      <div class="mice-top-grid">
+        <div class="mice-header-text">
+          <span class="section-eyebrow">MEETINGS - INCENTIVES - CONFERENCES - EVENTS</span>
+          <h2 class="section-title">When Business Brings People Together</h2>
+          <p class="section-desc">Corporate travel isn't always about one person travelling for a meeting. Sometimes it
+            means bringing teams, delegates or employees together in one destination. Kings Travels helps coordinate
+            travel around MICE and business tourism, connecting the essential arrangements with your meeting, incentive,
+            conference or corporate event plans.</p>
+        </div>
+        <div class="mice-banner-img">
+          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1000&q=80"
+            alt="Corporate conference auditorium with global presentation screen">
+        </div>
+      </div>
+
+      <div class="mice-features-grid">
+        <!-- Item 1: Meetings -->
+        <div class="mice-feature-box">
+          <div class="mice-feature-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <div class="mice-feature-text">
+            <h4>Meetings</h4>
+            <span class="mice-feature-tagline">Be There When It Matters</span>
+            <p>Travel and stay arrangements coordinated around important meetings and professional engagements.</p>
+          </div>
+        </div>
+
+        <!-- Item 2: Incentives -->
+        <div class="mice-feature-box">
+          <div class="mice-feature-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="mice-feature-text">
+            <h4>Incentives</h4>
+            <span class="mice-feature-tagline">Reward Success With an Experience</span>
+            <p>Travel arrangements for incentive trips created around teams, employees and company achievements.</p>
+          </div>
+        </div>
+
+        <!-- Item 3: Conferences -->
+        <div class="mice-feature-box">
+          <div class="mice-feature-icon">
+            <i class="fas fa-chalkboard-user"></i>
+          </div>
+          <div class="mice-feature-text">
+            <h4>Conferences</h4>
+            <span class="mice-feature-tagline">Move Your People With a Plan</span>
+            <p>Coordinated arrangements for employees, delegates and corporate groups travelling for conferences.</p>
+          </div>
+        </div>
+
+        <!-- Item 4: Corporate Events -->
+        <div class="mice-feature-box">
+          <div class="mice-feature-icon">
+            <i class="far fa-calendar-check"></i>
+          </div>
+          <div class="mice-feature-text">
+            <h4>Corporate Events</h4>
+            <span class="mice-feature-tagline">Bring the Team Together</span>
+            <p>Travel, accommodation and transfers coordinated around company events, offsites and corporate gatherings.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     SECTION 5: HOW IT WORKS
+     ========================================================================== -->
+  <section class="section-works" id="section-how-it-works">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-eyebrow">HOW IT WORKS</span>
+        <h2 class="section-title">From Business Requirements to Ready to Travel</h2>
+      </div>
+
+      <div class="steps-row">
+        <!-- Step 01 -->
+        <div class="step-card">
+          <div class="step-header">
+            <div class="step-icon-badge">
+              <i class="fas fa-clipboard-list"></i>
+            </div>
+            <span class="step-number">01</span>
+            <div class="step-divider"></div>
+            <span class="step-arrow"><i class="fas fa-chevron-right"></i></span>
+          </div>
+          <h4>Tell Us What You Need</h4>
+          <p>Share your destination, dates, number of travellers, business schedule and any important travel
+            requirements.</p>
+        </div>
+
+        <!-- Step 02 -->
+        <div class="step-card">
+          <div class="step-header">
+            <div class="step-icon-badge">
+              <i class="fas fa-gear"></i>
+            </div>
+            <span class="step-number">02</span>
+            <div class="step-divider"></div>
+            <span class="step-arrow"><i class="fas fa-chevron-right"></i></span>
+          </div>
+          <h4>We Plan the Journey</h4>
+          <p>We bring together suitable stays, transfers and travel arrangements around your itinerary and business
+            requirements.</p>
+        </div>
+
+        <!-- Step 03 -->
+        <div class="step-card">
+          <div class="step-header">
+            <div class="step-icon-badge">
+              <i class="far fa-calendar-check"></i>
+            </div>
+            <span class="step-number">03</span>
+            <div class="step-divider"></div>
+            <span class="step-arrow"><i class="fas fa-chevron-right"></i></span>
+          </div>
+          <h4>We Coordinate the Details</h4>
+          <p>The selected arrangements are organized into one coordinated travel plan, helping make the journey easier
+            for individuals and teams.</p>
+        </div>
+
+        <!-- Step 04 -->
+        <div class="step-card">
+          <div class="step-header">
+            <div class="step-icon-badge">
+              <i class="fas fa-plane-departure"></i>
+            </div>
+            <span class="step-number">04</span>
+          </div>
+          <h4>Your Team Is Ready to Travel</h4>
+          <p>With the essential arrangements in place, your travellers can focus on their meetings, events and business
+            commitments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     SECTION 6: FAQS
+     ========================================================================== -->
+  <section class="section-faq" id="section-faq">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-eyebrow">GOOD TO KNOW</span>
+        <h2 class="section-title">Corporate Travel Questions Answered</h2>
+      </div>
+
+      <div class="faq-grid">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What is corporate travel management?</span>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>Corporate travel management is the planning and coordination of travel undertaken for business purposes.
+              It can include arranging business trips, accommodation, transfers, group movements and other travel
+              requirements according to a company's schedule and needs.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What is the difference between business travel and corporate travel?</span>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>Business travel usually refers to a trip taken for professional purposes, such as a meeting, conference
+              or company event. Corporate travel is the broader process of coordinating these journeys for employees,
+              executives and teams.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Can Kings Travels arrange corporate group travel?</span>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Kings Travels can help coordinate travel arrangements for corporate groups attending meetings,
+              conferences, company events and offsites, based on the group's itinerary and requirements.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What is MICE travel?</span>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>MICE stands for Meetings, Incentives, Conferences and Events. It covers business-related travel
+              associated with professional meetings, incentive trips, conferences and corporate events.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Can accommodation and transfers be arranged together?</span>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Accommodation and airport, hotel or local transfers can be coordinated around the same business
+              itinerary, helping keep different parts of the journey connected.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Can corporate travel arrangements be customized?</span>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Corporate travel arrangements can be planned according to your destination, dates, number of
+              travellers, business schedule and specific travel requirements.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 7 -->
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>How do I plan a business trip for employees?</span>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>Start with the destination, travel dates, number of employees, meeting or event schedule, accommodation
+              requirements and local transportation needs. These details can then be brought together into a coordinated
+              business travel plan.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 8 -->
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>How can I request a corporate travel quote from Kings Travels?</span>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>Share your company name, destination, preferred dates, number of travellers and travel requirements with
+              Kings Travels. The team can then discuss suitable arrangements for your business trip.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     SECTION 7: FINAL CTA
+     ========================================================================== -->
+  <section class="section-bottom-cta">
+    <div class="bottom-cta-bg"></div>
+    <div class="bottom-cta-overlay"></div>
+    <div class="container">
+      <div class="bottom-cta-content">
+        <span class="section-eyebrow">READY FOR BUSINESS</span>
+        <h2>Let's Make Your Next Business Trip Work Better</h2>
+        <p>From an individual executive travelling for an important meeting to an entire team attending a corporate
+          event, every business journey has different requirements. Tell Kings Travels where your people need to go,
+          when they need to be there and what the journey requires. We'll help coordinate the essential travel
+          arrangements around your business.</p>
+        <a href="javascript:void(0)" onclick="openCorpModal('Discuss Your Travel Requirements')" class="btn-corp-gold">
+          Discuss Your Travel Requirements <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     INQUIRY POPUP MODAL
+     ========================================================================== -->
+  <div class="corp-modal" id="corpModal">
+    <div class="corp-modal-box">
+      <button class="corp-modal-close" onclick="closeCorpModal()" aria-label="Close dialog">&times;</button>
+      <div class="corp-modal-header">
+        <span class="section-eyebrow" style="margin-bottom:4px;">CORPORATE DESK</span>
+        <h3>Plan Your Corporate Travel</h3>
+        <p>Share your details below and our corporate travel manager will contact you promptly with a customized
+          itinerary.</p>
+      </div>
+
+      <form class="corp-form" id="corpForm" onsubmit="handleCorpSubmit(event)">
+        <div class="corp-form-group">
+          <label for="corp-name">Full Name *</label>
+          <input type="text" id="corp-name" placeholder="e.g. Rahul Sharma" required>
+        </div>
+
+        <div class="corp-form-group">
+          <label for="corp-company">Company / Organization *</label>
+          <input type="text" id="corp-company" placeholder="e.g. Acme Technologies" required>
+        </div>
+
+        <div class="corp-form-group">
+          <label for="corp-phone">Phone / WhatsApp *</label>
+          <input type="tel" id="corp-phone" placeholder="e.g. +91 98765 43210" required>
+        </div>
+
+        <div class="corp-form-group">
+          <label for="corp-email">Official Email *</label>
+          <input type="email" id="corp-email" placeholder="e.g. rahul@company.com" required>
+        </div>
+
+        <div class="corp-form-group">
+          <label for="corp-service">Service Required</label>
+          <select id="corp-service">
+            <option value="Business Travel">Executive Business Travel</option>
+            <option value="Corporate Group Travel">Corporate Group Travel / Offsite</option>
+            <option value="MICE & Conferences">MICE / Conference / Event</option>
+            <option value="Stays & Transfers">Corporate Stays &amp; Transfers</option>
+          </select>
+        </div>
+
+        <div class="corp-form-group">
+          <label for="corp-pax">Estimated Travelers</label>
+          <input type="number" id="corp-pax" min="1" placeholder="e.g. 5">
+        </div>
+
+        <div class="corp-form-group corp-form-full">
+          <label for="corp-dest">Destination &amp; Preferred Dates</label>
+          <input type="text" id="corp-dest" placeholder="e.g. Mumbai / Dubai, next month">
+        </div>
+
+        <div class="corp-form-group corp-form-full">
+          <label for="corp-message">Specific Requirements (Optional)</label>
+          <textarea id="corp-message" rows="3"
+            placeholder="Hotel category, conference facilities, airport pick-up requirements..."></textarea>
+        </div>
+
+        <div class="corp-form-full corp-modal-actions">
+          <button type="submit" class="btn-corp-gold">
+            Submit Corporate Request <i class="fas fa-paper-plane"></i>
+          </button>
+          <a href="javascript:void(0)" onclick="sendWhatsAppInquiry()" class="btn-corp-wa">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
      FOOTER (ORIGINAL FOOTER PRESERVED)
      ========================================================================== -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="assets/images/logo.jpeg" alt="Kings Travels Logo">
-        <div class="footer-brand-name"><span>Kings</span> Travels</div>
-        <p>A premier travel agency in India crafting personalized journeys that go beyond the ordinary package. Domestic escapes, international holidays, flights, stays and complete travel care.</p>
-        <div class="footer-socials">
-          <a href="#" class="footer-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/kingstravels_official" class="footer-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://wa.me/message/APRJYOU4WDQQK1" class="footer-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-          <a href="tel:+917087771666" class="footer-social" aria-label="Phone"><i class="fas fa-phone"></i></a>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo.jpeg" alt="Kings Travels Logo">
+          <div class="footer-brand-name"><span>Kings</span> Travels</div>
+          <p>A premier travel agency in India crafting personalized journeys that go beyond the ordinary package.
+            Domestic escapes, international holidays, flights, stays and complete travel care.</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/kingstravels_official" class="footer-social" aria-label="Instagram"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/message/APRJYOU4WDQQK1" class="footer-social" aria-label="WhatsApp"><i
+                class="fab fa-whatsapp"></i></a>
+            <a href="tel:+917087771666" class="footer-social" aria-label="Phone"><i class="fas fa-phone"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Top Destinations</h4>
+          <ul>
+            <li><a href="domestic-travel.html">&#127956; Kashmir</a></li>
+            <li><a href="domestic-travel.html">&#127796; Kerala</a></li>
+            <li><a href="domestic-travel.html">&#9968; Himachal Pradesh</a></li>
+            <li><a href="domestic-travel.html">&#127754; Andaman</a></li>
+            <li><a href="international-travel.html">&#127961; Dubai</a></li>
+            <li><a href="international-travel.html">&#127796; Bali</a></li>
+            <li><a href="international-travel.html">&#127962; Europe</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">&#9992; Flight Booking</a></li>
+            <li><a href="services.html">&#127976; Hotel Booking</a></li>
+            <li><a href="services.html">&#128706; Visa Assistance</a></li>
+            <li><a href="services.html">&#128663; Car Rentals</a></li>
+            <li><a href="services.html">&#127942; Custom Packages</a></li>
+            <li><a href="services.html">&#128101; Group Tours</a></li>
+            <li><a href="corporate.html">&#128188; Corporate Travel</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">&#127963; About Us</a></li>
+            <li><a href="b2b.html">&#129309; B2B Partner</a></li>
+            <li><a href="corporate.html">&#128188; Corporate Travel</a></li>
+            <li><a href="index.html#section-reviews">&#128172; Reviews</a></li>
+            <li><a href="travel-guides.html">&#128221; Travel Guides</a></li>
+            <li><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener"><span
+                  class="contact-icon-circle footer-link-icon"><i class="fas fa-phone-alt"></i></span> Contact Us</a>
+            </li>
+          </ul>
+          <h4 style="margin-top:24px;">Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Cancellation Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4><span class="contact-icon-circle footer-head-icon"><i class="fas fa-phone-alt"></i></span> Contact Us</h4>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="footer-contact-text"><a href="tel:+917087771666">+91 70877 71666</a></div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="footer-contact-text"><a href="https://wa.me/message/APRJYOU4WDQQK1">WhatsApp Us</a><br>Available
+              9AM - 9PM</div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="footer-contact-text"><a href="mailto:info@kingstravels.in">info@kingstravels.in</a></div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="footer-contact-text">Punjab, India<br>Serving Pan India &amp; International</div>
+          </div>
         </div>
       </div>
-      <div class="footer-col">
-        <h4>Top Destinations</h4>
-        <ul>
-          <li><a href="domestic-travel.html">&#127956; Kashmir</a></li>
-          <li><a href="domestic-travel.html">&#127796; Kerala</a></li>
-          <li><a href="domestic-travel.html">&#9968; Himachal Pradesh</a></li>
-          <li><a href="domestic-travel.html">&#127754; Andaman</a></li>
-          <li><a href="international-travel.html">&#127961; Dubai</a></li>
-          <li><a href="international-travel.html">&#127796; Bali</a></li>
-          <li><a href="international-travel.html">&#127962; Europe</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="services.html">&#9992; Flight Booking</a></li>
-          <li><a href="services.html">&#127976; Hotel Booking</a></li>
-          <li><a href="services.html">&#128706; Visa Assistance</a></li>
-          <li><a href="services.html">&#128663; Car Rentals</a></li>
-          <li><a href="services.html">&#127942; Custom Packages</a></li>
-          <li><a href="services.html">&#128101; Group Tours</a></li>
-          <li><a href="corporate.html">&#128188; Corporate Travel</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="about.html">&#127963; About Us</a></li>
-          <li><a href="b2b.html">&#129309; B2B Partner</a></li>
-          <li><a href="corporate.html">&#128188; Corporate Travel</a></li>
-          <li><a href="index.html#section-why">&#11088; Why Choose Us</a></li>
-          <li><a href="index.html#section-reviews">&#128172; Reviews</a></li>
-          <li><a href="travel-guides.html">&#128221; Travel Guides</a></li>
-          <li><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener">&#10067; FAQs</a></li>
-          <li><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener">&#128222; Contact Us</a></li>
-        </ul>
-        <h4 style="margin-top:24px;">Legal</h4>
-        <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms &amp; Conditions</a></li>
-          <li><a href="#">Cancellation Policy</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact Us</h4>
-        <div class="footer-contact-item">
-          <div class="footer-contact-icon"><i class="fas fa-phone-alt"></i></div>
-          <div class="footer-contact-text"><a href="tel:+917087771666">+91 70877 71666</a></div>
-        </div>
-        <div class="footer-contact-item">
-          <div class="footer-contact-icon"><i class="fab fa-whatsapp"></i></div>
-          <div class="footer-contact-text"><a href="https://wa.me/message/APRJYOU4WDQQK1">WhatsApp Us</a><br>Available 9AM - 9PM</div>
-        </div>
-        <div class="footer-contact-item">
-          <div class="footer-contact-icon"><i class="fas fa-envelope"></i></div>
-          <div class="footer-contact-text"><a href="mailto:info@kingstravels.in">info@kingstravels.in</a></div>
-        </div>
-        <div class="footer-contact-item">
-          <div class="footer-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-          <div class="footer-contact-text">Punjab, India<br>Serving Pan India &amp; International</div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <p>&copy; 2024 Kings Travels. All Rights Reserved. Designed &amp; Developed by <a href="#"
+              style="color:var(--gold);">Satvik Development</a>.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms &amp; Conditions</a>
+            <a href="#">Cancellation Policy</a>
+            <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener"><span
+                class="contact-icon-circle footer-bottom-icon"><i class="fas fa-phone-alt"></i></span> Contact</a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <div class="footer-bottom-inner">
-        <p>&copy; 2024 Kings Travels. All Rights Reserved. Designed &amp; Developed by <a href="#" style="color:var(--gold);">Satvik Development</a>.</p>
-        <div class="footer-bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms &amp; Conditions</a>
-          <a href="#">Cancellation Policy</a>
-          <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener">Contact</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- WhatsApp Float -->
-<a href="https://wa.me/message/APRJYOU4WDQQK1" class="wa-float" aria-label="Chat on WhatsApp">
-  <i class="fab fa-whatsapp"></i>
-</a>
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/message/APRJYOU4WDQQK1" class="wa-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
-<!-- ==========================================================================
+  <!-- ==========================================================================
      SCRIPTS
      ========================================================================== -->
   <script src="assets/js/main.js" defer></script>
   <script src="assets/js/pages/corporate.js" defer></script>
 </body>
+
 </html>
