@@ -1,212 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <title>Our Travel Services | Kings Travel</title>
-  <meta name="description" content="Explore Kings Travel's full suite of travel services: airport pickup & drop transfers, luxury hotel bookings, curated sightseeing tours, flight ticketing, forex, and visa guidance.">
-  <meta name="keywords" content="Kings Travel services, travel concierge Chandigarh, airport transfers, luxury hotel bookings, flight booking, forex transfer, sightseeing tours">
-  <meta name="author" content="Kings Travel">
-
-  <meta property="og:title" content="Our Travel Services | Kings Travel">
-  <meta property="og:description" content="Comprehensive, stress-free travel solutions designed for seamless holidays across India and worldwide.">
-  <meta property="og:image" content="assets/images/logo.jpeg">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Services in India | Transfers, Stays & Sightseeing | Kings Travels</title>
+  <meta name="description" content="Explore travel services in India with Kings Travels including airport transfers, room booking, sightseeing and dining services planned around your journey.">
+  <meta name="keywords" content="Travel Services in India, airport transfers, room booking, sightseeing India, dining services, Kings Travels">
   <link rel="shortcut icon" href="assets/images/logo.jpeg" type="image/x-icon">
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Outfit (exact same as index.html), Playfair Display, and Caveat (authentic handwritten travel script) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
-
-  <!-- CSS Frameworks & Icons -->
-  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
-  <link rel="stylesheet" href="assets/css/animate.css">
-  <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
-  <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/fonts/flaticon/font/flaticon.css">
-  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/css/helpers.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6.5.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16443245656"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'AW-16443245656');
   </script>
-</head>
 
+    <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/pages/services.css">
+</head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark probootstrap_navbar" id="probootstrap-navbar">
-    <div class="container" style="max-width: 92%;">
-      <a class="navbar-brand" href="index.html">
-        <img src="assets/images/logo.jpeg" class="logo" alt="Kings Travel Logo">
-        <span>Kings <span class="gold">Travel</span></span>
+  <!-- NAVBAR (SAME AS HOME PAGE, SERVICES IS A SINGLE LINK TAB) -->
+  <nav class="navbar" id="main-navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <img src="assets/images/logo.jpeg" alt="Kings Travels Logo">
+        <div class="navbar-brand-text"><span>Kings</span> Travels</div>
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#probootstrap-menu"
-        aria-controls="probootstrap-menu" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="ion-navicon"></i></span>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item">
+          <a href="index.html#section-destinations" class="nav-link">Destinations &#9662;</a>
+          <div class="nav-dropdown">
+            <a href="domestic-travel.html">&#127956; Domestic</a>
+            <a href="international-travel.html">&#127758; International</a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="services.html" class="nav-link active">Services</a></li>
+        <li class="nav-item">
+        <a href="b2b.html" class="nav-link">B2B Partner</a>
+      </li>
+        <li class="nav-item">
+          <a href="index.html#section-b2b" class="nav-link">Corporate &#9662;</a>
+          <div class="nav-dropdown">
+            <a href="services.html">&#128188; Corporate Travel</a>
+            <a href="services.html">&#127908; MICE</a>
+            <a href="index.html#section-experience">&#128101; Group Travel</a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="travel-guides.html" class="nav-link">Travel Guides</a></li>
+        <li class="nav-item"><a href="index.html#section-reviews" class="nav-link">Reviews</a></li>
+        <li class="nav-item"><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="nav-link nav-cta">Contact Us</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger-btn" aria-label="Open menu">
+        <span></span><span></span><span></span>
       </button>
-      <div class="collapse navbar-collapse" id="probootstrap-menu">
-        <ul class="navbar-nav ml-auto align-items-lg-center">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="city-guides.html">Destinations</a></li>
-          <li class="nav-item active"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-          <li class="nav-item ml-lg-3 mt-2 mt-lg-0">
-            <a href="https://wa.me/919872590519?text=Hello%20Kings%20Travel,%20I%20would%20like%20to%20inquire%20about%20your%20services!" target="_blank" class="btn btn-primary" style="padding: 10px 20px; font-size: 13px;">
-              <i class="fa fa-whatsapp"></i> Book Now
-            </a>
-          </li>
-        </ul>
-      </div>
     </div>
   </nav>
-  <!-- END NAVBAR -->
 
-  <!-- HERO SECTION -->
-  <section class="probootstrap-cover overflow-hidden relative" style="background-image: url('assets/images/bg_1.jpg');" id="section-home">
-    <div class="overlay"></div>
-    <div class="container text-center">
-      <div class="row justify-content-center">
-        <div class="col-lg-10 probootstrap-animate">
-          <div class="hero-badge">
-            <i class="fa fa-star"></i> End-To-End Concierge
-          </div>
-          <h1 class="hero-title">Our <span class="gold">Services</span></h1>
-          <p class="hero-lead">
-            Every step of your trip is coordinated with precision, comfort, and five-star quality — so you can sit back and truly enjoy the journey.
-          </p>
-          <div class="hero-btns">
-            <a href="#services-list" class="btn btn-primary">
-              <i class="fa fa-list-ul"></i> Explore Services
-            </a>
-            <a href="#contact-form" class="btn btn-outline-gold">
-              <i class="fa fa-envelope"></i> Request A Quote
-            </a>
-          </div>
-        </div>
+  <!-- MOBILE MENU (SAME AS HOME PAGE, SERVICES IS A SINGLE LINK TAB) -->
+  <div class="mobile-menu" id="mobile-menu">
+    <nav>
+      <ul>
+        <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link" style="display:flex;justify-content:space-between;align-items:center;">Home</a></li>
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-dest')">Destinations <i class="fa fa-chevron-down"></i></button>
+          <ul class="mobile-submenu" id="sub-dest">
+            <li><a href="domestic-travel.html">&#127956; Domestic</a></li>
+            <li><a href="international-travel.html">&#127758; International</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item"><a href="services.html" class="mobile-nav-link" style="display:flex;justify-content:space-between;align-items:center;color:var(--gold-light);">Services</a></li>
+        <li class="mobile-nav-item">
+        <a href="b2b.html" class="mobile-nav-link" style="display:flex;justify-content:space-between;align-items:center;">B2B Partner</a>
+      </li>
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-corp')">Corporate Travel <i class="fa fa-chevron-down"></i></button>
+          <ul class="mobile-submenu" id="sub-corp">
+            <li><a href="services.html">&#128188; Corporate Travel</a></li>
+            <li><a href="services.html">&#127908; MICE</a></li>
+            <li><a href="index.html#section-experience">&#128101; Group Travel</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-about')">About Us <i class="fa fa-chevron-down"></i></button>
+          <ul class="mobile-submenu" id="sub-about">
+            <li><a href="index.html">&#127963; About Kings Travels</a></li>
+            <li><a href="index.html">&#128105;&#8205;&#128188; Managing Director</a></li>
+            <li><a href="index.html#section-why">&#11088; Why Choose Us</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item">
+          <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-guides')">Travel Guides <i class="fa fa-chevron-down"></i></button>
+          <ul class="mobile-submenu" id="sub-guides">
+            <li><a href="travel-guides.html">&#128221; Travel Blog</a></li>
+            <li><a href="travel-guides.html">&#128506; Destination Guides</a></li>
+            <li><a href="travel-guides.html">&#128161; Travel Tips</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item"><a href="index.html#section-reviews" class="mobile-nav-link" style="display:flex;justify-content:space-between;align-items:center;">Reviews</a></li>
+        <li class="mobile-nav-item"><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="mobile-nav-link" style="display:flex;justify-content:space-between;align-items:center;">FAQs</a></li>
+        <li class="mobile-nav-item"><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="mobile-nav-link" style="display:flex;justify-content:space-between;align-items:center;">Contact Us</a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <a href="https://wa.me/message/APRJYOU4WDQQK1" class="btn btn-whatsapp" style="justify-content:center;"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+        <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="btn btn-primary" style="justify-content:center;"><i class="fas fa-paper-plane"></i> Plan My Trip</a>
       </div>
-    </div>
-  </section>
-  <!-- END HERO SECTION -->
+    </nav>
+  </div>
 
-  <!-- MAIN SERVICES LIST -->
-  <section class="probootstrap_section" id="services-list">
+  <!-- 1. HERO SECTION -->
+  <section class="services-hero">
+    <div class="services-hero-overlay"></div>
     <div class="container">
-      <div class="text-center probootstrap-animate mb-5">
-        <span class="section-tag">Premium Care</span>
-        <h2 class="section-heading">Tailored Travel Solutions</h2>
-        <div class="heading-divider"></div>
-        <p class="section-lead">We take care of every detail so you experience absolute peace of mind from departure to return.</p>
+      <div class="services-hero-inner">
+        <div class="hero-text-col">
+          <div class="breadcrumb-row">
+            <a href="index.html">Home</a>
+            <span class="sep"><i class="fas fa-chevron-right"></i></span>
+            <span class="curr">Services</span>
+          </div>
+          <div class="badge-pill">OUR SERVICES</div>
+          <h1>Making Every Journey<br>Feel Effortless</h1>
+          <p>Discover thoughtfully planned travel services in India with Kings Travels including airport transfers, room booking, sightseeing and dining services arranged around your destination, itinerary and travel preferences.</p>
+          <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="btn-journey">Plan My Journey &nbsp;<i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-handwriting-col">
+          <div class="hero-script-text">
+            Travel<br>Comfortably<br>Explore Freely
+            <span class="hero-plane-icon"><i class="fas fa-paper-plane"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. QUICK HIGHLIGHTS -->
+  <section class="services-features-strip">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon-box"><i class="fas fa-car-side"></i></div>
+          <div class="feature-info">
+            <h4>Comfortable Transfers</h4>
+            <p>Airport pickup, railway station and hotel transfers</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon-box"><i class="fas fa-bed"></i></div>
+          <div class="feature-info">
+            <h4>Stay Options</h4>
+            <p>Hotels, resorts, camps and villas</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon-box"><i class="fas fa-binoculars"></i></div>
+          <div class="feature-info">
+            <h4>Planned Sightseeing</h4>
+            <p>Local attractions and sightseeing experiences</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon-box"><i class="fas fa-utensils"></i></div>
+          <div class="feature-info">
+            <h4>Dining Experiences</h4>
+            <p>Restaurant and dining arrangements during your trip</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. WHAT WE ARRANGE -->
+  <section class="arrange-section">
+    <div class="container">
+      <div class="section-header-centered">
+        <div class="badge-pill">WHAT WE ARRANGE</div>
+        <h2>Everything Your Journey Needs<br><span>All in One Place</span></h2>
+        <p>Great travel is easier when everything works together. Kings Travels brings transfers, accommodation, sightseeing and dining arrangements into one well-planned journey. As an India travel agency, we help travellers organize the essential details of their trip around their destination, dates and preferences&mdash;whether they are exploring India or travelling abroad.</p>
       </div>
 
-      <div class="row">
-        <!-- Service 1: Transfer -->
-        <div class="col-lg-6 mb-4 probootstrap-animate">
-          <div class="probootstrap-media d-flex align-items-stretch h-100">
-            <div class="probootstrap-media-image" style="background-image: url('https://images.unsplash.com/photo-1500835556837-99ac94a94552?auto=format&fit=crop&q=80&w=1000');">
-            </div>
-            <div class="media-body d-flex flex-column justify-content-between">
-              <div>
-                <h5>01. Seamless Transfers</h5>
-                <p>Private airport &amp; railway station pickup and drop. Dedicated air-conditioned chauffeur-driven vehicles for sightseeing and city transitions throughout your stay.</p>
-              </div>
-              <a href="https://wa.me/919872590519?text=Inquiry%20for%20Transfer%20Services" target="_blank" class="btn btn-sm btn-outline-gold mt-3" style="align-self: flex-start; padding: 6px 16px; font-size: 11px; color: var(--secondary) !important;">
-                Inquire Transfers
-              </a>
-            </div>
+      <div class="arrange-grid">
+        <!-- Card 1: Transfer – Pickup & Drop -->
+        <div class="arrange-card" style="background-image: url('assets/images/service_transfer.jpg');">
+          <div class="arrange-card-inner">
+            <div class="arrange-circle-icon"><i class="fas fa-car"></i></div>
+            <h3>Transfer &ndash; Pickup &amp; Drop</h3>
+            <p>Make every arrival and departure easier with convenient airport transfers planned around your travel schedule. Kings Travels can help arrange airport pickup and drop, railway station pickups, airport-to-hotel transfers, hotel transfers and local transportation according to your itinerary. Our airport transfer services help connect the different stages of your journey so you can move from one place to the next with greater ease.</p>
           </div>
         </div>
 
-        <!-- Service 2: Accommodation -->
-        <div class="col-lg-6 mb-4 probootstrap-animate">
-          <div class="probootstrap-media d-flex align-items-stretch h-100">
-            <div class="probootstrap-media-image" style="background-image: url('assets/images/img_2.jpg');">
-            </div>
-            <div class="media-body d-flex flex-column justify-content-between">
-              <div>
-                <h5>02. Luxury Accommodation</h5>
-                <p>Hand-picked 4-star and 5-star hotels, authentic mountain chalets, heritage palaces, luxury desert safari camps, and private pool villas vetted for hygiene and comfort.</p>
-              </div>
-              <a href="https://wa.me/919872590519?text=Inquiry%20for%20Accommodation%20Services" target="_blank" class="btn btn-sm btn-outline-gold mt-3" style="align-self: flex-start; padding: 6px 16px; font-size: 11px; color: var(--secondary) !important;">
-                Inquire Stays
-              </a>
-            </div>
+        <!-- Card 2: Accommodation -->
+        <div class="arrange-card" style="background-image: url('assets/images/service_hotel.jpg');">
+          <div class="arrange-card-inner">
+            <div class="arrange-circle-icon"><i class="fas fa-bed"></i></div>
+            <h3>Accommodation</h3>
+            <p>The right stay can change the way you experience a destination. Kings Travels helps with room booking and accommodation arrangements across hotels, resorts, camps and villas according to your destination, itinerary and travel preferences. Whether you are booking a room for a short getaway or arranging stays for a longer journey, we help connect your accommodation with the rest of your travel plan.</p>
           </div>
         </div>
 
-        <!-- Service 3: Sightseeing -->
-        <div class="col-lg-6 mb-4 probootstrap-animate">
-          <div class="probootstrap-media d-flex align-items-stretch h-100">
-            <div class="probootstrap-media-image" style="background-image: url('https://media1.thrillophilia.com/filestore/tugvl5xiwuamnk7qf9rpz18hijej_ooty1_(Copy).jpg?w=576&h=650');">
-            </div>
-            <div class="media-body d-flex flex-column justify-content-between">
-              <div>
-                <h5>03. Curated Sightseeing &amp; Tours</h5>
-                <p>Skip-the-line monument entries, certified local guides, panoramic viewpoints, cultural immersions, and scenic routes customized to your schedule.</p>
-              </div>
-              <a href="https://wa.me/919872590519?text=Inquiry%20for%20Sightseeing%20Tours" target="_blank" class="btn btn-sm btn-outline-gold mt-3" style="align-self: flex-start; padding: 6px 16px; font-size: 11px; color: var(--secondary) !important;">
-                Inquire Tours
-              </a>
-            </div>
+        <!-- Card 3: Sightseeing -->
+        <div class="arrange-card" style="background-image: url('assets/images/service_sightseeing.jpg');">
+          <div class="arrange-card-inner">
+            <div class="arrange-circle-icon"><i class="fas fa-binoculars"></i></div>
+            <h3>Sightseeing</h3>
+            <p>A destination is meant to be experienced, not simply visited. Kings Travels helps arrange sightseeing around your itinerary so you can make the most of your time wherever you travel. From local sightseeing and popular tourist attractions to city sightseeing and planned sightseeing tours, your experiences can be organized around your travel schedule and interests.</p>
           </div>
         </div>
 
-        <!-- Service 4: Gourmet Food -->
-        <div class="col-lg-6 mb-4 probootstrap-animate">
-          <div class="probootstrap-media d-flex align-items-stretch h-100">
-            <div class="probootstrap-media-image" style="background-image: url('https://images.unsplash.com/photo-1505253758473-96b7015fcd40?auto=format&fit=crop&q=80&w=1000');">
-            </div>
-            <div class="media-body d-flex flex-column justify-content-between">
-              <div>
-                <h5>04. Gourmet Dining &amp; Cuisine</h5>
-                <p>Savor authentic local delicacies, daily breakfast inclusions, special candlelit dinners, and curated dining experiences at renowned culinary spots.</p>
-              </div>
-              <a href="https://wa.me/919872590519?text=Inquiry%20for%20Dining%20Options" target="_blank" class="btn btn-sm btn-outline-gold mt-3" style="align-self: flex-start; padding: 6px 16px; font-size: 11px; color: var(--secondary) !important;">
-                Inquire Dining
-              </a>
-            </div>
+        <!-- Card 4: Food & Dining -->
+        <div class="arrange-card" style="background-image: url('assets/images/service_dining.jpg');">
+          <div class="arrange-card-inner">
+            <div class="arrange-circle-icon"><i class="fas fa-utensils"></i></div>
+            <h3>Food &amp; Dining</h3>
+            <p>Good food adds another experience to every journey. Kings Travels can help coordinate restaurant and dining services at your destination according to your itinerary and selected travel plan. Dining arrangements can be planned alongside your stay and sightseeing schedule, making it easier to enjoy your destination without having to organize every detail separately.</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Service 5: Flights -->
-        <div class="col-lg-6 mb-4 probootstrap-animate">
-          <div class="probootstrap-media d-flex align-items-stretch h-100">
-            <div class="probootstrap-media-image" style="background-image: url('https://i.brecorder.com/primary/2021/03/6051c734757eb.jpg');">
-            </div>
-            <div class="media-body d-flex flex-column justify-content-between">
-              <div>
-                <h5>05. Flight &amp; Air Ticket Bookings</h5>
-                <p>Exclusive corporate and group airline discounts, round-trip ticket management, preferred seat allocation, extra baggage support, and instant re-routing.</p>
-              </div>
-              <a href="https://wa.me/919872590519?text=Inquiry%20for%20Flight%20Booking" target="_blank" class="btn btn-sm btn-outline-gold mt-3" style="align-self: flex-start; padding: 6px 16px; font-size: 11px; color: var(--secondary) !important;">
-                Inquire Flights
-              </a>
-            </div>
+  <!-- 4. A WELL-PLANNED JOURNEY -->
+  <section class="organized-section">
+    <div class="container">
+      <div class="organized-grid">
+        <div class="organized-content">
+          <div class="badge-pill">A WELL-PLANNED JOURNEY</div>
+          <h2>It’s the Little Details<br><span>That Make the Journey</span></h2>
+          <div class="organized-moments">
+            <div class="moment-pill"><i class="fas fa-check-circle"></i> A convenient pickup when you arrive.</div>
+            <div class="moment-pill"><i class="fas fa-check-circle"></i> A comfortable place to stay.</div>
+            <div class="moment-pill"><i class="fas fa-check-circle"></i> Enough time to discover the destination.</div>
+            <div class="moment-pill"><i class="fas fa-check-circle"></i> A good meal after a day of exploring.</div>
           </div>
+          <p>It’s often the smaller details that turn a trip into a better travel experience. As your India trip planner, Kings Travels helps bring transfers, accommodation, sightseeing and dining arrangements together around one itinerary. Instead of planning each part separately, the important details of your journey can work together from arrival to departure.</p>
+          <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="btn-journey">Plan My Journey &nbsp;<i class="fas fa-arrow-right"></i></a>
         </div>
 
-        <!-- Service 6: Money Transfer & Forex -->
-        <div class="col-lg-6 mb-4 probootstrap-animate">
-          <div class="probootstrap-media d-flex align-items-stretch h-100">
-            <div class="probootstrap-media-image" style="background-image: url('https://www.unimoni.in/blog/wp-content/uploads/2021/03/International-Money-transfer-860x560.png');">
-            </div>
-            <div class="media-body d-flex flex-column justify-content-between">
-              <div>
-                <h5>06. International Forex &amp; Remittance</h5>
-                <p>Multi-currency travel cards, foreign exchange notes, swift university fee remittance, and transparent bank-authorized conversion rates with minimal fees.</p>
+        <div class="organized-visual">
+          <div class="polaroid-collage-container">
+            <!-- Handwritten Flight Trail & Script Note -->
+            <div class="flight-trail-badge">
+              <svg class="flight-path-svg" viewBox="0 0 120 70" fill="none">
+                <path d="M 10 55 Q 60 12, 105 28" stroke="#333333" stroke-width="1.8" stroke-dasharray="4 4" fill="transparent"/>
+              </svg>
+              <i class="fas fa-plane flight-plane-dark"></i>
+              <div class="flight-script-text">
+                Every Detail<br>Taken Care Of<br>For A Better Journey
               </div>
-              <a href="https://wa.me/919872590519?text=Inquiry%20for%20Forex%20Services" target="_blank" class="btn btn-sm btn-outline-gold mt-3" style="align-self: flex-start; padding: 6px 16px; font-size: 11px; color: var(--secondary) !important;">
-                Inquire Forex
-              </a>
+            </div>
+
+            <!-- Polaroid Photo 1: Airport Departure Terminal -->
+            <div class="polaroid-card polaroid-pos-1">
+              <div class="polaroid-img-box">
+                <img src="assets/images/polaroid_airport.jpg" alt="Traveler with luggage in airport">
+              </div>
+            </div>
+
+            <!-- Polaroid Photo 2: Thai Longtail Boat in Lagoon -->
+            <div class="polaroid-card polaroid-pos-2">
+              <div class="polaroid-img-box">
+                <img src="assets/images/polaroid_boat.jpg" alt="Thai tropical lagoon and boat">
+              </div>
+            </div>
+
+            <!-- Polaroid Photo 3: Tropical Resort Pool & Palms -->
+            <div class="polaroid-card polaroid-pos-3">
+              <div class="polaroid-img-box">
+                <img src="assets/images/polaroid_pool.jpg" alt="Resort swimming pool with palm trees">
+              </div>
             </div>
           </div>
         </div>
@@ -214,121 +286,299 @@
     </div>
   </section>
 
-  <!-- WHY CHOOSE US -->
-  <section class="probootstrap_section" style="background: #F1F5F9;">
-    <div class="container text-center probootstrap-animate">
-      <span class="section-tag">Why Kings Travel</span>
-      <h2 class="section-heading">The Kings Travel Standard</h2>
-      <div class="heading-divider"></div>
-      <p class="section-lead">Discover why hundreds of families and discerning travelers trust Kings Travel for their most cherished getaways.</p>
+  <!-- 5. HOW IT WORKS -->
+  <section class="steps-section">
+    <div class="container">
+      <div class="section-header-centered">
+        <div class="badge-pill">HOW IT ALL COMES TOGETHER</div>
+        <h2>See How It <span>All Comes Together</span></h2>
+      </div>
 
-      <div class="row text-left mt-4">
-        <div class="col-md-4 mb-4">
-          <div class="service-card" style="padding: 28px;">
-            <div class="service-icon-box"><i class="fa fa-shield"></i></div>
-            <h5 class="service-title" style="font-size: 1.15rem;">100% Verified &amp; Safe</h5>
-            <p class="service-text">All partners, vehicles, and hotel properties are directly vetted for safety, cleanliness, and premium hospitality standards.</p>
+      <div class="steps-flow">
+        <!-- Step 1 -->
+        <div class="step-col">
+          <div class="step-header-box">
+            <div class="step-circle-icon"><i class="fas fa-car"></i></div>
+            <div class="step-title-unit">
+              <span class="step-number">01</span>
+              <span class="step-title-text">Arrive &amp; Transfer</span>
+            </div>
+          </div>
+          <p>Begin your journey with an airport pickup, railway station pickup or hotel transfer arranged around your arrival and travel itinerary.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-col">
+          <div class="step-header-box">
+            <div class="step-circle-icon"><i class="fas fa-bed"></i></div>
+            <div class="step-title-unit">
+              <span class="step-number">02</span>
+              <span class="step-title-text">Check In &amp; Stay</span>
+            </div>
+          </div>
+          <p>Settle into a hotel, resort, camp or villa with room booking arrangements suited to your destination and travel preferences.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-col">
+          <div class="step-header-box">
+            <div class="step-circle-icon"><i class="fas fa-binoculars"></i></div>
+            <div class="step-title-unit">
+              <span class="step-number">03</span>
+              <span class="step-title-text">Explore &amp; Sightsee</span>
+            </div>
+          </div>
+          <p>Experience local sightseeing, popular attractions and destination highlights with sightseeing planned around your itinerary.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step-col">
+          <div class="step-header-box">
+            <div class="step-circle-icon"><i class="fas fa-utensils"></i></div>
+            <div class="step-title-unit">
+              <span class="step-number">04</span>
+              <span class="step-title-text">Dine &amp; Enjoy</span>
+            </div>
+          </div>
+          <p>Enjoy restaurant and dining arrangements that fit naturally into your travel schedule while you experience the destination.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. FAQs -->
+  <section class="faqs-section">
+    <div class="container">
+      <div class="section-header-centered">
+        <div class="badge-pill">GOOD TO KNOW</div>
+        <h2>Good to Know <span>Before You Go</span></h2>
+      </div>
+
+      <div class="faqs-grid">
+        <!-- Column 1 (FAQs 1 to 4) -->
+        <div class="faqs-col">
+          <!-- FAQ 1 -->
+          <div class="faq-card" onclick="toggleFaq(this)">
+            <div class="faq-head">
+              <h5 class="faq-question-title"><span class="faq-qnum">1.</span> What travel services does Kings Travels provide in India?</h5>
+              <i class="fas fa-plus faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer faq-body">
+              <p>Kings Travels provides travel planning support for transfers, accommodation, sightseeing and dining arrangements. Our travel services in India can be planned around your destination, travel dates, itinerary and individual requirements.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-card" onclick="toggleFaq(this)">
+            <div class="faq-head">
+              <h5 class="faq-question-title"><span class="faq-qnum">2.</span> Does Kings Travels provide airport pickup and drop?</h5>
+              <i class="fas fa-plus faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer faq-body">
+              <p>Yes. Kings Travels can help arrange airport pickup and drop, railway station transfers, hotel transfers and other transportation required according to your travel itinerary.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-card" onclick="toggleFaq(this)">
+            <div class="faq-head">
+              <h5 class="faq-question-title"><span class="faq-qnum">3.</span> Can I arrange an airport-to-hotel transfer?</h5>
+              <i class="fas fa-plus faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer faq-body">
+              <p>Yes. An airport-to-hotel transfer can be arranged according to your arrival details, destination and itinerary. Hotel-to-airport transfers can also be coordinated for your return journey.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-card" onclick="toggleFaq(this)">
+            <div class="faq-head">
+              <h5 class="faq-question-title"><span class="faq-qnum">4.</span> Can Kings Travels help with room booking?</h5>
+              <i class="fas fa-plus faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer faq-body">
+              <p>Yes. Kings Travels can assist with room booking and accommodation arrangements. Depending on your destination and travel requirements, options can include hotels, resorts, camps and villas.</p>
+            </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="service-card" style="padding: 28px;">
-            <div class="service-icon-box"><i class="fa fa-sliders"></i></div>
-            <h5 class="service-title" style="font-size: 1.15rem;">100% Bespoke Itineraries</h5>
-            <p class="service-text">No cookie-cutter trips. Every single day of your journey is crafted to match your unique interests, pace, and comfort.</p>
+
+        <!-- Column 2 (FAQs 5 to 8) -->
+        <div class="faqs-col">
+          <!-- FAQ 5 -->
+          <div class="faq-card" onclick="toggleFaq(this)">
+            <div class="faq-head">
+              <h5 class="faq-question-title"><span class="faq-qnum">5.</span> Is sightseeing included in your travel services?</h5>
+              <i class="fas fa-plus faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer faq-body">
+              <p>Sightseeing can be planned according to your selected itinerary. Depending on the destination, this may include local sightseeing, city sightseeing, popular tourist attractions and other destination experiences.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-card" onclick="toggleFaq(this)">
+            <div class="faq-head">
+              <h5 class="faq-question-title"><span class="faq-qnum">6.</span> Can I customize my sightseeing itinerary?</h5>
+              <i class="fas fa-plus faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer faq-body">
+              <p>Yes. Your sightseeing plan can be organized around your interests, available time and travel itinerary. You can share the attractions and experiences you would like to explore while planning your journey.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="faq-card" onclick="toggleFaq(this)">
+            <div class="faq-head">
+              <h5 class="faq-question-title"><span class="faq-qnum">7.</span> Do you arrange food and dining during a trip?</h5>
+              <i class="fas fa-plus faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer faq-body">
+              <p>Kings Travels can help coordinate restaurant and dining services during your journey. Exact dining or meal arrangements depend on your destination, itinerary and selected travel plan.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="faq-card" onclick="toggleFaq(this)">
+            <div class="faq-head">
+              <h5 class="faq-question-title"><span class="faq-qnum">8.</span> Can transfers, accommodation and sightseeing be arranged together?</h5>
+              <i class="fas fa-plus faq-toggle-icon"></i>
+            </div>
+            <div class="faq-answer faq-body">
+              <p>Yes. Transfers, accommodation, sightseeing and dining arrangements can be coordinated around the same itinerary, helping you keep the essential parts of your journey organized.</p>
+            </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="service-card" style="padding: 28px;">
-            <div class="service-icon-box"><i class="fa fa-clock-o"></i></div>
-            <h5 class="service-title" style="font-size: 1.15rem;">24/7 Dedicated Concierge</h5>
-            <p class="service-text">From the moment you depart until you return home, your dedicated travel coordinator is just a phone call or WhatsApp away.</p>
-          </div>
-        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. FINAL CTA -->
+  <section class="cta-banner-section">
+    <div class="cta-banner-overlay"></div>
+    <!-- Flight line and pin decorative vector -->
+    <div class="cta-decorative-flight">
+      <svg class="cta-flight-svg" viewBox="0 0 140 120" fill="none">
+        <path d="M 20 100 C 40 40, 80 120, 110 30" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-dasharray="5 5" fill="none"/>
+        <circle cx="20" cy="100" r="4" fill="#ffffff"/>
+        <path d="M 20 85 C 16 85, 13 88, 13 92 C 13 98, 20 105, 20 105 C 20 105, 27 98, 27 92 C 27 88, 24 85, 20 85 Z" fill="#e2af5e"/>
+        <circle cx="20" cy="91" r="2.5" fill="#3c1e05"/>
+      </svg>
+      <i class="fas fa-paper-plane" style="color: #ffffff; font-size: 22px; transform: rotate(35deg); margin-left: 100px; margin-top: -105px;"></i>
+    </div>
+
+    <div class="container">
+      <div class="cta-content-box">
+        <div class="badge-pill" style="background: rgba(226,175,94,0.2); color: #f5d08a; border-color: rgba(226,175,94,0.4); margin-bottom: 16px;">START YOUR JOURNEY</div>
+        <h2>Your Next Journey Starts Here</h2>
+        <p>Tell us where you want to go and how you want to travel. From airport transfers and comfortable stays to sightseeing and dining arrangements, Kings Travels helps bring the essential details together around your journey.</p>
+        <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="btn-cta-orange">Plan My Journey &nbsp;<i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="probootstrap_section" id="contact-form">
+  <footer class="footer">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-5 mb-5 mb-lg-0">
-          <h3 class="mb-4">Get In Touch</h3>
-          <p class="text-light-50 mb-4">Plan your dream getaway today. Contact our Chandigarh travel experts for customized holiday packages.</p>
-
-          <div class="contact-info-card mb-4">
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fa fa-phone"></i></div>
-              <div class="contact-text">
-                <h6>Managing Director (Miss Navdeep Kaur)</h6>
-                <a href="https://wa.me/919872590519" target="_blank">+91 9872590519</a>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fa fa-user-circle"></i></div>
-              <div class="contact-text">
-                <h6>CEO &amp; Founder (Mr. Raj)</h6>
-                <a href="https://wa.me/917837585150" target="_blank">+91 7837585150</a>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fa fa-envelope"></i></div>
-              <div class="contact-text">
-                <h6>Email Us</h6>
-                <a href="mailto:Kingstravel2023@gmail.com">Kingstravel2023@gmail.com</a>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fa fa-map-marker"></i></div>
-              <div class="contact-text">
-                <h6>Head Office</h6>
-                <p>Sector 34A, Chandigarh, Punjab</p>
-              </div>
-            </div>
-          </div>
-
-          <h4 style="color: #FFFFFF; font-size: 1.1rem; margin-bottom: 12px;">Connect With Us</h4>
-          <div class="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=61552360375058" target="_blank" class="social-icon-btn" title="Facebook"><i class="fa fa-facebook"></i></a>
-            <a href="https://instagram.com/kings_travel2023" target="_blank" class="social-icon-btn" title="Instagram"><i class="fa fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/kings-travel-31a584291" target="_blank" class="social-icon-btn" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-            <a href="https://wa.me/919872590519" target="_blank" class="social-icon-btn" title="WhatsApp"><i class="fa fa-whatsapp"></i></a>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo.jpeg" alt="Kings Travels">
+          <div class="footer-brand-name"><span>Kings</span> Travels</div>
+          <p>Crafting unforgettable travel experiences across India and the world. Your journey, our expertise &ndash; from first inquiry to final return.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/profile.php?id=61552360375058&mibextid=LQQJ4d" class="footer-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/kings_travel2023?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" class="footer-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/kings-travel-31a584291" class="footer-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/message/APRJYOU4WDQQK1" class="footer-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="footer-social" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
-
-        <div class="col-lg-7">
-          <div class="iframe-container">
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSd2DHuQWDo_1fyn4b8vFhj5k6OBIookoHML12ioNQo8sD8Y2w/viewform?embedded=true"
-              title="Kings Travel Inquiry Form">Loading inquiry form…</iframe>
+        <div class="footer-col">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="index.html#section-destinations">&#127956; Kashmir</a></li>
+            <li><a href="index.html#section-destinations">&#127964; Rajasthan</a></li>
+            <li><a href="index.html#section-destinations">&#127796; Kerala</a></li>
+            <li><a href="index.html#section-destinations">&#127956; Manali</a></li>
+            <li><a href="index.html#section-destinations">&#127958; Goa</a></li>
+            <li><a href="index.html#section-destinations">&#127961; Dubai</a></li>
+            <li><a href="index.html#section-destinations">&#127958; Thailand</a></li>
+            <li><a href="index.html#section-destinations">&#127958; Maldives</a></li>
+            <li><a href="travel-guides.html">All Destinations &rarr;</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Packages</h4>
+          <ul>
+            <li><a href="domestic-travel.html">&#127470;&#127475; Domestic Tours</a></li>
+            <li><a href="international-travel.html">&#9992;&#65039; International Tours</a></li>
+            <li><a href="index.html#section-experience">&#128145; Honeymoon</a></li>
+            <li><a href="index.html#section-experience">&#128106; Family</a></li>
+            <li><a href="index.html#section-experience">&#128101; Group Tours</a></li>
+            <li><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener">&#128221; Customized</a></li>
+          </ul>
+          <h4 style="margin-top:24px;">Services</h4>
+          <ul>
+            <li><a href="services.html">&#128652; Transfer &ndash; Pickup &amp; Drop</a></li>
+            <li><a href="services.html">&#127968; Accommodation</a></li>
+            <li><a href="services.html">&#127959; Sightseeing</a></li>
+            <li><a href="services.html">&#127869;&#65039; Food &amp; Dining</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">&#127963; About Us</a></li>
+            <li><a href="index.html#section-b2b">&#129309; B2B Partner</a></li>
+            <li><a href="index.html#section-why">&#11088; Why Choose Us</a></li>
+            <li><a href="index.html#section-reviews">&#128172; Reviews</a></li>
+            <li><a href="travel-guides.html">&#128221; Travel Guides</a></li>
+            <li><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener">&#10067; FAQs</a></li>
+            <li><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener">&#128222; Contact Us</a></li>
+          </ul>
+          <h4 style="margin-top:24px;">Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Cancellation Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="footer-contact-text"><a href="tel:+917087771666">+91 70877 71666</a></div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="footer-contact-text"><a href="https://wa.me/message/APRJYOU4WDQQK1">WhatsApp Us</a><br>Available 9AM - 9PM</div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="footer-contact-text"><a href="mailto:info@kingstravels.in">info@kingstravels.in</a></div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="footer-contact-text">Punjab, India<br>Serving Pan India &amp; International</div>
           </div>
         </div>
       </div>
-
-      <div class="copyright-text">
-        <p class="mb-0">&copy; 2026 Kings Travel. All Rights Reserved. | Designed &amp; Maintained with Excellence.</p>
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <p>&copy; 2024 Kings Travels. All Rights Reserved. Designed &amp; Developed by <a href="#" style="color:var(--gold);">Satvik Development</a>.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms &amp; Conditions</a>
+            <a href="#">Cancellation Policy</a>
+            <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener">Contact</a>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- FLOATING WHATSAPP BUTTON -->
-  <a href="https://wa.me/919872590519?text=Hello%20Kings%20Travel,%20I%20would%20like%20to%20inquire%20about%20your%20services." class="floating-whatsapp" target="_blank" rel="noopener" title="Chat with us on WhatsApp">
-    <i class="fa fa-whatsapp"></i>
-    <span>Chat with Us</span>
-  </a>
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/message/APRJYOU4WDQQK1" class="wa-float" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
-  <!-- SCRIPTS -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <script src="assets/js/jquery.waypoints.min.js"></script>
-  <script src="assets/js/jquery.easing.1.3.js"></script>
-  <script src="assets/js/select2.min.js"></script>
-  <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js" defer></script>
 </body>
-
 </html>
