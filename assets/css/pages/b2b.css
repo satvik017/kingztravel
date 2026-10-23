@@ -5,7 +5,7 @@
 /* B2B HERO */
     .b2b-hero {
       position: relative;
-      background: #0c1e33;
+      background: #183359;
       color: white;
       padding: 170px 0 90px;
       overflow: hidden;
@@ -168,7 +168,7 @@
       position: relative;
       border-radius: 20px;
       overflow: hidden;
-      background: #0c1e33;
+      background: #183359;
       min-height: 380px;
       display: flex;
     }
@@ -269,7 +269,7 @@
 
     /* DESTINATIONS */
     .section-destinations {
-      background: #0c1e33;
+      background: linear-gradient(135deg, #183359 0%, #20426E 100%);
       color: white;
       padding: 90px 0;
     }
@@ -478,7 +478,7 @@
 
     /* FINAL CTA */
     .b2b-cta {
-      background: linear-gradient(135deg, #0a1727, #153254);
+      background: linear-gradient(135deg, #183359, #224675);
       padding: 70px 0;
       color: white;
     }
