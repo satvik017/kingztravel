@@ -12,7 +12,7 @@
 .services-hero {
   position: relative;
   padding: 160px 0 100px;
-  background: #0A192F url('../../images/service_hero.jpg') no-repeat center right / cover;
+  background: #183359 url('../../images/service_hero.jpg') no-repeat center right / cover;
   overflow: hidden;
   min-height: 560px;
   display: flex;
@@ -24,10 +24,10 @@
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(10, 25, 47, 0.94) 0%,
-    rgba(10, 25, 47, 0.84) 48%,
-    rgba(10, 25, 47, 0.45) 82%,
-    rgba(10, 25, 47, 0.65) 100%
+    rgba(21, 44, 77, 0.88) 0%,
+    rgba(21, 44, 77, 0.76) 48%,
+    rgba(21, 44, 77, 0.38) 82%,
+    rgba(21, 44, 77, 0.55) 100%
   );
   z-index: 1;
 }
@@ -646,7 +646,7 @@
     .cta-banner-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(90deg, rgba(10, 25, 47, 0.94) 0%, rgba(17, 34, 64, 0.85) 45%, rgba(10, 25, 47, 0.65) 100%);
+      background: linear-gradient(90deg, rgba(21, 44, 77, 0.92) 0%, rgba(30, 63, 109, 0.82) 45%, rgba(21, 44, 77, 0.65) 100%);
       z-index: 1;
     }
     .cta-decorative-flight {

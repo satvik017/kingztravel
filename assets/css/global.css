@@ -3,13 +3,14 @@
    ========================================================================== */
 
 :root {
-  /* Brand Color Palette */
+  /* Brand Color Palette - Refined & Lighter Royal Sapphire Navy */
   --gold: #d89b42;
   --gold-light: #e5b873;
   --gold-dark: #b57f33;
-  --navy: #0A192F;
-  --navy-mid: #112240;
-  --navy-light: #233554;
+  --navy: #152C4D;
+  --navy-dark: #0F2038;
+  --navy-mid: #1E3F6D;
+  --navy-light: #2A5490;
   --cream: #F8F5F0;
   --cream-light: #FAF8F5;
   --white: #ffffff;
@@ -21,9 +22,9 @@
   --gray-800: #0f172a;
 
   /* Elevations & Shadows */
-  --shadow-sm: 0 2px 12px rgba(10, 25, 47, 0.08);
-  --shadow-md: 0 8px 32px rgba(10, 25, 47, 0.12);
-  --shadow-lg: 0 20px 60px rgba(10, 25, 47, 0.16);
+  --shadow-sm: 0 2px 12px rgba(21, 44, 77, 0.08);
+  --shadow-md: 0 8px 32px rgba(21, 44, 77, 0.12);
+  --shadow-lg: 0 20px 60px rgba(21, 44, 77, 0.16);
   --shadow-gold: 0 8px 32px rgba(216, 155, 66, 0.30);
 
   /* Border Radii */
@@ -337,7 +338,7 @@ button {
   right: 0;
   z-index: 1000;
   padding: 0 24px;
-  background: rgba(10, 25, 47, 0.97);
+  background: rgba(21, 44, 77, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(226, 175, 94, 0.25);
@@ -415,7 +416,7 @@ button {
   top: calc(100% + 8px);
   left: 50%;
   transform: translateX(-50%) translateY(8px);
-  background: rgba(10, 25, 47, 0.98);
+  background: rgba(21, 44, 77, 0.98);
   border: 1px solid rgba(216, 155, 66, 0.3);
   border-radius: var(--radius-md);
   padding: 8px;
@@ -423,7 +424,7 @@ button {
   opacity: 0;
   pointer-events: none;
   transition: var(--transition);
-  box-shadow: 0 20px 60px rgba(10, 25, 47, 0.5);
+  box-shadow: 0 20px 60px rgba(21, 44, 77, 0.45);
 }
 
 .nav-dropdown::before {
@@ -640,7 +641,7 @@ button {
    GLOBAL FOOTER
    ========================================================================== */
 .footer {
-  background: var(--navy);
+  background: linear-gradient(180deg, #183359 0%, #11243E 100%);
   color: var(--white);
   padding: 80px 0 30px;
   border-top: 1px solid rgba(216, 155, 66, 0.2);

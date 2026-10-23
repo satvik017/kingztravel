@@ -43,7 +43,7 @@
       min-height: 86vh;
       display: flex;
       align-items: center;
-      background: #0A192F;
+      background: #183359;
       overflow: hidden;
       padding: 150px 0 90px;
     }
@@ -64,10 +64,10 @@
       inset: 0;
       background: linear-gradient(
         90deg,
-        rgba(10, 25, 47, 0.94) 0%,
-        rgba(10, 25, 47, 0.85) 45%,
-        rgba(10, 25, 47, 0.45) 80%,
-        rgba(10, 25, 47, 0.6) 100%
+        rgba(21, 44, 77, 0.88) 0%,
+        rgba(21, 44, 77, 0.75) 45%,
+        rgba(21, 44, 77, 0.38) 80%,
+        rgba(21, 44, 77, 0.52) 100%
       );
     }
 
@@ -258,7 +258,7 @@
        SECTION 3: SCHEDULE COMES FIRST (DARK SECTION)
        ========================================================================== */
     .section-schedule {
-      background: #0A192F;
+      background: linear-gradient(135deg, #183359 0%, #20426E 100%);
       position: relative;
       overflow: hidden;
       padding: 84px 0;
@@ -605,7 +605,7 @@
        SECTION 7: BOTTOM BANNER CTA
        ========================================================================== */
     .section-bottom-cta {
-      background: #0A192F;
+      background: linear-gradient(135deg, #183359 0%, #20426E 100%);
       position: relative;
       overflow: hidden;
       padding: 80px 0;
@@ -626,9 +626,9 @@
       inset: 0;
       background: linear-gradient(
         135deg,
-        rgba(10, 25, 47, 0.96) 0%,
-        rgba(10, 25, 47, 0.85) 60%,
-        rgba(10, 25, 47, 0.92) 100%
+        rgba(21, 44, 77, 0.90) 0%,
+        rgba(21, 44, 77, 0.78) 60%,
+        rgba(21, 44, 77, 0.85) 100%
       );
     }
 
@@ -666,7 +666,7 @@
       position: fixed;
       inset: 0;
       z-index: 2000;
-      background: rgba(10, 25, 47, 0.82);
+      background: rgba(21, 44, 77, 0.75);
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
       display: flex;

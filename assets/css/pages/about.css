@@ -43,7 +43,7 @@
       min-height: 88vh;
       display: flex;
       align-items: center;
-      background: #0A192F;
+      background: #183359;
       overflow: hidden;
       padding: 150px 0 80px;
     }
@@ -64,10 +64,10 @@
       inset: 0;
       background: linear-gradient(
         90deg,
-        rgba(10, 25, 47, 0.94) 0%,
-        rgba(10, 25, 47, 0.82) 48%,
-        rgba(10, 25, 47, 0.35) 82%,
-        rgba(10, 25, 47, 0.5) 100%
+        rgba(21, 44, 77, 0.88) 0%,
+        rgba(21, 44, 77, 0.74) 48%,
+        rgba(21, 44, 77, 0.32) 82%,
+        rgba(21, 44, 77, 0.45) 100%
       );
     }
 
@@ -282,7 +282,7 @@
       box-shadow: 0 16px 40px rgba(10, 25, 47, 0.12);
       border: 1px solid rgba(216, 155, 66, 0.25);
       height: 480px;
-      background: #0A192F;
+      background: #183359;
     }
 
     .md-portrait-card img {
@@ -296,7 +296,7 @@
       position: absolute;
       bottom: 20px;
       left: 20px;
-      background: rgba(10, 25, 47, 0.88);
+      background: rgba(21, 44, 77, 0.88);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       padding: 14px 20px;
@@ -476,7 +476,7 @@
        SECTION 6: THE JOURNEY MATTERS (DARK BANNER)
        ========================================================================== */
     .section-kinder {
-      background: #0A192F;
+      background: linear-gradient(135deg, #183359 0%, #20426E 100%);
       position: relative;
       overflow: hidden;
       padding: 84px 0;
@@ -622,7 +622,7 @@
        SECTION 8: BOTTOM BANNER CTA
        ========================================================================== */
     .section-bottom-cta {
-      background: #0A192F;
+      background: linear-gradient(135deg, #183359 0%, #20426E 100%);
       position: relative;
       overflow: hidden;
       padding: 84px 0;
