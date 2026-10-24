@@ -328,6 +328,16 @@ button {
   font-size: 13px;
 }
 
+/* Rotate all phone icons 180 degrees along Y axis */
+.fa-phone,
+.fa-phone-alt,
+.fa-phone-flip,
+i[class*="fa-phone"] {
+  display: inline-block;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
 /* ==========================================================================
    NAVIGATION BAR
    ========================================================================== */
