@@ -127,6 +127,145 @@
     ]
   }
   </script>
+
+  <!-- page schema  -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["TravelAgency", "Organization"],
+      "@id": "https://kingstravels.in/#organization",
+      "name": "Kings Travels",
+      "url": "https://kingstravels.in/",
+      "description": "Kings Travels is an India-based travel agency offering customized domestic and international holidays, flight bookings, hotel bookings, visa assistance, group tours and corporate travel solutions.",
+      "telephone": "+91 98725 90519",
+      "email": "kingstravel2025@gmail.com",
+      "founder": {
+        "@type": "Person",
+        "name": "Miss Navdeep Kaur"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kurali",
+        "addressLocality": "Kurali",
+        "addressRegion": "Punjab",
+        "postalCode": "140103",
+        "addressCountry": "IN"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91 98725 90519",
+        "email": "kingstravel2025@gmail.com",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Hindi", "Punjabi"]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://kingstravels.in/#website",
+      "url": "https://kingstravels.in/",
+      "name": "Kings Travels",
+      "publisher": {
+        "@id": "https://kingstravels.in/#organization"
+      },
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://kingstravels.in/#webpage",
+      "url": "https://kingstravels.in/",
+      "name": "Travel Agency in India | Kings Travels",
+      "description": "Explore customized domestic and international holiday packages, flights, hotels, visa assistance and group tours with Kings Travels.",
+      "isPartOf": {
+        "@id": "https://kingstravels.in/#website"
+      },
+      "about": {
+        "@id": "https://kingstravels.in/#organization"
+      },
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://kingstravels.in/#featured-packages",
+      "name": "Featured Holiday Packages by Kings Travels",
+      "itemListOrder": "https://schema.org/ItemListOrderAscending",
+      "numberOfItems": 7,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Kashmir Valley Honeymoon Escape",
+            "description": "6 days and 5 nights covering Srinagar, Gulmarg and Pahalgam.",
+            "touristType": "Honeymoon travellers"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Dubai Luxury Family Experience",
+            "description": "6 days and 5 nights including Dubai city tour and desert safari.",
+            "touristType": "Families"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Andaman Island & Beach Escape",
+            "description": "6 days and 5 nights covering Port Blair, Havelock and Neil Island."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Thailand Beach & Culture Escape",
+            "description": "6 days and 5 nights covering Bangkok and Phuket."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Himachal Hills & Valleys Tour",
+            "description": "6 days and 5 nights covering Shimla, Kufri, Manali and Solang."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Leh Ladakh Adventure Escape",
+            "description": "6 days and 5 nights covering Leh, Nubra Valley and Pangong Lake."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Bali Romantic Island Getaway",
+            "description": "6 days and 5 nights covering Ubud and Seminyak."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
