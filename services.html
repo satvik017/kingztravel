@@ -10,6 +10,15 @@
   <meta name="keywords"
     content="Travel Services in India, airport transfers, room booking, sightseeing India, dining services, Kings Travels">
   <link rel="canonical" href="https://kingstravels.in/services.html">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Travel Services in India | Transfers, Stays & Sightseeing | Kings Travels">
+  <meta property="og:description" content="Explore travel services in India with Kings Travels including airport transfers, room booking, sightseeing and dining services planned around your journey.">
+  <meta property="og:url" content="https://kingstravels.in/services.html">
+  <meta property="og:site_name" content="Kings Travels">
+  <meta property="og:image" content="https://kingstravels.in/assets/images/service_hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="shortcut icon" href="assets/images/logo.jpeg" type="image/x-icon">
 
   <!-- Google Fonts: Outfit (exact same as index.html), Playfair Display, and Caveat (authentic handwritten travel script) -->
@@ -23,16 +32,114 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16443245656"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-30NC4RWT43"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
+    gtag('config', 'G-30NC4RWT43');
     gtag('config', 'AW-16443245656');
   </script>
 
   <link rel="stylesheet" href="assets/css/global.css">
   <link rel="stylesheet" href="assets/css/pages/services.css?v=2">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://kingstravels.in/services.html#webpage",
+        "url": "https://kingstravels.in/services.html",
+        "name": "Travel Services in India | Transfers, Stays & Sightseeing | Kings Travels",
+        "description": "Explore travel services in India with Kings Travels including airport transfers, room booking, sightseeing and dining services planned around your journey.",
+        "isPartOf": {
+          "@id": "https://kingstravels.in/#website"
+        },
+        "about": {
+          "@id": "https://kingstravels.in/#agency"
+        },
+        "breadcrumb": {
+          "@id": "https://kingstravels.in/services.html#breadcrumb"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://kingstravels.in/services.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://kingstravels.in/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://kingstravels.in/services.html"
+          }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://kingstravels.in/services.html#service",
+        "name": "Travel Services by Kings Travels",
+        "provider": {
+          "@id": "https://kingstravels.in/#agency"
+        },
+        "serviceType": "Travel & Tourism Services",
+        "areaServed": {
+          "@type": "Country",
+          "name": "India"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Kings Travels Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Airport & Station Transfers"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Hotel & Resort Room Booking"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Sightseeing & Guided Day Tours"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Flight & Train Ticket Bookings"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Special Dining & Meal Experiences"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -40,14 +147,14 @@
   <!-- NAVBAR (SAME AS HOME PAGE, SERVICES IS A SINGLE LINK TAB) -->
   <nav class="navbar" id="main-navbar">
     <div class="navbar-inner">
-      <a href="index.html" class="navbar-brand">
+      <a href="/" class="navbar-brand">
         <img src="assets/images/logo.jpeg" alt="Kings Travels Logo">
         <div class="navbar-brand-text"><span>Kings</span> Travels</div>
       </a>
       <ul class="nav-menu">
-        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
         <li class="nav-item">
-          <a href="index.html#section-destinations" class="nav-link">Destinations &#9662;</a>
+          <a href="/#section-destinations" class="nav-link">Destinations &#9662;</a>
           <div class="nav-dropdown">
             <a href="domestic-travel.html">&#127956; Domestic</a>
             <a href="international-travel.html">&#127758; International</a>
@@ -58,15 +165,15 @@
           <a href="b2b.html" class="nav-link">B2B Partner</a>
         </li>
         <li class="nav-item">
-          <a href="index.html#section-b2b" class="nav-link">Corporate &#9662;</a>
+          <a href="corporate.html" class="nav-link">Corporate &#9662;</a>
           <div class="nav-dropdown">
-            <a href="services.html">&#128188; Corporate Travel</a>
-            <a href="services.html">&#127908; MICE</a>
-            <a href="index.html#section-experience">&#128101; Group Travel</a>
+            <a href="corporate.html">&#128188; Corporate Travel</a>
+            <a href="corporate.html#section-mice">&#127908; MICE</a>
+            <a href="corporate.html#section-schedule">&#128101; Group Travel</a>
           </div>
         </li>
         <li class="nav-item"><a href="travel-guides.html" class="nav-link">Travel Guides</a></li>
-        <li class="nav-item"><a href="index.html#section-reviews" class="nav-link">Reviews</a></li>
+        <li class="nav-item"><a href="/#section-reviews" class="nav-link">Reviews</a></li>
         <li class="nav-item"><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener"
             class="nav-link nav-cta">Contact Us</a></li>
       </ul>
@@ -80,7 +187,7 @@
   <div class="mobile-menu" id="mobile-menu">
     <nav>
       <ul>
-        <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link"
+        <li class="mobile-nav-item"><a href="/" class="mobile-nav-link"
             style="display:flex;justify-content:space-between;align-items:center;">Home</a></li>
         <li class="mobile-nav-item">
           <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-dest')">Destinations <i
@@ -101,18 +208,18 @@
           <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-corp')">Corporate Travel <i
               class="fa fa-chevron-down"></i></button>
           <ul class="mobile-submenu" id="sub-corp">
-            <li><a href="services.html">&#128188; Corporate Travel</a></li>
-            <li><a href="services.html">&#127908; MICE</a></li>
-            <li><a href="index.html#section-experience">&#128101; Group Travel</a></li>
+            <li><a href="corporate.html">&#128188; Corporate Travel</a></li>
+            <li><a href="corporate.html#section-mice">&#127908; MICE</a></li>
+            <li><a href="corporate.html#section-schedule">&#128101; Group Travel</a></li>
           </ul>
         </li>
         <li class="mobile-nav-item">
           <button class="mobile-nav-link" onclick="toggleMobileSubmenu('sub-about')">About Us <i
               class="fa fa-chevron-down"></i></button>
           <ul class="mobile-submenu" id="sub-about">
-            <li><a href="index.html">&#127963; About Kings Travels</a></li>
-            <li><a href="index.html">&#128105;&#8205;&#128188; Managing Director</a></li>
-            <li><a href="index.html#section-why">&#11088; Why Choose Us</a></li>
+            <li><a href="about.html">&#127963; About Kings Travels</a></li>
+            <li><a href="about.html#leadership">&#128105;&#8205;&#128188; Managing Director</a></li>
+            <li><a href="/#section-why">&#11088; Why Choose Us</a></li>
           </ul>
         </li>
         <li class="mobile-nav-item">
@@ -124,7 +231,7 @@
             <li><a href="travel-guides.html">&#128161; Travel Tips</a></li>
           </ul>
         </li>
-        <li class="mobile-nav-item"><a href="index.html#section-reviews" class="mobile-nav-link"
+        <li class="mobile-nav-item"><a href="/#section-reviews" class="mobile-nav-link"
             style="display:flex;justify-content:space-between;align-items:center;">Reviews</a></li>
         <li class="mobile-nav-item"><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener"
             class="mobile-nav-link" style="display:flex;justify-content:space-between;align-items:center;">FAQs</a></li>
@@ -148,7 +255,7 @@
       <div class="services-hero-inner">
         <div class="hero-text-col">
           <div class="breadcrumb-row">
-            <a href="index.html">Home</a>
+            <a href="/">Home</a>
             <span class="sep"><i class="fas fa-chevron-right"></i></span>
             <span class="curr">Services</span>
           </div>
@@ -604,10 +711,10 @@
             <li><a href="about.html">&#127963; About Us</a></li>
             <li><a href="b2b.html">&#129309; B2B Partner</a></li>
             <li><a href="corporate.html">&#128188; Corporate Travel</a></li>
-            <li><a href="index.html#section-why">&#11088; Why Choose Us</a></li>
-            <li><a href="index.html#section-reviews">&#128172; Reviews</a></li>
+            <li><a href="/#section-why">&#11088; Why Choose Us</a></li>
+            <li><a href="/#section-reviews">&#128172; Reviews</a></li>
             <li><a href="travel-guides.html">&#128221; Travel Guides</a></li>
-            <li><a href="index.html#section-accreditations">&#127942; Accreditations</a></li>
+            <li><a href="/#section-accreditations">&#127942; Accreditations</a></li>
             <li><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener">&#10067; FAQs</a></li>
             <li><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener">&#128222; Contact Us</a>
             </li>
@@ -617,6 +724,7 @@
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms &amp; Conditions</a></li>
             <li><a href="#">Cancellation Policy</a></li>
+            <li><a href="sitemap.xml">Sitemap</a></li>
           </ul>
         </div>
         <div class="footer-col footer-col-registrations">
