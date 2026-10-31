@@ -6,56 +6,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page Not Found (404) | Kings Travels</title>
   <meta name="robots" content="noindex, follow">
-  <link rel="shortcut icon" href="assets/images/logo.jpeg" type="image/x-icon">
+  <link rel="shortcut icon" href="/assets/images/logo.jpeg" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="/assets/css/global.css">
+
+  <script>
+    // If user lands on any non-existent URL, redirect browser address bar to /404.html
+    if (window.location.pathname !== '/404.html' && window.location.pathname !== '/404') {
+      window.location.replace('/404.html');
+    }
+  </script>
+
   <style>
     .error-hero {
-      min-height: 80vh;
+      min-height: 85vh;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 120px 20px 60px;
+      padding: 130px 20px 70px;
       background: radial-gradient(circle at center, #1b2838 0%, #0c1219 100%);
       color: #fff;
     }
     .error-card {
-      max-width: 680px;
+      max-width: 720px;
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid rgba(226, 175, 94, 0.25);
-      border-radius: 16px;
-      padding: 48px 32px;
-      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 50px 32px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    .error-badge {
+      display: inline-block;
+      font-size: 0.82rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--gold-light, #e2af5e);
+      background: rgba(226, 175, 94, 0.12);
+      border: 1px solid rgba(226, 175, 94, 0.3);
+      padding: 6px 16px;
+      border-radius: 50px;
+      margin-bottom: 18px;
     }
     .error-code {
-      font-size: 5rem;
+      font-size: 5.5rem;
       font-weight: 800;
       color: var(--gold-light, #e2af5e);
       line-height: 1;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
       font-family: 'Playfair Display', serif;
     }
     .error-title {
-      font-size: 1.8rem;
-      margin-bottom: 16px;
-      font-weight: 600;
+      font-size: 2rem;
+      margin-bottom: 14px;
+      font-weight: 700;
+      font-family: 'Playfair Display', serif;
     }
     .error-desc {
       color: #cbd5e1;
       font-size: 1.05rem;
       line-height: 1.6;
-      margin-bottom: 32px;
+      margin-bottom: 24px;
+    }
+    .redirect-notice {
+      background: rgba(226, 175, 94, 0.08);
+      border: 1px dashed rgba(226, 175, 94, 0.35);
+      border-radius: 12px;
+      padding: 12px 20px;
+      margin-bottom: 28px;
+      color: #f1f5f9;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .redirect-notice span#timer {
+      font-weight: 800;
+      color: var(--gold-light, #e2af5e);
+      font-size: 1.1rem;
     }
     .error-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 10px;
       justify-content: center;
       margin-bottom: 32px;
     }
@@ -64,22 +104,23 @@
       align-items: center;
       gap: 8px;
       padding: 10px 18px;
-      background: rgba(226, 175, 94, 0.1);
-      border: 1px solid rgba(226, 175, 94, 0.3);
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.15);
       border-radius: 30px;
       color: #fff;
       text-decoration: none;
-      font-size: 0.95rem;
-      transition: all 0.3s ease;
+      font-size: 0.92rem;
+      transition: all 0.25s ease;
     }
     .error-chip:hover {
       background: var(--gold-light, #e2af5e);
       color: #0c1219;
+      border-color: var(--gold-light, #e2af5e);
       transform: translateY(-2px);
     }
     .error-actions {
       display: flex;
-      gap: 16px;
+      gap: 14px;
       justify-content: center;
       flex-wrap: wrap;
     }
@@ -91,7 +132,7 @@
   <nav class="navbar" id="main-navbar">
     <div class="navbar-inner">
       <a href="/" class="navbar-brand">
-        <img src="assets/images/logo.jpeg" alt="Kings Travels Logo">
+        <img src="/assets/images/logo.jpeg" alt="Kings Travels Logo">
         <div class="navbar-brand-text"><span>Kings</span> Travels</div>
       </a>
       <ul class="nav-menu">
@@ -99,42 +140,82 @@
         <li class="nav-item">
           <a href="/#section-destinations" class="nav-link">Destinations &#9662;</a>
           <div class="nav-dropdown">
-            <a href="domestic-travel.html">&#127956; Domestic</a>
-            <a href="international-travel.html">&#127758; International</a>
+            <a href="/domestic-travel.html">&#127956; Domestic</a>
+            <a href="/international-travel.html">&#127758; International</a>
           </div>
         </li>
-        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-        <li class="nav-item"><a href="b2b.html" class="nav-link">B2B Partner</a></li>
-        <li class="nav-item"><a href="corporate.html" class="nav-link">Corporate Travel</a></li>
-        <li class="nav-item"><a href="travel-guides.html" class="nav-link">Travel Guides</a></li>
-        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-        <li class="nav-item"><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="nav-link nav-cta">Contact Us</a></li>
+        <li class="nav-item"><a href="/services.html" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="/b2b.html" class="nav-link">B2B Partner</a></li>
+        <li class="nav-item">
+          <a href="/corporate.html" class="nav-link">Corporate &#9662;</a>
+          <div class="nav-dropdown">
+            <a href="/corporate.html">&#128188; Corporate Travel</a>
+            <a href="/corporate.html#section-mice">&#127908; MICE</a>
+            <a href="/corporate.html#section-schedule">&#128101; Group Travel</a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="/travel-guides.html" class="nav-link">Travel Guides</a></li>
+        <li class="nav-item"><a href="/about.html" class="nav-link">About Us</a></li>
+        <li class="nav-item"><a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener"
+            class="nav-link nav-cta">Contact Us</a></li>
       </ul>
+      <button class="nav-hamburger" id="hamburger-btn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <nav>
+      <ul>
+        <li class="mobile-nav-item"><a href="/" class="mobile-nav-link">Home</a></li>
+        <li class="mobile-nav-item">
+          <a href="/domestic-travel.html" class="mobile-nav-link">&#127956; Domestic Travel</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="/international-travel.html" class="mobile-nav-link">&#127758; International Travel</a>
+        </li>
+        <li class="mobile-nav-item"><a href="/services.html" class="mobile-nav-link">Services</a></li>
+        <li class="mobile-nav-item"><a href="/b2b.html" class="mobile-nav-link">B2B Partner</a></li>
+        <li class="mobile-nav-item"><a href="/corporate.html" class="mobile-nav-link">Corporate Travel</a></li>
+        <li class="mobile-nav-item"><a href="/travel-guides.html" class="mobile-nav-link">Travel Guides</a></li>
+        <li class="mobile-nav-item"><a href="/about.html" class="mobile-nav-link">About Us</a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <a href="https://wa.me/message/APRJYOU4WDQQK1" class="btn btn-whatsapp" style="justify-content:center;"><i
+            class="fab fa-whatsapp"></i> WhatsApp Us</a>
+      </div>
+    </nav>
+  </div>
 
   <!-- 404 CONTENT -->
   <section class="error-hero">
     <div class="error-card">
+      <div class="error-badge"><i class="fas fa-exclamation-triangle"></i> Error 404</div>
       <div class="error-code">404</div>
       <h1 class="error-title">Destination Not Found</h1>
       <p class="error-desc">
-        The travel page you are looking for may have moved, been renamed, or is temporarily unavailable. Let us help guide you back to your journey:
+        The travel page or URL you entered doesn't exist, may have moved, or is temporarily unavailable. Let us help guide you back to your journey:
       </p>
+
+      <div class="redirect-notice">
+        <i class="fas fa-history"></i> Auto-returning to Home in <span id="timer">8</span> seconds...
+      </div>
 
       <div class="error-links">
         <a href="/" class="error-chip"><i class="fas fa-home"></i> Home</a>
-        <a href="domestic-travel.html" class="error-chip">&#127956; Domestic Tours</a>
-        <a href="international-travel.html" class="error-chip">&#127758; International Tours</a>
-        <a href="services.html" class="error-chip"><i class="fas fa-concierge-bell"></i> Services</a>
-        <a href="corporate.html" class="error-chip"><i class="fas fa-briefcase"></i> Corporate Travel</a>
-        <a href="b2b.html" class="error-chip"><i class="fas fa-handshake"></i> B2B Partner</a>
-        <a href="travel-guides.html" class="error-chip"><i class="fas fa-compass"></i> Travel Guides</a>
-        <a href="about.html" class="error-chip"><i class="fas fa-info-circle"></i> About Us</a>
+        <a href="/domestic-travel.html" class="error-chip">&#127956; Domestic Tours</a>
+        <a href="/international-travel.html" class="error-chip">&#127758; International Tours</a>
+        <a href="/services.html" class="error-chip"><i class="fas fa-concierge-bell"></i> Services</a>
+        <a href="/corporate.html" class="error-chip"><i class="fas fa-briefcase"></i> Corporate Travel</a>
+        <a href="/b2b.html" class="error-chip"><i class="fas fa-handshake"></i> B2B Partner</a>
+        <a href="/travel-guides.html" class="error-chip"><i class="fas fa-compass"></i> Travel Guides</a>
+        <a href="/about.html" class="error-chip"><i class="fas fa-info-circle"></i> About Us</a>
       </div>
 
       <div class="error-actions">
-        <a href="/" class="btn btn-primary" style="padding:12px 28px;text-decoration:none;"><i class="fas fa-arrow-left"></i> Return Home</a>
+        <a href="/" class="btn btn-primary" style="padding:12px 28px;text-decoration:none;"><i class="fas fa-arrow-left"></i> Return Home Now</a>
         <a href="https://wa.me/message/APRJYOU4WDQQK1" target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding:12px 28px;text-decoration:none;"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
       </div>
     </div>
@@ -146,6 +227,21 @@
       <p>&copy; 2026 Kings Travels. All rights reserved. Registered with Ministry of Tourism (NIDHI) &amp; Punjab Tourism.</p>
     </div>
   </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+  <script>
+    // 8-second countdown to return home automatically if user remains idle
+    let countdown = 8;
+    const timerElem = document.getElementById('timer');
+    const interval = setInterval(() => {
+      countdown--;
+      if (timerElem) timerElem.textContent = countdown;
+      if (countdown <= 0) {
+        clearInterval(interval);
+        window.location.href = '/';
+      }
+    }, 1000);
+  </script>
 </body>
 
 </html>
